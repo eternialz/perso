@@ -33,6 +33,8 @@ gem 'cells-erb'
 
 # Font-awesome
 gem "font-awesome-rails"
+# Reset CSS
+gem 'normalize-rails'
 
 # Markdown support
 gem 'pandoc-ruby'
@@ -62,9 +64,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-group :test do
-  gem 'capybara', '~> 2.14'
-  gem 'mongoid-rspec', git: 'https://github.com/mongoid-rspec/mongoid-rspec.git'
-  gem 'email_spec', '~> 2.1'
-end
