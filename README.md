@@ -1,1 +1,1 @@
-# Readme [![CodeFactor](https://www.codefactor.io/repository/github/eternialz/moeverdose/badge)](https://www.codefactor.io/repository/github/eternialz/moeverdose/) [![TravisCI](https://travis-ci.org/eternialz/perso.svg?branch=master)](https://travis-ci.org/eternialz/moeverdose)
+# Readme [![CodeFactor](https://www.codefactor.io/repository/github/eternialz/perso/badge)](https://www.codefactor.io/repository/github/eternialz/perso/) [![TravisCI](https://travis-ci.org/eternialz/perso.svg?branch=master)](https://travis-ci.org/eternialz/perso)
