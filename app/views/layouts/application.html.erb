@@ -5,13 +5,17 @@
     <body>
         <%= render "layouts/flash" %>
 
-        <%= render "layouts/menu" %>
+        <%= render "layouts/splash" %>
+
 
         <div class="page">
-            <%= yield %>
-        </div>
+            <%= render "layouts/menu" %>
 
-        <%= render "layouts/footer" %>
+            <div class="row">
+                <%= yield %>
+                <a href="#top">test</a>
+            </div>
+        </div>
 
         <%= render "layouts/cookie_disclaimer" %>
     </body>

@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: $large) {
     .row {
-        max-width: 1600px;
+        max-width: 1400px;
     }
 }
 
@@ -41,10 +41,15 @@
     &.-sm {
         margin: $gutter /2;
     }
+
+    &.-centered {
+        float: none;
+        margin: 0 auto;
+    }
 }
 
 .row {
-    @media only screen and (min-width: $xsmall) {
+    @media only screen and (min-width: $small) {
         .col-3 { width: (100% / 4) }
         .col-4 { width: (100% / 3) }
         .col-6 { width: (100% / 2) }
@@ -58,5 +63,35 @@
         .col-8.-sm { width: calc(#{(100% / (12 / 8))} - #{($gutter / 2)}) }
         .col-9.-sm { width: calc(#{(100% / (12 / 9))} - #{($gutter / 2)}) }
         .col-12.-sm { width: calc(100% - #{($gutter / 2)}) }
+    }
+}
+
+.align {
+    &.-center {
+        text-align: center;
+    }
+
+    &.-right {
+        text-align: right;
+    }
+
+    @media only screen and (max-width: $small) {
+        &.-max-small-center {
+            text-align: center;
+        }
+
+        &.-max-small-right {
+            text-align: right;
+        }
+    }
+
+    @media only screen and (min-width: $small) {
+        &.-min-small-center {
+            text-align: center;
+        }
+
+        &.-min-small-right {
+            text-align: right;
+        }
     }
 }

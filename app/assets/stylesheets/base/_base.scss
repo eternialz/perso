@@ -1,22 +1,35 @@
 /* Browser Styling */
 ::selection {
-    background: $cyan;
-    color: $white;
+    background-color: rgba($accent2, .75) !important;
+    color: $white !important;
 }
 
 /* Global default custom styles */
 html {
-    background: $gray5;
+    background: $white;
     box-sizing: border-box;
-    color: $gray3;
-    font-size: 16px;
+    color: $gray4;
+    font-family: Tahoma, Geneva, sans-serif; // Fallback
+    font-family: 'Exo 2', sans-serif;
+    font-size: $default-font-size;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: Tahoma, Geneva, sans-serif; // Fallback
-    font-family: 'Fira Sans', sans-serif;
 
     @media only screen and (max-width: $xsmall) {
-        font-size: 14px;
+        font-size: $default-font-size * 0.9;
+    }
+
+    @media only screen and (min-width: $large) {
+        font-size: $default-font-size * 1.15;
+        line-height: $default-line-height * 1.2;
+    }
+
+    @media only screen and (min-width: $xlarge) {
+        font-size: $default-font-size * 1.25;
+    }
+
+    @media only screen and (min-width: $xxlarge) {
+        font-size: $default-font-size * 1.4;
     }
 }
 
@@ -47,7 +60,15 @@ a {
     color: $accent;
     cursor: pointer;
     text-decoration: none;
-    transition: all 70ms linear;
+    transition: all 100ms linear;
+
+    &:hover {
+        color: $red;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 label {
