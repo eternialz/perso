@@ -1,0 +1,62 @@
+.row {
+    @extend %clearfix;
+
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.rel {
+    position: relative;
+}
+
+@media only screen and (min-width: $large) {
+    .row {
+        max-width: 1600px;
+    }
+}
+
+@media only screen and (min-width: $xlarge) {
+    .row {
+        max-width: 1800px;
+    }
+}
+
+@media only screen and (min-width: $xxlarge) {
+    .row {
+        max-width: 2200px;
+    }
+}
+
+.row [class^="col"] {
+    float: left;
+    padding: $gutter / 2;
+    text-align: left;
+    width: 100%;
+
+    &.-sp {
+        padding: 0;
+    }
+
+    &.-sm {
+        margin: $gutter /2;
+    }
+}
+
+.row {
+    @media only screen and (min-width: $xsmall) {
+        .col-3 { width: (100% / 4) }
+        .col-4 { width: (100% / 3) }
+        .col-6 { width: (100% / 2) }
+        .col-8 { width: (100% / (12 / 8)) }
+        .col-9 { width: (100% / (12 / 9)) }
+        .col-12 { width: 100% }
+
+        .col-3.-sm { width: calc(#{(100% / 4)} - #{($gutter / 2)}) }
+        .col-4.-sm { width: calc(#{(100% / 3)} - #{($gutter / 2)}) }
+        .col-6.-sm { width: calc(#{(100% / 2)} - #{($gutter / 2)}) }
+        .col-8.-sm { width: calc(#{(100% / (12 / 8))} - #{($gutter / 2)}) }
+        .col-9.-sm { width: calc(#{(100% / (12 / 9))} - #{($gutter / 2)}) }
+        .col-12.-sm { width: calc(100% - #{($gutter / 2)}) }
+    }
+}

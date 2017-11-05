@@ -1,0 +1,30 @@
+#cookie_parent {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#cookies_disclaimer {
+    border-radius: 4px;
+    width: 900px;
+    max-width: calc(100% - 30px);
+    margin: 15px auto;
+    line-height: 50px;
+    background: $gray0;
+    text-align: center;
+
+    p {
+        display: inline-block;
+        width: calc(100% - 60px);
+    }
+
+    #cookies_close {
+        line-height: 50px;
+        border-radius: 0 4px 4px 0;
+        float: right;
+    }
+
+    a { color: $accent }
+}

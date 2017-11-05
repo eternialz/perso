@@ -1,0 +1,37 @@
+
+.tooltiped {
+    position: relative;
+
+    .tooltip {
+        background: $blue;
+        border-radius: 3px;
+        color: $white;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.4;
+        left: calc(50% - 175px);
+        opacity: 0;
+        padding: 10px 7px 12px 7px;
+        pointer-events: none;
+        position: absolute;
+        text-align: center;
+        bottom: calc(100% + 10px);
+        transition: all 170ms linear;
+        width: 350px;
+        z-index: 10000;
+
+        &::after {
+            border-top: 10px solid $blue;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            top: 100%;
+            content: "";
+            left: calc(50% - 10px);
+            position: absolute;
+        }
+    }
+
+    &:hover .tooltip {
+        opacity: 1;
+    }
+}

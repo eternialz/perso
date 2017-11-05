@@ -1,0 +1,73 @@
+/* Browser Styling */
+::selection {
+    background: $cyan;
+    color: $white;
+}
+
+/* Global default custom styles */
+html {
+    background: $gray5;
+    box-sizing: border-box;
+    color: $gray3;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: Tahoma, Geneva, sans-serif; // Fallback
+    font-family: 'Fira Sans', sans-serif;
+
+    @media only screen and (max-width: $xsmall) {
+        font-size: 14px;
+    }
+}
+
+html, body {
+    min-height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+
+    li {
+        display: block;
+    }
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    color: $accent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 70ms linear;
+}
+
+label {
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+img {
+    max-width: 100%;
+    float: left;
+}
+
+p {
+    margin: 0;
+}
+
+.para {
+    margin: 15px 0;
+}
