@@ -1,29 +1,36 @@
 header.nav {
-    height: 100vh;
-    width: 300px;
-    background: $black;
-    color: $white;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 0.15em solid $gray0;
+    border-image: linear-gradient(90deg, $accent, $accent2) 30;
+    background: $white;
+    line-height: 4em;
+
+    .row {
+        text-align: center;
+    }
 
     a {
-        padding: 10px;
-        display: block;
-        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0 15px;
+        display: inline-block;
     }
 
-    p, .fa {
-        line-height: 40px;
-        float: left;
+    $link-number: 4;
+    @for $i from 1 to $link-number + 1 {
+        li:nth-child(#{$i}) a {
+            color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
+        }
     }
 
-    .fa  {
-        font-size: 32px;
-        background: $gray4;
-        text-align: center;
-        width: 40px;
-        border-radius: 50%;
+    li a:hover {
+        color: $pink;
     }
 
-    li {
-display: block;
+    .fa {
+        margin-right: 10px;
     }
 }

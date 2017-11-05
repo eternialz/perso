@@ -5,18 +5,22 @@
     border-bottom-width: 2px;
     border-radius: 4px;
     border: none;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     color: $white !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
+    font-size: 85%;
     font-weight: 600;
-    line-height: 45px;
+    letter-spacing: 0.05em;
+    line-height: 2.1em;
+    margin: 1.5em 1em 1.5em 0;
     opacity: 1 !important;
     outline: none !important;
-    padding: 0 17px !important;
+    padding: 0 17px 1px !important;
     text-align: left !important;
     text-transform: uppercase;
-    transition: background-color 170ms ease-in-out;
+    text-shadow: none !important;
+    transition: all 170ms ease-in-out;
 
     &.-full {
         width: 100%;
@@ -25,7 +29,8 @@
     .fa, svg {
         float: right;
         margin-left: 14px;
-        line-height: 45px;
+        line-height: 2.1em;
+        text-shadow: none !important;
     }
 
     @media only screen and (max-width: $xsmall) {
@@ -40,11 +45,25 @@
     }
 
     &:focus {
-        box-shadow: 0 0 0 3px rgba($accent, .4);
+
+    }
+
+    &:hover {
+        box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        transform: translateY(-2px);
     }
 
     &:active {
-        box-shadow: none;
-        background: darken($accent, 4%);
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        transform: translateY(1px);
+    }
+
+    &.-white {
+        background: $white;
+        color: $accent !important;
+    }
+
+    &.-accent2 {
+        background: $accent2;
     }
 }

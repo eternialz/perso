@@ -1,17 +1,11 @@
 
 // Website accent
 // ====================================================================
-$cyan: #3297d3;
-.cyan { color: $cyan; }
-
-$blue: #6772e5;
+$blue: #67a5e5;
 .blue { color: $blue; }
 
-$pink: #d20067;
+$pink: #ef4e74;
 .pink { color: $pink; }
-
-$purple: #b9304d;
-.purple { color: $purple; }
 
 $green: #24b47e;
 .green { color: $green; }
@@ -22,10 +16,14 @@ $yellow: #FDD760;
 $orange: #FFA452;
 .orange { color: $orange; }
 
+$purple: #8549df;
+.purple { color: $purple; }
+
 $red: #de3b4a;
 .red { color: $red; }
 
-$accent: $pink;
+$accent: $purple;
+$accent2: $blue;
 
 // Gray palette
 // ====================================================================
