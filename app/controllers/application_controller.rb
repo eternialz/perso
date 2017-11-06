@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
-    before_action :set_locale
+    # before_action :set_locale
 
     def home
         render "/home"
@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
         end
     end
 
-    def set_locale
-        I18n.locale = :fr # We only serve french content, so we enforce the :fr locale
-    end
+    # def set_locale
+    #    I18n.locale = :fr # We only serve french content, so we enforce the :fr locale
+    # end
 end
