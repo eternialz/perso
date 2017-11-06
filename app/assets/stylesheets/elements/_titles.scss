@@ -5,6 +5,11 @@
     font-style: italic;
     position: relative;
     --text-shadow-color: #{rgba($accent, 0.1)};
+    margin: 0.5em 0;
+
+    &.-accent2 {
+        color: $accent2;
+    }
 
     span {
         text-transform: uppercase;

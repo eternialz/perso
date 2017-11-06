@@ -2,7 +2,6 @@ header.nav {
     @extend %clearfix;
 
     position: sticky;
-
     background: $white;
     border-bottom: 3px solid $gray0;
     border-image: linear-gradient(90deg, $accent, $accent2) 1;
@@ -10,6 +9,7 @@ header.nav {
     line-height: 72px;
     height: 72px;
     transform: translate3d(0, 0, 0); // Fix flicker with links hover
+    z-index: 10;
 
     .row {
         text-align: center;

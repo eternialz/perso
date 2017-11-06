@@ -9,6 +9,46 @@
     padding-right: 1em;
     --text-shadow-color: rgba($accent2, 0.1);
 
+    &.-tiny {
+        box-shadow: inset 0 0 0 1px rgba($accent, .5);
+        background: rgba($accent, 0.26);
+        line-height: 1.8em;
+        padding: 0 0.75em;
+        width: auto !important;
+
+        &.-accent2 {
+            box-shadow: inset 0 0 0 1px rgba($accent2, .5);
+            background: rgba($accent2, 0.26);
+            .icon { color: $accent2; }
+        }
+
+        .icon {
+            line-height: 1.8em;
+            padding: 0; margin: 0;
+        }
+    }
+
+    &.-full {
+        padding-right: 0.6em;
+        width: 100%;
+        max-width: calc(100% - 3em);
+
+        .icon {
+            width: 9em;
+            padding-left: 0.5em;
+            text-align: left;
+
+            span {
+                float: right;
+            }
+
+            .fa {
+                min-width: 1.5em;
+                text-align: center;
+            }
+        }
+    }
+
     .icon {
         --text-shadow-color: rgba($accent, 0.1);
         color: $accent;
