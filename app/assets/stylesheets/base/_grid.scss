@@ -29,6 +29,8 @@
 }
 
 .row [class^="col"] {
+    @extend %clearfix;
+
     float: left;
     padding: $gutter / 2;
     text-align: left;
