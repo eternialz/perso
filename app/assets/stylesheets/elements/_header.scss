@@ -47,6 +47,10 @@ header.nav {
             display: none;
             margin-right: 0.5em;
         }
+
+        li:last-child .fa {
+            display: inline-block;
+        }
     }
 
     @media only screen and (max-width: $small) {
@@ -77,6 +81,10 @@ header.nav {
                 display: block;
             }
 
+            li {
+                border-top: 1px solid $gray0;
+            }
+
             li:last-child {
                 display: none;
             }
@@ -99,10 +107,14 @@ header.nav {
         letter-spacing: 1px;
         padding: 0 20px;
         text-transform: uppercase;
+    }
 
-        &:hover {
-            color: $gray3;
-        }
+    ul li a:hover {
+        color: $gray3;
+    }
+
+    a:active {
+        background: $gray0;
     }
 
     .image, h1 {

@@ -1,0 +1,15 @@
+.date {
+    float: left;
+    width: 4.5em;
+    text-align: right;
+    padding-right: 1em;
+    height: 100%;
+
+    .start {
+        color: $accent;
+    }
+
+    .duration {
+        color: $accent2;
+    }
+}
