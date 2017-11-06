@@ -1,9 +1,9 @@
 
-.tooltiped {
+.tool {
     position: relative;
 
-    .tooltip {
-        background: $blue;
+    .tip {
+        background: linear-gradient(125deg, $accent, $accent2);
         border-radius: 3px;
         color: $white;
         font-size: 16px;
@@ -15,23 +15,36 @@
         pointer-events: none;
         position: absolute;
         text-align: center;
-        bottom: calc(100% + 10px);
+        top: 100%;
         transition: all 170ms linear;
         width: 350px;
         z-index: 10000;
+        box-shadow: 0 50px 100px rgba(50,50,93,.1),
+                    0 15px 35px rgba(50,50,93,.15),
+                    0 5px 15px rgba(0,0,0,.1),
+                    inset 0 0 0 2px rgba(0,0,0,.2);
 
-        &::after {
-            border-top: 10px solid $blue;
+        &::after, &::before {
+            border-bottom: 10px solid mix($accent, $accent2, 50%);
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            top: 100%;
+            bottom: calc(100% - 2px);
             content: "";
             left: calc(50% - 10px);
             position: absolute;
         }
+
+        &::before {
+            border-bottom: 10px solid darken(mix($accent, $accent2, 50%), 5%);
+            bottom: 100%;
+        }
+
+        &.-top {
+            
+        }
     }
 
-    &:hover .tooltip {
+    &:hover .tip {
         opacity: 1;
     }
 }
