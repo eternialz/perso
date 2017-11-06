@@ -6,6 +6,8 @@
 
 /* Global default custom styles */
 html {
+    --text-shadow-color: #{rgba($black, 0.1)};
+
     background: $white;
     box-sizing: border-box;
     color: $gray4;
@@ -14,6 +16,7 @@ html {
     font-size: $default-font-size;
     overflow-x: hidden;
     overflow-y: scroll;
+    text-shadow: 0 0 1px var(--text-shadow-color) !important;
 
     @media only screen and (max-width: $xsmall) {
         font-size: $default-font-size * 0.9;
@@ -61,14 +64,6 @@ a {
     cursor: pointer;
     text-decoration: none;
     transition: all 100ms linear;
-
-    &:hover {
-        color: $red;
-    }
-
-    &:hover {
-        opacity: 0.8;
-    }
 }
 
 label {
