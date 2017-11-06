@@ -1,0 +1,32 @@
+.title {
+    color: $accent;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    --text-shadow-color: #{rgba($accent, 0.1)};
+
+    span {
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 1.9em;
+    }
+
+    & > .fa {
+        position: absolute;
+        left: -2.5em;
+        padding: 0.5em 0;
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        float: left;
+        margin-right: 0.5em;
+        background: rgba($accent, .4);
+        border-radius: 50%;
+    }
+
+    .btn {
+        float: right;
+        margin: 0.15em;
+    }
+}
