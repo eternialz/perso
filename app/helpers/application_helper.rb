@@ -3,7 +3,7 @@ module ApplicationHelper
         "Site name"
     end
 
-    # TODO Change color 
+    # TODO Change color
     def accent
         "#000000"
     end

@@ -41,7 +41,7 @@
     }
 
     &:focus {
-
+        outline: 2px solid $accent;
     }
 
     &:hover {
@@ -57,6 +57,11 @@
     &.-white {
         background: $white;
         color: $accent !important;
+        outline: 2px solid $accent;
+
+        &:focus {
+            outline: 2px solid $accent;
+        }
     }
 
     &.-accent2 {

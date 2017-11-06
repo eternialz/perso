@@ -1,20 +1,21 @@
 .heavy_link {
+    --text-shadow-color: rgba($blue, .1);
     color: $accent2;
     display: inline-block;
     font-weight: 600;
-    text-transform: none;
-    --text-shadow-color: initial;
-    padding: 0.5em 0;
+    letter-spacing: 1px;
     margin: 0.5em 0;
+    padding: 0.5em 0;
+    text-transform: none;
 
     .fa {
         float: right;
-        margin-left: 0.5em;
         font-size: 0.75em;
+        margin-left: 0.5em;
         padding: 0.45em;
     }
 
     &:hover {
-        color: $gray6;
+        --text-shadow-color: initial;
     }
 }

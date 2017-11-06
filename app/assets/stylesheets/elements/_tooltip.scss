@@ -1,6 +1,7 @@
 
 .tool {
     position: relative;
+    display: inline-block;
 
     .tip {
         background: linear-gradient(125deg, $accent, $accent2);
@@ -11,11 +12,11 @@
         line-height: 1.4;
         left: calc(50% - 175px);
         opacity: 0;
-        padding: 10px 7px 12px 7px;
+        padding: 10px 7px 12px;
         pointer-events: none;
         position: absolute;
         text-align: center;
-        top: calc(80% + 5px);
+        top: 100%;
         transition: all 170ms linear;
         width: 350px;
         z-index: 10000;
@@ -70,7 +71,7 @@
         }
 
         &.-top {
-            bottom: calc(80% + 5px);
+            bottom: calc(100% + 10px);
             top: auto;
 
             &::after {

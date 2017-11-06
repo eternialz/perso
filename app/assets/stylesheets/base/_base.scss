@@ -64,6 +64,10 @@ a {
     cursor: pointer;
     text-decoration: none;
     transition: all 100ms linear;
+
+    &:hover {
+        color: $gray3;
+    }
 }
 
 label {
