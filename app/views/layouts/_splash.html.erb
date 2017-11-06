@@ -1,54 +1,28 @@
 <div id="splash">
-    <div id="video-background">
-        <div id="video-foreground">
-            <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/NZlfxWMr7nc?playlist=DjxwLr6TjHs&start=60&rel=0&autoplay=1&controls=0&showinfo=0&loop=1&iv_load_policy=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-            <script>
-                var tag = document.createElement('script');
-
-                tag.src = "//www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                var player;
-
-                function onYouTubeIframeAPIReady() {
-                    player = new YT.Player('ytplayer', {
-                        events: {
-                            'onReady': onPlayerReady
-                        }
-                    });
-                }
-
-                function onPlayerReady() {
-                    player.playVideo();
-                    // Mute!
-                    player.mute();
-                }
-            </script>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-8 -centered">
-            <div class="col-6 align -max-small-center -min-small-right">
-                <div class="splash-image">
-                    <div class="image -round">
-                        <img src="https://pbs.twimg.com/profile_images/640249589593952256/HhZls8Ux_400x400.jpg" width="100%">
+    <div id="background">
+        <div class="row">
+            <div class="col-8 -centered">
+                <div class="col-6 align -max-small-center -min-small-right">
+                    <div class="splash-image">
+                        <div class="image -round">
+                            <img src="https://pbs.twimg.com/profile_images/640249589593952256/HhZls8Ux_400x400.jpg" width="100%">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 align -small-center">
-                <h2>Bienvenue</h2>
-                <p>Lorem ipsum dolor sit amet</p>
+                <div class="col-6 align -small-center">
+                    <h2>Bienvenue</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
 
-                <div class="buttons">
-                    <a class="btn">Portfolio <%= fa_icon "book" %></a>
-                    <a class="btn -white">Github <%= fa_icon "github" %></a>
-                </div>
+                    <div id="buttons">
+                        <a class="btn">Portfolio <%= fa_icon "book" %></a>
+                        <a class="btn -white">Github <%= fa_icon "github" %></a>
+                    </div>
 
-                <div id="social">
-                    <a href="github"><%= fa_icon "github" %></a>
-                    <a href="github"><%= fa_icon "github" %></a>
-                    <a href="github"><%= fa_icon "github" %></a>
+                    <div id="social">
+                        <a href="github"><%= fa_icon "github" %></a>
+                        <a href="github"><%= fa_icon "github" %></a>
+                        <a href="github"><%= fa_icon "github" %></a>
+                    </div>
                 </div>
             </div>
         </div>

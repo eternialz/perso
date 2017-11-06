@@ -1,36 +1,56 @@
 header.nav {
+    @extend %clearfix;
+
     position: sticky;
-    left: 0;
-    right: 0;
-    top: 0;
-    border-bottom: 0.15em solid $gray0;
-    border-image: linear-gradient(90deg, $accent, $accent2) 30;
+
     background: $white;
-    line-height: 4em;
+    border-bottom: 3px solid $gray0;
+    border-image: linear-gradient(90deg, $accent, $accent2) 1;
+    top: 0; right: 0; left: 0;
+    line-height: 72px;
+    height: 72px;
+    transform: translate3d(0, 0, 0); // Fix flicker with links hover
 
     .row {
         text-align: center;
     }
 
     a {
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding: 0 15px;
         display: inline-block;
+        letter-spacing: 1px;
+        padding: 0 20px;
+        text-transform: uppercase;
     }
 
-    $link-number: 4;
+    li:nth-child(1) {
+        float: left;
+        height: 73px;
+    }
+
+    $link-number: 6;
     @for $i from 1 to $link-number + 1 {
         li:nth-child(#{$i}) a {
             color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
         }
     }
 
-    li a:hover {
-        color: $pink;
+    li:last-child {
+        float: right;
     }
 
-    .fa {
-        margin-right: 10px;
+    .image, h1 {
+        float: left;
+    }
+
+    .image {
+        border: 2px solid $accent;
+        margin: 10px 0;
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 1em;
+        line-height: 73px;
+        margin-left: 10px;
     }
 }

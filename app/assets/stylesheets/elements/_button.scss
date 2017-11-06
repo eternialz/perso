@@ -2,18 +2,16 @@
 .btn, a.btn {
     appearance: none;
     background: $accent;
-    border-bottom-width: 2px;
     border-radius: 4px;
     border: none;
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     color: $white !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 85%;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.05em;
     line-height: 2.1em;
-    margin: 1.5em 1em 1.5em 0;
     opacity: 1 !important;
     outline: none !important;
     padding: 0 17px 1px !important;
@@ -34,9 +32,7 @@
     }
 
     @media only screen and (max-width: $xsmall) {
-        display: block;
-        margin: inherit auto;
-        width: 80%;
+        min-width: 40%;
     }
 
     svg {

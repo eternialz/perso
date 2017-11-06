@@ -1,4 +1,9 @@
 .page {
+    background: $white;
     position: relative;
-    height: 500vh;
+
+    & > .row {
+        padding: 3em 0;
+        padding-left: 4em;
+    }
 }

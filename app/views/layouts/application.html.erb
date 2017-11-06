@@ -9,12 +9,11 @@
 
 
         <div class="page">
-            <%= render "layouts/menu" %>
 
-            <div class="row">
-                <%= yield %>
-                <a href="#top">test</a>
-            </div>
+            <%= render "layouts/menu" %>
+            
+            <%= yield %>
+
         </div>
 
         <%= render "layouts/cookie_disclaimer" %>
