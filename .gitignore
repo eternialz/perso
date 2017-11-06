@@ -42,3 +42,13 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+#Ignore all temporary files create by vim
+*~
+.*~
+*.swp
+*.swo
+public/system/
+
+# Ignore environnement variables with secrets and tokens
+source.sh

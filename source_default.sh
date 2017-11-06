@@ -1,0 +1,4 @@
+# RAILS
+export SECRET_KEY_BASE=
+export SECRET_KEY_DEV=
+export SECRET_KEY_TEST=
