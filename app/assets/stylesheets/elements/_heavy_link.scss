@@ -1,0 +1,20 @@
+.heavy_link {
+    color: $accent2;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: none;
+    --text-shadow-color: initial;
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+
+    .fa {
+        float: right;
+        margin-left: 0.5em;
+        font-size: 0.75em;
+        padding: 0.45em;
+    }
+
+    &:hover {
+        color: $gray6;
+    }
+}
