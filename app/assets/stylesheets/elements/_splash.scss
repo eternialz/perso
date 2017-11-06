@@ -39,4 +39,8 @@
             padding: 12px;
         }
     }
+
+    @media only screen and (max-width: $small) {
+        display: none;
+    }
 }

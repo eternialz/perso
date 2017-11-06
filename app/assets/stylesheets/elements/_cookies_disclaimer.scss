@@ -4,26 +4,32 @@
     right: 0;
     z-index: 1000;
     width: 100%;
+    text-align: center;
 }
 
 #cookies_disclaimer {
-    border-radius: 4px;
-    width: 900px;
-    max-width: calc(100% - 30px);
-    margin: 15px auto;
-    line-height: 50px;
     background: $gray0;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1),
+                0 15px 35px rgba(50,50,93,.15),
+                0 5px 15px rgba(0,0,0,.1),
+                inset 0 0 0 1px rgba(0,0,0,.2);
+    display: inline-block;
+    line-height: 3em;
+    margin: 15px auto;
+    max-width: calc(100% - 30px);
+    padding: 0 1em;
     text-align: center;
+    width: auto;
 
     p {
         display: inline-block;
-        width: calc(100% - 60px);
     }
 
     #cookies_close {
-        line-height: 50px;
-        border-radius: 0 4px 4px 0;
         float: right;
+        margin: 1em 0 0 1em;
+        padding: 0;
     }
 
     a { color: $accent }

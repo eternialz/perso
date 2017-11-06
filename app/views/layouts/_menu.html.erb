@@ -1,6 +1,6 @@
 <header class="nav">
     <div class="row">
-        <li>
+        <li id="logo">
             <a href="/">
                 <div class="image -round">
                     <img src="https://pbs.twimg.com/profile_images/640249589593952256/HhZls8Ux_400x400.jpg" width="50" height="50">
@@ -8,15 +8,19 @@
                 <h1>Sébastien Erfani</h1>
             </a>
         </li>
-        <li><a href="">Curriculum Vitæ</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Github</a></li>
-        <li><a href="">Contact</a></li>
-        <li>
-            <a href="#" class="tool">
-                <%= fa_icon "angle-up" %>
-                <span class="tip -align-right">Return to Top</span>
-            </a>
-        </li>
+        <label id="display-menu" for="menu-toggle"><%= fa_icon "bars" %></label>
+        <input type="checkbox" id="menu-toggle" checked>
+        <ul>
+            <li><a href=""><%= fa_icon "caret-right" %>Curriculum Vitæ</a></li>
+            <li><a href=""><%= fa_icon "caret-right" %>Portfolio</a></li>
+            <li><a href=""><%= fa_icon "caret-right" %>Github</a></li>
+            <li><a href=""><%= fa_icon "caret-right" %>Contact</a></li>
+            <li>
+                <a href="#" class="tool">
+                    <%= fa_icon "angle-up" %>
+                    <span class="tip -align-right">Return to Top</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </header>

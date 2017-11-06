@@ -4,31 +4,94 @@ header.nav {
     position: sticky;
     background: $white;
     border-bottom: 3px solid $gray0;
-    border-image: linear-gradient(90deg, $accent, $accent2) 1;
+    box-shadow: 0 0px 12px 2px rgba($black, 0.08);
     top: 0; right: 0; left: 0;
     line-height: 72px;
     height: 72px;
     transform: translate3d(0, 0, 0); // Fix flicker with links hover
     z-index: 10;
 
-    .row {
-        text-align: center;
+    #display-menu {
+        color: $accent2;
+        display: none;
+        float: right;
+        font-size: 130%;
+        padding: 0 27px;
     }
 
-    li:nth-child(1) {
+    #logo {
         float: left;
         height: 73px;
     }
 
-    $link-number: 6;
-    @for $i from 1 to $link-number + 1 {
-        li:nth-child(#{$i}) a {
-            color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
+    #menu-toggle {
+        display: none;
+        @media only screen and (max-width: $small) {
+            & + ul {
+                display: block;
+            }
+
+            &:checked {
+                & + ul {
+                    display: none;
+                }
+            }
         }
     }
 
-    li:last-child {
+    ul {
+        display: inline-block;
         float: right;
+
+        .fa {
+            display: none;
+            margin-right: 0.5em;
+        }
+    }
+
+    @media only screen and (max-width: $small) {
+        #logo {
+            float: right;
+
+            .image {
+                float: right;
+            }
+        }
+
+        #display-menu {
+            float: left;
+            display: inline-block;
+        }
+
+        ul {
+            float: left;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            background: $white;
+            border-bottom: 3px solid $gray0;
+            box-shadow: 0 6px 12px -5px rgba($black, 0.08);
+            line-height: 2.5em;
+
+            li, li a {
+                display: block;
+            }
+
+            li:last-child {
+                display: none;
+            }
+
+            .fa {
+                display: inline-block;
+            }
+        }
+    }
+
+    $link-number: 6;
+    @for $i from 2 to $link-number + 1 {
+        ul li:nth-child(#{$i - 1}) a {
+            color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
+        }
     }
 
     li a {
@@ -55,6 +118,6 @@ header.nav {
         display: inline-block;
         font-size: 1em;
         line-height: 73px;
-        margin-left: 10px;
+        margin: 0 0.6em;
     }
 }
