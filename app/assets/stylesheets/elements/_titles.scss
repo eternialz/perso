@@ -7,7 +7,7 @@
     font-style: italic;
     position: relative;
     --text-shadow-color: #{rgba($accent, 0.1)};
-    margin: 1em 0 0.5em;
+    margin: 0 0 0.5em;
 
     &.-accent2 {
         color: $accent2;
@@ -20,8 +20,6 @@
     }
 
     & > .fa {
-        position: absolute;
-        left: -2.5em;
         padding: 0.5em 0;
         text-align: center;
         width: 2em;

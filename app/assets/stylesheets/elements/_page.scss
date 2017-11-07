@@ -1,9 +1,5 @@
 .page {
-    background: $white;
+    @extend %clearfix;
+    background: darken($white, 3%);
     position: relative;
-
-    & > .row {
-        padding: 3em 0;
-        padding-left: 4em;
-    }
 }
