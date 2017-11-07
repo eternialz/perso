@@ -29,6 +29,13 @@
             line-height: 1.8em;
             padding: 0; margin: 0;
         }
+
+        svg.fa {
+            height: 18px;
+            position: relative;
+            top: 3px;
+            margin: 0;
+        }
     }
 
     &.-full {
