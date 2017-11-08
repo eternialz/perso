@@ -8,7 +8,7 @@ class Contact
     # Validations
     validates :full_name, :presence => true
     validates :mail, :presence => true
-    validates_format_of :email, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/ #Verify the pattern of the mail field
+    validates_format_of :mail, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/ #Verify the pattern of the mail field
     validates :message, :presence => true
 
     # Attributes values
@@ -27,7 +27,7 @@ class Contact
     def generate
         message = [
                 "Contact from : " + self.full_name +
-                "\nMail : " + self.full_name +
+                "\nMail : " + self.mail +
                 "\nMessage : \n" + self.message[0..1500]
         ]
 

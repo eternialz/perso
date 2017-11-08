@@ -1,7 +1,17 @@
 class ContactsController < ActionController::Base
+    layout 'application', :only => [:create]
+
     def create
-        @contact = Contact.new(contact_params)
-        discord_notify()
+        @contact ||= Contact.new(contact_params)
+
+        if @contact.valid?
+            discord_notify
+            flash[:success] = "Votre message à bien été envoyé"
+            redirect_to root_path
+        else
+            flash.now[:error] = "Une erreur a empêcher l'envoi du formulaire. Vérifier les informations s'il vous plaît"
+            render '/home'
+        end
     end
 
     private

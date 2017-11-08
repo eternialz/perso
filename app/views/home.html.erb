@@ -287,15 +287,25 @@
         </div>
     </div>
 </section>
+<a id="contact"></a>
 <section class="contact darker">
     <div class="row">
         <h3 class="title"><%= fa_icon "comments-o" %><span>Contact</span></h3>
         <div class="col-8">
-            <h5 class="title">Me contacter</h5>
-            <input type="text" placeholder="Nom complet">
-            <input type="text" placeholder="Adresse mail">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
+            <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
+                <h5 class="title">Me contacter</h5>
+                <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
+                <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
+                <%= f.text_area :message, required: true, placeholder: "Message" %>
+                <% if flash.any? %>
+                    <div class="flashes">
+                        <% flash.each do |key, value| %>
+                            <div class="flash -<%= key %>"><%= value %></div>
+                        <% end %>
+                    </div>
+                <% end %>
+                <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
+            <% end %>
         </div>
         <div class="col-4">
             <h5 class="title">Informations de contact</h5>

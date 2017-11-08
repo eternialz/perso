@@ -14,5 +14,3 @@
 //= require rails-ujs
 
 //= require_directory .
-
-//= require turbolinks

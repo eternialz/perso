@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
     # before_action :set_locale
 
     def home
+        @contact ||= Contact.new()
+
         render "/home"
     end
 

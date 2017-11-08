@@ -1,0 +1,18 @@
+.flash {
+    margin-top: 1em;
+    &.-success {
+        color: $green;
+    }
+
+    &.-notice {
+        color: $accent;
+    }
+
+    &.-warn {
+        color: $orange;
+    }
+
+    &.-error {
+        color: $red;
+    }
+}
