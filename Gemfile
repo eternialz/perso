@@ -27,6 +27,12 @@ gem 'jbuilder', '~> 2.5'
 # Inline SVG instead of makin a new http request
 gem 'inline_svg'
 
+# Retry in case of error
+gem 'retryable'
+
+# HTTP Requests
+gem 'httparty'
+
 # Pagination plugin
 gem 'kaminari'
 
