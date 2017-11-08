@@ -287,29 +287,39 @@
         </div>
     </div>
 </section>
-<section>
+<section class="contact darker">
     <div class="row">
         <h3 class="title"><%= fa_icon "comments-o" %><span>Contact</span></h3>
-        <div class="tag">
-            <div class="icon">
-                <%= fa_icon "envelope" %>
-                Mail
-            </div>
-            <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
+        <div class="col-8">
+            <h5 class="title">Me contacter</h5>
+            <input type="text" placeholder="Nom complet">
+            <input type="text" placeholder="Adresse mail">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
         </div>
-        <div class="tag">
-            <div class="icon">
-                <%= fa_icon "telegram" %>
-                Telegram :
+        <div class="col-4">
+            <h5 class="title">Informations de contact</h5>
+            <div class="tag -full">
+                <div class="icon">
+                    <%= fa_icon "envelope" %>
+                    Mail :
+                </div>
+                <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
             </div>
-            <span>Sébastien Erfani</span>
-        </div>
-        <div class="tag">
-            <div class="icon">
-                <%= inline_svg "discord_logo.svg", class: "fa" %>
-                Discord :
+            <div class="tag -full">
+                <div class="icon">
+                    <%= fa_icon "telegram" %>
+                    Telegram :
+                </div>
+                <span>Sébastien Erfani</span>
             </div>
-            <span>Eternialz#4329</span>
+            <div class="tag -full">
+                <div class="icon">
+                    <%= inline_svg "discord_logo.svg", class: "fa" %>
+                    Discord :
+                </div>
+                <span>Eternialz#4329</span>
+            </div>
         </div>
     </div>
 </section>

@@ -54,17 +54,18 @@
         transform: translateY(1px);
     }
 
+    &.-accent2 {
+        background: $accent2;
+
+        &.-white {
+            color: $accent2 !important;
+            outline: 2px solid $accent2;
+        }
+    }
+
     &.-white {
         background: $white;
         color: $accent !important;
         outline: 2px solid $accent;
-
-        &:focus {
-            outline: 2px solid $accent;
-        }
-    }
-
-    &.-accent2 {
-        background: $accent2;
     }
 }

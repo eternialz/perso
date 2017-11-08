@@ -28,12 +28,12 @@ footer {
         z-index: 0;
         content: "";
         position: absolute;
-        width: 100%;
+        width: 200%;
         height: 100%;
-        left: 0;
+        left: -50%;
         top: 0;
 
-        $gradient-color: darken($blue, 10%);
+        $gradient-color: rgba(darken($blue, 15%), .75);
         background-image: radial-gradient(at top,
             mix(transparent, $gradient-color, 0%) 0%,
             mix(transparent, $gradient-color, 19%) 19%,
