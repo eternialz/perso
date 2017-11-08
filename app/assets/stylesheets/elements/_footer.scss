@@ -1,3 +1,101 @@
 footer {
-    
+    background-image: linear-gradient( 90deg,
+        mix($accent2, $accent, 0%) 0%,
+        mix($accent2, $accent, 19%) 19%,
+        mix($accent2, $accent, 34%) 34%,
+        mix($accent2, $accent, 47%) 47%,
+        mix($accent2, $accent, 56.5%) 56.5%,
+        mix($accent2, $accent, 65%) 65%,
+        mix($accent2, $accent, 73%) 73%,
+        mix($accent2, $accent, 80.2%) 80.2%,
+        mix($accent2, $accent, 86.1%) 86.1%,
+        mix($accent2, $accent, 91%) 91%,
+        mix($accent2, $accent, 95.2%) 95.2%,
+        mix($accent2, $accent, 98.2%) 98.2%,
+        mix($accent2, $accent, 100%) 100%
+    );
+    color: $white;
+    letter-spacing: 1px;
+    padding: 4em 1.5em 5em;
+    position: relative;
+
+    .row {
+        position: relative;
+        z-index: 1;
+    }
+
+    &::after {
+        z-index: 0;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        $gradient-color: darken($blue, 10%);
+        background-image: radial-gradient(at top,
+            mix(transparent, $gradient-color, 0%) 0%,
+            mix(transparent, $gradient-color, 19%) 19%,
+            mix(transparent, $gradient-color, 34%) 34%,
+            mix(transparent, $gradient-color, 47%) 47%,
+            mix(transparent, $gradient-color, 56.5%) 56.5%,
+            mix(transparent, $gradient-color, 65%) 65%,
+            mix(transparent, $gradient-color, 73%) 73%,
+            mix(transparent, $gradient-color, 80.2%) 80.2%,
+            mix(transparent, $gradient-color, 86.1%) 86.1%,
+            mix(transparent, $gradient-color, 91%) 91%,
+            mix(transparent, $gradient-color, 95.2%) 95.2%,
+            mix(transparent, $gradient-color, 98.2%) 98.2%,
+            mix(transparent, $gradient-color, 100%) 100%);
+    }
+
+    a {
+        display: block;
+        color: $true-white;
+        padding: 0.25em 0;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    p {
+        margin: 0.25em 0;
+    }
+
+    .title {
+        color: $true-white;
+        font-size: 0.8em;
+        font-style: normal;
+        letter-spacing: 0.25em;
+        margin-bottom: 1.5em;
+    }
+
+    svg {
+        border-radius: 4px;
+        float: left;
+        height: 1.4em;
+        line-height: 2em;
+        position: relative;
+        width: 1.87em;
+    }
+
+    .locale {
+        border-radius: 4px;
+        display: inline-block;
+        padding: 0.4em;
+        width: 100%;
+
+        &.current {
+            opacity: 1;
+            background: rgba($true-white, .2);
+        }
+
+        span {
+            float: left;
+            padding-left: 0.5em;
+        }
+    }
 }

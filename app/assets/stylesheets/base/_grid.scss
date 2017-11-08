@@ -120,6 +120,7 @@ section {
 
 .row {
     @media only screen and (min-width: $small) {
+        .col-2 { width: (100% / 6) }
         .col-3 { width: (100% / 4) }
         .col-4 { width: (100% / 3) }
         .col-6 { width: (100% / 2) }
