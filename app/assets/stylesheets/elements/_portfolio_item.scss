@@ -1,7 +1,82 @@
 .portfolio-item {
-    background: $white;
+    @extend %clearfix;
     border-radius: 4px;
+    background: $white;
     box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-    min-height: 20em;
     margin: 2em 0;
+
+    nav, .content {
+        float: left;
+        padding: 1em;
+    }
+
+    nav {
+        border-right: 1px solid $gray0;
+        line-height: 1.4em;
+        padding-right: 0;
+        padding-top: 2.85em;
+        position: relative;
+        right: -1px;
+        text-align: right;
+        width: 10em;
+    }
+
+    .title {
+        line-height: 1em;
+        margin: 0;
+        padding: 1em 1em 0;
+        float: left;
+        width: calc(100% - 10em);
+    }
+
+    .thumbnails {
+        padding: 1em;
+        border-top: 1px solid $gray0;
+        border-left: 1px solid $gray0;
+        float: left;
+        margin-left: 10em;
+        width: calc(100% - 10em)
+    }
+
+    .image {
+        float: left;
+        height: 4em;
+        margin-right: 1em;
+        width: 4em;
+    }
+
+    .content {
+        display: none;
+        border-left: 1px solid $gray0;
+        width: calc(100% - 10em);
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        &:checked + .content {
+            display: inline-block;
+        }
+    }
+
+    label {
+        display: inline-block;
+        margin: 0.15em 0;
+        padding-right: 1em;
+        transition: all 100ms ease-in-out;
+
+        &.selected {
+            border-right: 5px solid $accent2;
+            color: $accent2;
+            cursor: default;
+            font-weight: 600;
+            opacity: 1 !important;
+            padding-right: calc(1em - 5px);
+        }
+
+        &:hover {
+            color: $accent2;
+            opacity: 0.9;
+        }
+    }
 }

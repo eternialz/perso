@@ -6,8 +6,8 @@ header.nav {
     border-bottom: 3px solid $gray0;
     box-shadow: 0 0px 12px 2px rgba($black, 0.08);
     top: 0; right: 0; left: 0;
-    line-height: 72px;
-    height: 72px;
+    line-height: 4em;
+    height: 4em;
     transform: translate3d(0, 0, 0); // Fix flicker with links hover
     z-index: 100;
 
@@ -16,12 +16,12 @@ header.nav {
         display: none;
         float: right;
         font-size: 130%;
-        padding: 0 27px;
+        padding: 0 1.1em;
     }
 
     #logo {
         float: left;
-        height: 73px;
+        height: 4em;
     }
 
     #menu-toggle {
@@ -122,14 +122,15 @@ header.nav {
     }
 
     .image {
-        border: 2px solid $accent;
-        margin: 9px 0;
+        box-shadow: 0 0 0 0.14em $accent;
+        max-width: 3em;
+        margin: 0.4em 0;
     }
 
     h1 {
         display: inline-block;
         font-size: 1em;
-        line-height: 73px;
+        line-height: 4em;
         margin: 0 0.6em;
     }
 }

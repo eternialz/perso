@@ -1,0 +1,41 @@
+section {
+    &.-gradient-background {
+        position: relative;
+        z-index: 10;
+        background-image: linear-gradient(200deg,
+            mix($accent2, $accent, 0%) 0%,
+            mix($accent2, $accent, 19%) 19%,
+            mix($accent2, $accent, 34%) 34%,
+            mix($accent2, $accent, 47%) 47%,
+            mix($accent2, $accent, 56.5%) 56.5%,
+            mix($accent2, $accent, 65%) 65%,
+            mix($accent2, $accent, 73%) 73%,
+            mix($accent2, $accent, 80.2%) 80.2%,
+            mix($accent2, $accent, 86.1%) 86.1%,
+            mix($accent2, $accent, 91%) 91%,
+            mix($accent2, $accent, 95.2%) 95.2%,
+            mix($accent2, $accent, 98.2%) 98.2%,
+            mix($accent2, $accent, 100%) 100%
+        );
+
+        &::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        }
+
+        &::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+        }
+
+        .row > .title {
+            color: $white;
+
+            .fa {
+                background: rgba($white, .35);
+            }
+        }
+    }
+
+}

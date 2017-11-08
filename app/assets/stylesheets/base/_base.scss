@@ -6,7 +6,7 @@
 
 /* Global default custom styles */
 html {
-    --text-shadow-color: #{rgba($black, 0.1)};
+    --text-shadow-color: #{rgba($black, 0.004)};
 
     background: $white;
     box-sizing: border-box;
@@ -16,7 +16,9 @@ html {
     font-size: $default-font-size;
     overflow-x: hidden;
     overflow-y: scroll;
-    text-shadow: 0 0 1px var(--text-shadow-color) !important;
+    text-shadow: 1px 1px 1px var(--text-shadow-color);
+    text-rendering : geometricPrecision;
+    -webkit-font-smoothing: antialiased !important;
 
     @media only screen and (max-width: $xsmall) {
         font-size: $default-font-size * 0.9;

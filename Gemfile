@@ -24,6 +24,9 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
+# Inline SVG instead of makin a new http request
+gem 'inline_svg'
+
 # Pagination plugin
 gem 'kaminari'
 
