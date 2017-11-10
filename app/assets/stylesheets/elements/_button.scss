@@ -10,11 +10,11 @@
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.125em;
     line-height: 2.1em;
     opacity: 1 !important;
     outline: none !important;
-    padding: 0 17px 1px !important;
+    padding: 0.25em 0.9em 0.15em;
     text-align: left !important;
     text-transform: uppercase;
     text-shadow: none !important;
@@ -25,8 +25,8 @@
     }
 
     .fa, svg {
-        float: right;
-        margin-left: 14px;
+        float: left;
+        margin-right: 0.8em;
         line-height: 2.1em;
         text-shadow: none !important;
     }
@@ -47,11 +47,13 @@
     &:hover {
         box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
         transform: translateY(-2px);
+        background: lighten($accent, 6%);
     }
 
     &:active {
         box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         transform: translateY(1px);
+        background: darken($accent, 6%);
     }
 
     &.-accent2 {
@@ -60,12 +62,36 @@
         &.-white {
             color: $accent2 !important;
             outline: 2px solid $accent2;
+
+            &:hover {
+                color: lighten($accent2, 6%) !important;
+            }
+
+            &:active {
+                color: darken($accent2, 6%) !important;
+            }
+        }
+
+        &:hover {
+            background: lighten($accent2, 6%);
+        }
+
+        &:active {
+            background: darken($accent2, 6%);
         }
     }
 
     &.-white {
-        background: $white;
+        background: $white !important;
         color: $accent !important;
         outline: 2px solid $accent;
+
+        &:hover {
+            color: lighten($accent, 6%);
+        }
+
+        &:active {
+            color: darken($accent, 6%);
+        }
     }
 }

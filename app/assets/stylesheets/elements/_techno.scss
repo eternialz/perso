@@ -1,0 +1,20 @@
+.technologie {
+    display: inline-block;
+    background: rgba($accent, .22);
+    color: $accent; fill: $accent;
+    font-weight: 600;
+    padding-right: 0.25em;
+
+    .fa {
+        text-align: center;
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        padding: 0.3em;
+        margin-right: 0.2em;
+    }
+
+    span, .fa {
+        float: left;
+    }
+}

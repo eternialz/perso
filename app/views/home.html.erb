@@ -1,6 +1,6 @@
 <section>
     <div class="row">
-        <h3 class="title"><%= fa_icon "id-card" %><span>Curriculum Vitæ</span></h3>
+        <h3 class="title -icon"><%= fa_icon "id-card" %><span>Curriculum Vitæ</span></h3>
         <div class="cv-item">
             <div class="date">
                 <div class="start">
@@ -135,7 +135,7 @@
 </section>
 <section class="-gradient-background">
     <div class="row">
-        <h3 class="title"><%= fa_icon "book" %><span>Portfolio</span></h3>
+        <h3 class="title -icon"><%= fa_icon "book" %><span>Portfolio</span></h3>
         <div class="portfolio-item" id="portfolio-item-1">
             <nav>
                 <label for="portfolio-content-1-1" class="selected">A propos</label>
@@ -180,51 +180,61 @@
 </section>
 <section class="-border-bottom -border-top -sp-bottom">
     <div class="row">
-        <h3 class="title"><%= fa_icon "id-card" %><span>Compétences</span></h3>
+        <h3 class="title -icon"><%= fa_icon "id-card" %><span>Compétences</span></h3>
         <div class="col-8 -sp -wp-right">
             <h6 class="title">Web :</h6>
             <div class="tag -full">
-                <div class="icon">
+                <div class="key">
                     <%= fa_icon "css3" %><span>CSS/SASS</span>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:100%">
+                <div class="value">
+                    <div class="progress-bar">
+                        <div class="progress" style="width:100%">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tag -full">
-                <div class="icon">
+                <div class="key">
                     <%= fa_icon "html5" %><span>HTML</span>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:100%">
+                <div class="value">
+                    <div class="progress-bar">
+                        <div class="progress" style="width:100%">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tag -full">
-                <div class="icon">
+                <div class="key">
                     <%= inline_svg "ruby_logo.svg", class: "fa" %><span>Ruby on Rails</span>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:82%">
+                <div class="value">
+                    <div class="progress-bar">
+                        <div class="progress" style="width:82%">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tag -full">
-                <div class="icon">
+                <div class="key">
                     <%= inline_svg "js_logo.svg", class: "fa" %><span>JS/JQuery</span>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:72%">
+                <div class="value">
+                    <div class="progress-bar">
+                        <div class="progress" style="width:72%">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tag -full">
-                <div class="icon">
+                <div class="key">
                     <%= fa_icon "database" %><span>SQL</span>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:69%">
+                <div class="value">
+                    <div class="progress-bar">
+                        <div class="progress" style="width:69%">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,43 +242,43 @@
         <div class="col-4 -sp -wp-left">
             <div class="col-12 -sp">
                 <h6 class="title">Autres technologies :</h6>
-                <div class="tag -tiny">
-                    <div class="icon"><%= fa_icon "code-fork" %>GIT</div>
+                <div class="technologie">
+                    <%= fa_icon "code-fork" %><span>GIT</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= fa_icon "linux" %>Linux</div>
+                <div class="technologie">
+                    <%= fa_icon "linux" %><span>Linux</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= inline_svg "ruby_logo.svg", class: "fa" %>Ruby</div>
+                <div class="technologie">
+                    <%= inline_svg "ruby_logo.svg", class: "fa" %><span>Ruby</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= inline_svg "python_logo.svg", class: "fa" %>Python</div>
+                <div class="technologie">
+                    <%= inline_svg "python_logo.svg", class: "fa" %><span>Python</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= inline_svg "nodejs_logo.svg", class: "fa" %>NodeJS</div>
+                <div class="technologie">
+                    <%= inline_svg "nodejs_logo.svg", class: "fa" %><span>NodeJS</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= fa_icon "code" %>C/C++</div>
+                <div class="technologie">
+                    <%= fa_icon "code" %><span>C/C++</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= fa_icon "code" %>C#</div>
+                <div class="technologie">
+                    <%= fa_icon "code" %><span>C#</span>
                 </div>
-                <div class="tag -tiny">
-                    <div class="icon"><%= fa_icon "database" %>NoSQL/MongoDB</div>
+                <div class="technologie">
+                    <%= fa_icon "database" %><span>NoSQL/MongoDB</span>
                 </div>
             </div>
             <div class="col-12 -sp">
                 <h6 class="title -accent2">Autres compétences :</h6>
-                <div class="tag -tiny -accent2">
+                <div class=" -accent2">
                     <div class="icon"><%= fa_icon "users" %>Expérience Utilisateur (UX)</div>
                 </div>
-                <div class="tag -tiny -accent2">
+                <div class=" -accent2">
                     <div class="icon"><%= fa_icon "paint-brush" %>Design (UI)</div>
                 </div>
-                <div class="tag -tiny -accent2">
+                <div class=" -accent2">
                     <div class="icon"><%= fa_icon "calendar-o" %>Management</div>
                 </div>
-                <div class="tag -tiny -accent2">
+                <div class=" -accent2">
                     <div class="icon"><%= fa_icon "briefcase" %>Droit Informatique</div>
                 </div>
             </div>
@@ -288,48 +298,64 @@
     </div>
 </section>
 <a id="contact"></a>
-<section class="contact darker">
-    <div class="row">
-        <h3 class="title"><%= fa_icon "comments-o" %><span>Contact</span></h3>
-        <div class="col-8">
-            <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
+<section class="contact darker -sp rel">
+    <div class="row -size-8 -left">
+        <div class="col-12 -big-gutter -sp -wp-right">
+            <h3 class="title -icon"><%= fa_icon "comments-o" %><span>Contact</span></h3>
+            <% if flash[:success].blank? %>
                 <h5 class="title">Me contacter</h5>
-                <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
-                <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
-                <%= f.text_area :message, required: true, placeholder: "Message" %>
-                <% if flash.any? %>
-                    <div class="flashes">
-                        <% flash.each do |key, value| %>
-                            <div class="flash -<%= key %>"><%= value %></div>
+                <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
+                    <div>
+                        <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
+                        <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
+                        <%= f.text_area :message, required: true, placeholder: "Message" %>
+                        <% if flash.any? %>
+                            <% flash.each do |key, value| %>
+                                <div class="flash -<%= key %>"><%= value %></div>
+                            <% end %>
                         <% end %>
+                        <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
                     </div>
                 <% end %>
-                <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
+            <% else %>
+                <h3 class="success -green"><%= fa_icon "check" %>Votre message à été envoyé</h3>
+                <p>
+                    Je vous répondrait le plus rapidement possible
+                </p>
             <% end %>
-        </div>
-        <div class="col-4">
             <h5 class="title">Informations de contact</h5>
-            <div class="tag -full">
-                <div class="icon">
+            <div class="tag">
+                <div class="key">
                     <%= fa_icon "envelope" %>
                     Mail :
                 </div>
-                <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
+                <div class="value">
+                    <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
+                </div>
             </div>
-            <div class="tag -full">
-                <div class="icon">
+            <div class="tag">
+                <div class="key">
                     <%= fa_icon "telegram" %>
                     Telegram :
                 </div>
-                <span>Sébastien Erfani</span>
+                <div class="value">
+                    <span>Sébastien Erfani</span>
+                </div>
             </div>
-            <div class="tag -full">
-                <div class="icon">
+            <div class="tag">
+                <div class="key">
                     <%= inline_svg "discord_logo.svg", class: "fa" %>
                     Discord :
                 </div>
-                <span>Eternialz#4329</span>
+                <div class="value">
+                    <span>Eternialz#4329</span>
+                </div>
             </div>
         </div>
+    </div>
+    <div id="map" class="row -size-4 -right -sp">
+        <script async defer
+            <%= "src=https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAPS_API_KEY'] + "&callback=initMap" %>>
+        </script>
     </div>
 </section>

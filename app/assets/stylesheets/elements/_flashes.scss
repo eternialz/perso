@@ -1,5 +1,6 @@
 .flash {
-    margin-top: 1em;
+    float: left;
+
     &.-success {
         color: $green;
     }

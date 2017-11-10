@@ -1,0 +1,13 @@
+#map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    @media only screen and (max-width: $small) {
+        max-height: 50vh;
+        position: static;
+        height: 400px;
+    }
+}

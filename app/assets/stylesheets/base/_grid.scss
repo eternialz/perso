@@ -30,42 +30,80 @@ section {
 }
 
 .row {
+    --padding: 5%;
+
     @extend %clearfix;
 
-    margin: 0 auto;
-    max-width: 1200px;
+    display: inline-block;
+    padding: 0 var(--padding);
     width: 100%;
+
+    &.-size-8 {
+        max-width: 100% / (12 / 8);
+    }
+
+    &.-size-4 {
+        max-width: 100% / (12 / 4);
+    }
+
+    &.-left, &.-right {
+        float: left;
+    }
+
+    &.-left {
+        padding-right: 0;
+    }
+
+    &.-right {
+        padding-left: 0;
+    }
+
+    &.-sp {
+        padding: 0;
+    }
+
+    @media only screen and (max-width: $small) {
+        max-width: 100% !important;
+    }
 }
 
 .rel {
     position: relative;
 }
 
+
+
+@media only screen and (max-width: $small) {
+    .row {
+        --padding: 0;
+    }
+}
+
 @media only screen and (min-width: $large) {
     .row {
-        max-width: 1400px;
+        --padding: 7.5%;
     }
 }
 
 @media only screen and (min-width: $xlarge) {
     .row {
-        max-width: 1600px;
+        --padding: 15%;
     }
 }
 
 @media only screen and (min-width: $xxlarge) {
     .row {
-        max-width: 1800px;
+        --padding: 17.5%;
     }
 }
 
 @media only screen and (min-width: $xxxlarge) {
     .row {
-        max-width: 2000px;
+        --padding: 20%;
     }
 }
 
-.row [class^="col"] {
+[class^="col-"] {
     @extend %clearfix;
 
     float: left;
@@ -118,23 +156,21 @@ section {
 
 }
 
-.row {
-    @media only screen and (min-width: $small) {
-        .col-2 { width: (100% / 6) }
-        .col-3 { width: (100% / 4) }
-        .col-4 { width: (100% / 3) }
-        .col-6 { width: (100% / 2) }
-        .col-8 { width: (100% / (12 / 8)) }
-        .col-9 { width: (100% / (12 / 9)) }
-        .col-12 { width: 100% }
+@media only screen and (min-width: $small) {
+    .col-2 { width: (100% / 6) }
+    .col-3 { width: (100% / 4) }
+    .col-4 { width: (100% / 3) }
+    .col-6 { width: (100% / 2) }
+    .col-8 { width: (100% / (12 / 8)) }
+    .col-9 { width: (100% / (12 / 9)) }
+    .col-12 { width: 100% }
 
-        .col-3.-sm { width: calc(#{(100% / 4)} - #{($gutter)}) }
-        .col-4.-sm { width: calc(#{(100% / 3)} - #{($gutter)}) }
-        .col-6.-sm { width: calc(#{(100% / 2)} - #{($gutter)}) }
-        .col-8.-sm { width: calc(#{(100% / (12 / 8))} - #{($gutter)}) }
-        .col-9.-sm { width: calc(#{(100% / (12 / 9))} - #{($gutter)}) }
-        .col-12.-sm { width: calc(100% - #{($gutter)}) }
-    }
+    .col-3.-sm { width: calc(#{(100% / 4)} - #{($gutter)}) }
+    .col-4.-sm { width: calc(#{(100% / 3)} - #{($gutter)}) }
+    .col-6.-sm { width: calc(#{(100% / 2)} - #{($gutter)}) }
+    .col-8.-sm { width: calc(#{(100% / (12 / 8))} - #{($gutter)}) }
+    .col-9.-sm { width: calc(#{(100% / (12 / 9))} - #{($gutter)}) }
+    .col-12.-sm { width: calc(100% - #{($gutter)}) }
 }
 
 .align {

@@ -1,37 +1,46 @@
 .title {
     @extend %clearfix;
 
+    clear: both;
     color: $accent;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    margin: 1em 0 1.5em;
     position: relative;
-    --text-shadow-color: #{rgba($accent, 0.1)};
-    margin: 0 0 0.5em;
+    text-transform: uppercase;
 
     &.-accent2 {
         color: $accent2;
     }
 
     span {
+        line-height: 2.5em;
         text-transform: uppercase;
-        font-style: italic;
-        line-height: 1.9em;
     }
 
-    & > .fa {
-        padding: 0.5em 0;
-        text-align: center;
-        width: 2em;
-        height: 2em;
-        float: left;
-        margin-right: 0.5em;
-        background: rgba($accent, .4);
-        border-radius: 50%;
+    &.-icon {
+        padding-left: 1.75em;
+
+        & .fa {
+            background: rgba($accent, .4);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: -1.25em;
+            height: 2.5em;
+            margin-right: 0.75em;
+            padding: 0.75em 0;
+            text-align: center;
+            width: 2.5em;
+        }
+
+        @media only screen and (max-width: $small) {
+            padding-left: 3em;
+
+            .fa {
+                left: 0;
+            }
+        }
     }
 
-    .btn {
-        float: right;
-        margin: 0.15em;
-    }
 }
