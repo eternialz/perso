@@ -1,13 +1,13 @@
-class ArticlesController < ActionController::Base
-    require 'pandoc-ruby', only: [:show]
-    before_action :set_article, except: [:new, :create]
-    before_action :check_api_key, except: [:show]
+class ArticlesController < ApplicationController
+    before_action :set_article, except: [:new, :create, :index]
+    before_action :check_api_key, except: [:show, :index]
 
     def index
         @articles = Article.all
     end
 
     def show
+        require 'pandoc-ruby'
         @content = PandocRuby.convert(@article.content, :from => :markdown, :to => :html)
     end
 
@@ -45,7 +45,7 @@ class ArticlesController < ActionController::Base
     def check_api_key
         unless params[:api] == ENV['BLOG_API_KEY']
             flash[:error] = "La clé API fournie n'est pas correcte"
-            redirect_to: blog_index_path
+            redirect_to blog_index_path
         end
     end
 

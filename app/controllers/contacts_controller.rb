@@ -1,6 +1,4 @@
-class ContactsController < ActionController::Base
-    layout 'application', :only => [:create]
-
+class ContactsController <  ApplicationController
     def create
         @contact ||= Contact.new(contact_params)
 

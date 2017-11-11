@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
     # before_action :set_locale
+    layout 'application'
 
     def home
         @contact ||= Contact.new()
