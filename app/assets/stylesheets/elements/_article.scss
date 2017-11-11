@@ -1,6 +1,30 @@
 .article {
     position: relative;
 
+    .buttons {
+        .btn {
+            margin-bottom: 2em;
+
+            @media only screen and (max-width: $small) {
+                width: 100%;
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .-white {
+            float: right;
+            margin-left: 0.5em;
+
+            @media only screen and (max-width: $small) {
+                width: calc(50% - 0.5em);
+            }
+
+            &:last-child {
+                margin: 0 0.5em 0 0;
+            }
+        }
+    }
+
     header {
         background: $white;
         border-radius: 4px;
@@ -57,9 +81,9 @@
     }
 
     nav {
-        width: 11em;
+        width: 13em;
         position: sticky;
-        top: 1em;
+        top: -1em;
         float: left;
         padding: 2em 0.5em 0 0;
         text-align: right;
@@ -93,7 +117,8 @@
 }
 
 .article-content {
-    width: calc(100% - 11em);
+    width: calc(100% - 13em);
+    max-width: 45em;
     float: left;
     padding: 2em 1em;
 
@@ -194,6 +219,7 @@
     p {
         font-size: 1rem;
         margin-bottom: 1.3rem;
+        text-indent: 1em;
     }
 
     h1,
@@ -225,6 +251,13 @@
         font-weight: 600;
         letter-spacing: 0.125em;
         text-transform: uppercase;
+    }
+
+    h4,
+    h5, {
+        font-size: 1em;
+        text-transform: capitalize;
+        padding-left: 2em;
     }
 
     small {
