@@ -6,6 +6,7 @@
  *= require font-awesome
  *
  *= require_self
+ *
  */
 
 @import "dependencies/colors";
@@ -13,6 +14,8 @@
 @import "dependencies/extends";
 @import "dependencies/functions";
 @import "dependencies/mixins";
+
+@import "vendors/highlight/atom-one-dark";
 
 @import "base/base";
 @import "base/grid";
