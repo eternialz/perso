@@ -1,0 +1,13 @@
+<section>
+    <div class="row">
+        <%= form_for @article, url: url do |f| %>
+            <input type="hidden" value="<%= params[:api] %>" name="api">
+            <%= f.text_field :title %>
+            <%= f.text_area :description %>
+            <%= f.text_area :content %>
+            <button type="submit" class="btn"><%= fa_icon "send" %><%= text %></button>
+            <button type="submit" class="btn -white" formaction="/articles/preview" formtarget="_blank"><%= fa_icon "eye" %>Preview</button>
+            <%= link_to 'Destroy', blog_path(@article, api: params[:api]), method: :delete, class: "btn -white", data: { confirm: 'Are you sure?' } %>
+        <% end %>
+    </div>
+</section>

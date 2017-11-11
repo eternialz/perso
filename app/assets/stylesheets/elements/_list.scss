@@ -3,12 +3,15 @@
 
     .item {
         background: $true-white;
-        width: calc(49% - 2em);
-        margin: 1em;
+        border-radius: 4px;
         box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
         display: inline-block;
+        float: left;
+        margin: 1em;
+        min-height: 13em;
         padding: 1em 1em 0;
-        border-radius: 4px;
+        position: relative;
+        width: calc(49% - 2em);
 
         .title {
             margin: 0;
@@ -24,8 +27,14 @@
         }
 
         @media only screen and (max-width: $small) {
-            width: 100%;
             margin: 0 0 1em;
+            width: 100%;
+        }
+
+        .heavy-link {
+            bottom: 0em;
+            position: absolute;
+            right: 1em;
         }
     }
 }
