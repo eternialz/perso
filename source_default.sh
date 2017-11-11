@@ -5,3 +5,6 @@ export SECRET_KEY_TEST=
 
 # Discord webhook
 export DISCORD_WEBHOOK_URL=https://discordapp.com/api/webhooks/xxx/xxx
+
+# Google Maps
+export GOOGLE_MAPS_API_KEY=

@@ -51,4 +51,7 @@ bower.json
 public/system/
 
 # Ignore environnement variables with secrets and tokens
-source.sh
+/source.sh
+
+# Ignore plan
+/plan.md
