@@ -7,8 +7,10 @@ class ArticlesController < ApplicationController
     end
 
     def show
-        require 'pandoc-ruby'
-        @content = PandocRuby.convert(@article.content, :from => :markdown, :to => :html)
+        markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, tables: true, fenced_code_blocks: true)
+        @content = markdown.render(@article.content)
+
+        title(@article.title)
     end
 
     def new

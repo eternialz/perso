@@ -1,11 +1,12 @@
-.heavy_link {
+.heavy-link {
     --text-shadow-color: rgba($blue, .1);
-    color: $accent2;
+    color: $accent;
     display: inline-block;
     letter-spacing: 1px;
     margin: 0.5em 0;
     padding: 0.5em 0;
     text-transform: none;
+    float: right;
 
     .fa {
         float: right;

@@ -43,4 +43,10 @@
         }
     }
 
+    &.-tiny {
+        width: 100%;
+        margin: 0 0 0.5em;
+        color: $gray1;
+        line-height: 2em;
+    }
 }

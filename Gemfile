@@ -44,7 +44,7 @@ gem "font-awesome-rails"
 gem 'normalize-rails'
 
 # Markdown support
-gem 'pandoc-ruby'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'factory_bot_rails'
