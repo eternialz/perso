@@ -1,4 +1,110 @@
 .article {
+    position: relative;
+
+    header {
+        background: $white;
+        border-radius: 4px;
+        display: block;
+        padding: 1em;
+        line-height: 1em;
+        box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+        height: auto;
+        position: relative;
+        transition: all 150ms ease;
+
+        .title {
+            font-size: 1em;
+            margin: 0;
+            width: calc(100% - 7em);
+            float: left;
+            letter-spacing: 0.1em;
+            font-size: 1em;
+            line-height: 2em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            top: 1em;
+            width: 0.2em;
+            height: 2em;
+            background: $accent;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .content {
+            display: block;
+            line-height: 1.2em;
+            clear: both;
+            padding: 0.5em 0 0.3em;
+            font-size: 1em;
+            color: $text;
+        }
+
+        .date {
+            float: right;
+            text-transform: uppercase;
+            color: $gray1;
+            line-height: 2em;
+            width: 7em;
+            text-align: right;
+        }
+    }
+
+    nav {
+        width: 11em;
+        position: sticky;
+        top: 1em;
+        float: left;
+        padding: 2em 0.5em 0 0;
+        text-align: right;
+
+        a {
+            font-size: 0.8em;
+            width: 100%;
+            display: inline-block;
+            margin: 0.2em 0;
+            padding: 0.2em 0;
+            line-height: 1.1;
+            color: $text;
+            font-weight: 600;
+
+            a.current {
+                color: $accent;
+            }
+        }
+
+        @media only screen and (max-width: $small) {
+            display: none;
+        }
+    }
+
+    .-tiny {
+        width: 100%;
+        margin: 0 0 0.5em;
+        color: $gray1;
+        line-height: 2em;
+    }
+}
+
+.article-content {
+    width: calc(100% - 11em);
+    float: left;
+    padding: 2em 1em;
+
+    .-tiny {
+        float: left;
+    }
+
+    @media only screen and (max-width: $small) {
+        width: 100%;
+    }
+
     @media print {
         *,
         *:before,
@@ -94,6 +200,7 @@
     h2,
     h3,
     h4 {
+        font-size: 1.4em;
         margin: 2rem 0 .5rem;
     }
 
@@ -118,8 +225,6 @@
         font-weight: 600;
         letter-spacing: 0.125em;
         text-transform: uppercase;
-        border-left: 5px solid $purple;
-        padding-left: 0.5em;
     }
 
     small {

@@ -1,5 +1,5 @@
 .page {
     @extend %clearfix;
-    background: darken($white, 3%);
+    background: $white;
     position: relative;
 }

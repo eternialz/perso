@@ -6,6 +6,22 @@
         margin-bottom: 1em;
     }
 
+    .date {
+        float: left;
+        height: 100%;
+        padding-right: 1em;
+        text-align: right;
+        width: 4.5em;
+
+        .start {
+            color: $accent;
+        }
+
+        .duration {
+            color: $accent2;
+        }
+    }
+
     .content {
         width: calc(100% - 4.5em);
         float: left;

@@ -1,5 +1,24 @@
-<section>
-    <dif class="row article">
-        <%= raw @content %>
-    </div>
-</section>
+<% cache @article do %>
+    <section>
+        <div class="article row">
+            <header>
+                <h3 class="title">
+                    <%= @article.title %>
+                </h3>
+                <div class="date">
+
+                </div>
+                <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </header>
+            <nav>
+                <h6 class="title -tiny">Navigation</h6>
+            </nav>
+            <div class="article-content">
+                <h6 class="title -tiny">Publié le <%= @article.created_at.strftime("%e %B %Y") %></h6>
+                <%= raw @content %>
+            </div>
+        </div>
+    </section>
+<% end %>

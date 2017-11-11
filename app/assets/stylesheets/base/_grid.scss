@@ -30,7 +30,7 @@ section {
 }
 
 .row {
-    --padding: 5%;
+    --padding: 10%;
 
     @extend %clearfix;
 
@@ -81,25 +81,19 @@ section {
 
 @media only screen and (min-width: $large) {
     .row {
-        --padding: 7.5%;
+        --padding: 15%;
     }
 }
 
 @media only screen and (min-width: $xlarge) {
     .row {
-        --padding: 15%;
+        --padding: 20%;
     }
 }
 
 @media only screen and (min-width: $xxlarge) {
     .row {
-        --padding: 17.5%;
-    }
-}
-
-@media only screen and (min-width: $xxxlarge) {
-    .row {
-        --padding: 20%;
+        --padding: 25%;
     }
 }
 
