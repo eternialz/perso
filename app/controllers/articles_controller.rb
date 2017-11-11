@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
     before_action :check_api_key, except: [:show, :index]
 
     def index
-        @articles = Article.all
+        @articles = Kaminari.paginate_array(Article.order_by(created_at: :desc)).page(params[:page]).per(4)
     end
 
     def show

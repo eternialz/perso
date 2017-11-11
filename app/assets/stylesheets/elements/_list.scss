@@ -22,5 +22,10 @@
         .content {
             color: $text;
         }
+
+        @media only screen and (max-width: $small) {
+            width: 100%;
+            margin: 0 0 1em;
+        }
     }
 }

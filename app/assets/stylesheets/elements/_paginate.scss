@@ -1,0 +1,25 @@
+.pagination {
+    margin: 2em auto;
+    text-align: center;
+
+    span.page {
+        display: inline-block;
+    }
+
+    span {
+        font-weight: 600;
+        line-height: 2em;
+        margin: 0 0.5em;
+        min-width: 1em;
+        text-align: center;
+    }
+
+    span.current {
+        background: $accent;
+        border-radius: 50%;
+        color: $white;
+        margin: 0;
+        padding: 0 0.5em;
+        width: 2em;
+    }
+}
