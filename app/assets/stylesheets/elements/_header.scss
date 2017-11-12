@@ -1,23 +1,73 @@
 header.nav {
     @extend %clearfix;
 
-    background: $white;
+    position: fixed;
+    top: 0;
+    width: 100%;
     line-height: 4em;
     height: 4em;
     transform: translate3d(0, 0, 0); // Fix flicker with links hover
     z-index: 100;
 
-    #display-menu {
-        color: $accent2;
-        display: none;
-        float: right;
-        font-size: 130%;
-        padding: 0 1.1em;
+    &::before {
+        background: $true-white;
+        content: "";
+        transition: opacity 150ms ease;
+        position: absolute;
+        width: 150%;
+        left: -25%;
+        height: 100%;
+        z-index: -1;
+        opacity: 1;
+        box-shadow: 0 15px 35px rgba(50,50,93,.07), 0 5px 15px rgba(0,0,0,.05);
     }
 
-    #logo {
+    .row {
+        z-index: 10;
+    }
+
+    $link-number: 4;
+    @for $i from 2 to $link-number + 1 {
+        ul li:nth-child(#{$i - 1}) a {
+            color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
+        }
+    }
+
+    li a {
+        display: inline-block;
+        letter-spacing: 2px;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    a:active {
+        background: rgba($gray0, .2);
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 1em;
+        line-height: 4em;
+        margin: 0 0.6em;
+    }
+
+    ul {
+        display: inline-block;
+        float: right;
+
+        .fa {
+            display: none;
+            margin-right: 0.5em;
+        }
+    }
+
+    #display-menu {
+        color: $accent;
+        display: none;
         float: left;
-        height: 4em;
+        font-size: 130%;
+        padding: 0 1.1em;
     }
 
     #menu-toggle {
@@ -35,31 +85,16 @@ header.nav {
         }
     }
 
-    ul {
-        display: inline-block;
-        float: right;
-
-        .fa {
-            display: none;
-            margin-right: 0.5em;
-        }
-
-        li:last-child .fa {
-            display: inline-block;
-        }
-    }
-
     @media only screen and (max-width: $small) {
         #logo {
             float: right;
 
-            .image {
-                float: right;
+            a {
+                color: $accent2;
             }
         }
 
         #display-menu {
-            float: left;
             display: inline-block;
         }
 
@@ -81,52 +116,9 @@ header.nav {
                 border-top: 1px solid $gray0;
             }
 
-            li:last-child {
-                display: none;
-            }
-
             .fa {
                 display: inline-block;
             }
         }
-    }
-
-    $link-number: 6;
-    @for $i from 2 to $link-number + 1 {
-        ul li:nth-child(#{$i - 1}) a {
-            color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
-        }
-    }
-
-    li a {
-        display: inline-block;
-        letter-spacing: 2px;
-        padding: 0 20px;
-        text-transform: uppercase;
-    }
-
-    ul li a:hover {
-        color: $gray3;
-    }
-
-    a:active {
-        background: $gray0;
-    }
-
-    .image, h1 {
-        float: left;
-    }
-
-    .image {
-        box-shadow: 0 0 0 0.14em $accent;
-        max-width: 3em;
-        margin: 0.4em 0;
-    }
-
-    h1 {
-        display: inline-block;
-        font-size: 1em;
-        line-height: 4em;
-        margin: 0 0.6em;
     }
 }
