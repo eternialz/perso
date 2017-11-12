@@ -1,8 +1,8 @@
-<% cache @article do %>
-    <section>
-        <div class="article row">
-            <div class="clearfix">
-                <%= render partial: 'buttons' %>
+<section>
+    <div class="article row">
+        <div class="clearfix">
+            <%= render partial: 'buttons' %>
+            <% cache @article do %>
                 <header>
                     <h3 class="title">
                         <%= @article.title %>
@@ -18,8 +18,8 @@
                     <h6 class="title -tiny">Publié le <%= @article.created_at.strftime("%e %B %Y") %></h6>
                     <%= raw @content %>
                 </div>
-            </div>
-            <%= render partial: 'buttons' %>
+            <% end %>
         </div>
-    </section>
-<% end %>
+        <%= render partial: 'buttons' %>
+    </div>
+</section>

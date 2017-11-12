@@ -17,11 +17,12 @@
 
             @media only screen and (max-width: $small) {
                 width: calc(50% - 0.5em);
+                
+                &:last-child {
+                    margin: 0 0.5em 2em 0;
+                }
             }
 
-            &:last-child {
-                margin: 0 0.5em 0 0;
-            }
         }
     }
 
