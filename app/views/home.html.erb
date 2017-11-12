@@ -326,7 +326,7 @@
 <a id="contact"></a>
 <section class="contact darker -sp rel">
     <div class="row -size-8 -left">
-        <div class="col-12 -big-gutter -sp -wp-right">
+        <div class="col-12">
             <h3 class="title -icon"><%= fa_icon "comments-o" %><span>Contact</span></h3>
             <% if flash[:success].blank? %>
                 <h5 class="title">Me contacter</h5>
@@ -350,31 +350,31 @@
                 </p>
             <% end %>
             <h5 class="title">Informations de contact</h5>
-            <div class="tag">
-                <div class="key">
-                    <%= fa_icon "envelope" %>
-                    Mail :
+            <div class="zone -icon">
+                <%= fa_icon "user" %>
+                <div class="contact-info">
+                    <div class="key">
+                        Mail
+                    </div>
+                    <div class="value">
+                        <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
+                    </div>
                 </div>
-                <div class="value">
-                    <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
+                <div class="contact-info">
+                    <div class="key">
+                        Telegram
+                    </div>
+                    <div class="value">
+                        <span>Sébastien Erfani</span>
+                    </div>
                 </div>
-            </div>
-            <div class="tag">
-                <div class="key">
-                    <%= fa_icon "telegram" %>
-                    Telegram :
-                </div>
-                <div class="value">
-                    <span>Sébastien Erfani</span>
-                </div>
-            </div>
-            <div class="tag">
-                <div class="key">
-                    <%= inline_svg "discord_logo.svg", class: "fa" %>
-                    Discord :
-                </div>
-                <div class="value">
-                    <span>Eternialz#4329</span>
+                <div class="contact-info">
+                    <div class="key">
+                        Discord
+                    </div>
+                    <div class="value">
+                        <span>Eternialz#4329</span>
+                    </div>
                 </div>
             </div>
         </div>

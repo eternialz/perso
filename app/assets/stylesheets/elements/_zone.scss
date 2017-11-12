@@ -1,21 +1,34 @@
 .zone {
-        @extend %clearfix;
-        background: $true-white;
-        background-image: linear-gradient(125deg,
-            mix($accent2, $accent, 0%) 0%,
-            mix($accent2, $accent, 19%) 19%,
-            mix($accent2, $accent, 34%) 34%,
-            mix($accent2, $accent, 47%) 47%,
-            mix($accent2, $accent, 56.5%) 56.5%,
-            mix($accent2, $accent, 65%) 65%,
-            mix($accent2, $accent, 73%) 73%,
-            mix($accent2, $accent, 80.2%) 80.2%,
-            mix($accent2, $accent, 86.1%) 86.1%,
-            mix($accent2, $accent, 91%) 91%,
-            mix($accent2, $accent, 95.2%) 95.2%,
-            mix($accent2, $accent, 98.2%) 98.2%,
-            mix($accent2, $accent, 100%) 100%
-        );
-        border-radius: 4px;
-        box-shadow: 0 3px 10px rgba($black, .15), 0 1px 1px 1px rgba($black, .05);
+    @extend %clearfix;
+    background: $true-white;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    padding: 1em;
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2em;
+
+    &.-icon {
+        padding: 1.5em 1em 1.5em 7em;
+
+        * {
+            position: relative;
+            z-index: 1;
+        }
+
+        & > .fa {
+            z-index: 0;
+            color: $gray0;
+            opacity: 0.5;
+            left: -20px;
+            font-size: 12em;
+            position: absolute;
+            bottom: -40px;
+        }
+
+        @media only screen and (max-width: $small) {
+            padding: 1.5em;
+        }
+    }
 }

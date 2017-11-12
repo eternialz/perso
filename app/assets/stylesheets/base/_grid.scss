@@ -38,8 +38,16 @@ section {
     padding: 0 var(--padding);
     width: 100%;
 
+    &.-sp {
+        padding: 0;
+    }
+
     &.-size-8 {
         max-width: 100% / (12 / 8);
+
+        @media only screen and (max-width: $small) {
+            padding: 0 1em !important;
+        }
     }
 
     &.-size-4 {
@@ -56,10 +64,6 @@ section {
 
     &.-right {
         padding-left: 0;
-    }
-
-    &.-sp {
-        padding: 0;
     }
 
     @media only screen and (max-width: $small) {
