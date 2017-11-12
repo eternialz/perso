@@ -9,4 +9,12 @@ class Article
     validates :title, presence: true
     validates :content, presence: true
     validates :description, presence: true
+
+    def next
+        self.class.where(:created_at.gt => created_at).first
+    end
+
+    def previous
+        self.class.where(:created_at.lt => created_at).last
+    end
 end

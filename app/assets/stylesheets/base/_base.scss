@@ -118,3 +118,13 @@ p {
 .para {
     margin: 15px 0;
 }
+
+.float {
+    &.-r {
+        float: right;
+    }
+
+    &.-l {
+        float: left;
+    }
+}

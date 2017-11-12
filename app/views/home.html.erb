@@ -178,6 +178,32 @@
         </div>
     </div>
 </section>
+<section>
+    <div class="row list">
+        <h3 class="title -icon"><%= fa_icon "newspaper-o" %><span>Derniers articles du blog</span></h3>
+        <% @articles.each do |a| %>
+            <div class="item">
+                <h3 class="title">
+                    <%= link_to a.title, blog_path(a) %>
+                </h3>
+                <div class="date title -tiny">
+                    <%= a.created_at.strftime("%e %B %Y") %>
+                </div>
+                <p class="content">
+                    <%= a.description[0..200] %> ...
+                </p>
+                <%= link_to blog_path(a), class: "heavy-link" do %>
+                    Voir plus <%= fa_icon "arrow-right" %>
+                <% end %>
+            </div>
+        <% end %>
+        <div class="col-12 -big-gutter">
+            <%= link_to blog_index_path, class: "btn float -r" do %>
+                <%= fa_icon "arrow-right" %> Blog
+            <% end %>
+        </div>
+    </div>
+</section>
 <section class="-border-bottom -border-top -sp-bottom">
     <div class="row">
         <h3 class="title -icon"><%= fa_icon "id-card" %><span>Compétences</span></h3>

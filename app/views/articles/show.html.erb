@@ -2,26 +2,13 @@
     <section>
         <div class="article row">
             <div class="clearfix">
-                <div class="buttons clearfix">
-                    <%= link_to blog_index_path, class: "btn" do %>
-                        <%= fa_icon "table" %> Retour à l'index
-                    <% end %>
-                    <%= link_to blog_index_path, class: "btn -white" do %>
-                        <%= fa_icon "arrow-right" %> Suivant
-                    <% end %>
-                    <%= link_to blog_index_path, class: "btn -white" do %>
-                        <%= fa_icon "arrow-left" %> Précédent
-                    <% end %>
-                </div>
+                <%= render partial: 'buttons' %>
                 <header>
                     <h3 class="title">
                         <%= @article.title %>
                     </h3>
-                    <div class="date">
-
-                    </div>
                     <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <%= @article.description %>
                     </p>
                 </header>
                 <nav>
@@ -32,17 +19,7 @@
                     <%= raw @content %>
                 </div>
             </div>
-            <div class="buttons clearfix">
-                <%= link_to blog_index_path, class: "btn" do %>
-                <%= fa_icon "table" %> Retour à l'index
-                <% end %>
-                <%= link_to blog_index_path, class: "btn -white" do %>
-                <%= fa_icon "arrow-right" %> Suivant
-                <% end %>
-                <%= link_to blog_index_path, class: "btn -white" do %>
-                <%= fa_icon "arrow-left" %> Précédent
-                <% end %>
-            </div>
+            <%= render partial: 'buttons' %>
         </div>
     </section>
 <% end %>

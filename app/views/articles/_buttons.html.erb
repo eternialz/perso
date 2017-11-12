@@ -1,0 +1,15 @@
+<div class="buttons clearfix">
+    <%= link_to blog_index_path, class: "btn" do %>
+        <%= fa_icon "newspaper-o" %> Retour à l'index
+    <% end %>
+    <% if @next %>
+        <%= link_to blog_path(@next), class: "btn -white" do %>
+            <%= fa_icon "arrow-right" %> Suivant
+        <% end %>
+    <% end %>
+    <% if @previous %>
+        <%= link_to blog_path(@previous), class: "btn -white" do %>
+            <%= fa_icon "arrow-left" %> Précédent
+        <% end %>
+    <% end %>
+</div>

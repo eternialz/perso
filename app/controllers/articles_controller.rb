@@ -10,6 +10,9 @@ class ArticlesController < ApplicationController
         markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, tables: true, fenced_code_blocks: true)
         @content = markdown.render(@article.content)
 
+        @previous = @article.previous
+        @next = @article.next
+
         title(@article.title)
     end
 

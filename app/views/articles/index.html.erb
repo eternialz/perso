@@ -9,7 +9,7 @@
                     <%= a.created_at.strftime("%e %B %Y") %>
                 </div>
                 <p class="content">
-                    <%= a.description[0..200] %>...
+                    <%= a.description[0..200] %> ...
                 </p>
                 <%= link_to blog_path(a), class: "heavy-link" do %>
                     Voir plus <%= fa_icon "arrow-right" %>

@@ -46,7 +46,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width: calc(100% - 7em);
         }
 
         &::after {
@@ -68,15 +67,6 @@
             font-size: 1em;
             line-height: 1.2em;
             padding: 0.5em 0 0.3em;
-        }
-
-        .date {
-            color: $gray1;
-            float: right;
-            line-height: 2em;
-            text-align: right;
-            text-transform: uppercase;
-            width: 7em;
         }
     }
 
@@ -242,7 +232,7 @@
         color: $purple;
         display: inline-block;
         font-weight: 600;
-        letter-spacing: 0.125em;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
     }
 
