@@ -7,7 +7,7 @@
                     <%= link_to a.title, blog_path(a) %>
                 </h3>
                 <div class="date title -tiny">
-                    <%= a.created_at.strftime("%e %B %Y") %>
+                    <%= I18n.localize a.created_at, format: "%e %B %Y" %>
                 </div>
                 <p class="content">
                     <%= a.description[0..200] %> ...

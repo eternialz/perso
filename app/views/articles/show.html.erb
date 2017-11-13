@@ -16,7 +16,7 @@
                     <ul></ul>
                 </nav>
                 <div class="article-content">
-                    <h6 class="title -tiny">Publié le <%= @article.created_at.strftime("%e %B %Y") %></h6>
+                    <h6 class="title -tiny">Publié le <%= I18n.localize @article.created_at, format: "%e %B %Y" %></h6>
                     <%= raw @content %>
                 </div>
             <% end %>
