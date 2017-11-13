@@ -2,109 +2,34 @@
 .tool {
     position: relative;
     display: inline-block;
+    z-index: 10;
 
     .tip {
-        background: linear-gradient(125deg, $accent, $accent2);
+        background: $true-white;
         border-radius: 3px;
-        color: $white;
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 1.4;
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        color: $text;
+        font-weight: 600;
         left: calc(50% - 175px);
+        line-height: 1.4;
         opacity: 0;
         padding: 10px 7px 12px;
         pointer-events: none;
         position: absolute;
         text-align: center;
-        top: 100%;
+        top: calc(100% + 10px);
         transition: all 170ms linear;
         width: 350px;
         z-index: 10000;
-        box-shadow: 0 50px 100px rgba(50,50,93,.1),
-                    0 15px 35px rgba(50,50,93,.15),
-                    0 5px 15px rgba(0,0,0,.1),
-                    inset 0 0 0 1px rgba(0,0,0,.2);
 
-        &::after, &::before {
-            border-bottom: 10px solid mix($accent, $accent2, 50%);
+        &::after {
+            border-bottom: 10px solid $true-white;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
             bottom: calc(100% - 2px);
             content: "";
             left: calc(50% - 10px);
             position: absolute;
-        }
-
-        &::before {
-            border-bottom: 10px solid darken(mix($accent, $accent2, 50%), 5%);
-            bottom: 100%;
-        }
-
-        &.-align-right {
-            left: auto;
-            right: 5px;
-
-            &::after, &::before {
-                border-bottom: 10px solid mix($accent, $accent2, 5%);
-                left: auto;
-                right: 10px;
-            }
-
-            &::before {
-                border-bottom: 10px solid darken(mix($accent, $accent2, 5%), 10%);
-            }
-        }
-
-        &.-align-left {
-            left: 5px;
-            right: auto;
-
-            &::after, &::before {
-                border-bottom: 10px solid mix($accent, $accent2, 95%);
-                left: 10px;
-                right: auto;
-            }
-
-            &::before {
-                border-bottom: 10px solid darken(mix($accent, $accent2, 95%), 10%);
-            }
-        }
-
-        &.-top {
-            bottom: calc(100% + 10px);
-            top: auto;
-
-            &::after {
-                border-top: 10px solid mix($accent, $accent2, 50%);
-                border-bottom: none;
-                top: calc(100% - 2px);
-            }
-
-            &::before {
-                border-top: 10px solid darken(mix($accent, $accent2, 50%), 5%);
-                border-bottom: none;
-                top: 100%;
-            }
-
-            &.-align-right {
-                &::after, &::before {
-                    border-top: 10px solid mix($accent, $accent2, 5%);
-                }
-
-                &::before {
-                    border-top: 10px solid darken(mix($accent, $accent2, 5%), 10%);
-                }
-            }
-
-            &.-alight-left {
-                &::after, &::before {
-                    border-top: 10px solid mix($accent, $accent2, 95%);
-                }
-
-                &::before {
-                    border-top: 10px solid darken(mix($accent, $accent2, 95%), 10%);
-                }
-            }
         }
     }
 

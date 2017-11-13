@@ -35,6 +35,7 @@
         width: 13em;
 
         ul a {
+            color: $text;
             display: inline-block;
             font-size: 0.8em;
             font-weight: 600;
@@ -43,7 +44,7 @@
             padding: 0.2em 0;
             width: 100%;
 
-            a.current {
+            &.current {
                 color: $accent;
             }
         }

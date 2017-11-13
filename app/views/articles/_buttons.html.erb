@@ -3,13 +3,15 @@
         <%= fa_icon "newspaper-o" %> Retour à l'index
     <% end %>
     <% if @next %>
-        <%= link_to blog_path(@next), class: "btn -white" do %>
+        <%= link_to blog_path(@next), class: "btn -white tool" do %>
             <%= fa_icon "arrow-right" %> Suivant
+            <span class="tip"><%= @next.title %></span>
         <% end %>
     <% end %>
     <% if @previous %>
-        <%= link_to blog_path(@previous), class: "btn -white" do %>
+        <%= link_to blog_path(@previous), class: "btn -white tool" do %>
             <%= fa_icon "arrow-left" %> Précédent
+            <span class="tip"><%= @previous.title %></span>
         <% end %>
     <% end %>
 </div>
