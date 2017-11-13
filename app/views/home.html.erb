@@ -146,66 +146,69 @@
     </div>
 </section>
 <a id="contact"></a>
-<section class="contact darker -sp rel">
-    <div class="row -size-8 -left">
-        <div class="col-12">
-            <h3 class="title -icon"><%= fa_icon "comments-o" %><span>Contact</span></h3>
-            <% if flash[:success].blank? %>
-                <h5 class="title">Me contacter</h5>
-                <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
-                    <div>
-                        <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
-                        <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
-                        <%= f.text_area :message, required: true, placeholder: "Message" %>
-                        <% if flash.any? %>
-                            <% flash.each do |key, value| %>
-                                <div class="flash -<%= key %>"><%= value %></div>
+<section class="contact darker">
+    <div class="row">
+        <h3 class="title -icon"><%= fa_icon "comments-o" %><span>Contact</span></h3>
+        <div class="col-12 -sp">
+            <div class="col-6">
+                <% if flash[:success].blank? %>
+                    <h5 class="title">Me contacter</h5>
+                    <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
+                        <div>
+                            <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
+                            <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
+                            <%= f.text_area :message, required: true, placeholder: "Message" %>
+                            <% if flash.any? %>
+                                <% flash.each do |key, value| %>
+                                    <div class="flash -<%= key %>"><%= value %></div>
+                                <% end %>
                             <% end %>
-                        <% end %>
-                        <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
-                    </div>
+                            <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
+                        </div>
+                    <% end %>
+                <% else %>
+                    <h3 class="success -green"><%= fa_icon "check" %>Votre message à été envoyé</h3>
+                    <p>
+                        Je vous répondrait le plus rapidement possible
+                    </p>
                 <% end %>
-            <% else %>
-                <h3 class="success -green"><%= fa_icon "check" %>Votre message à été envoyé</h3>
-                <p>
-                    Je vous répondrait le plus rapidement possible
-                </p>
-            <% end %>
-            <h5 class="title">Informations de contact</h5>
-            <div class="zone -icon">
-                <%= fa_icon "user" %>
-                <div class="contact-info">
-                    <div class="key">
-                        Mail
+            </div>
+            <div class="col-6">
+                <h5 class="title">Informations de contact</h5>
+                <div class="zone -icon">
+                    <%= fa_icon "user" %>
+                    <div class="contact-info">
+                        <div class="key">
+                            Mail
+                        </div>
+                        <div class="value">
+                            <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani@gmail.com</a></span>
+                        </div>
                     </div>
-                    <div class="value">
-                        <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani<%= fa_icon "at" %>gmail.com</a></span>
+                    <div class="contact-info">
+                        <div class="key">
+                            Telegram
+                        </div>
+                        <div class="value">
+                            <span>Sébastien Erfani</span>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-info">
-                    <div class="key">
-                        Telegram
-                    </div>
-                    <div class="value">
-                        <span>Sébastien Erfani</span>
-                    </div>
-                </div>
-                <div class="contact-info">
-                    <div class="key">
-                        Discord
-                    </div>
-                    <div class="value">
-                        <span>Eternialz#4329</span>
+                    <div class="contact-info">
+                        <div class="key">
+                            Discord
+                        </div>
+                        <div class="value">
+                            <span>Eternialz#4329</span>
+                        </div>
                     </div>
                 </div>
+                <% unless Rails.env.development? %>
+                    <div id="map"></div>
+                    <script async defer
+                        <%= "src=https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAPS_API_KEY'] + "&callback=initMap" %>>
+                    </script>
+                <% end %>
             </div>
         </div>
     </div>
-    <% unless Rails.env.development? %>
-        <div id="map" class="row -size-4 -right -sp">
-            <script async defer
-                <%= "src=https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAPS_API_KEY'] + "&callback=initMap" %>>
-            </script>
-        </div>
-    <% end %>
 </section>

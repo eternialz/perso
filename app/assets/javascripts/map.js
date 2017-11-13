@@ -1,9 +1,10 @@
 function initMap() {
     var illkirch = {lat: 48.531313, lng: 7.733358};
+    var center = {lat: 48.541313, lng: 7.733358};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
-        center: illkirch,
+        center: center,
         styles: [
             {
                 "elementType": "labels",
@@ -297,8 +298,30 @@ function initMap() {
             }
         ]
     });
+
+    var contentString =
+        '<div id="content">'+
+            '<h1 id="firstHeading" class="firstHeading">Adresse</h1>'+
+            '<div id="bodyContent"><strong>'+
+                '<p>22 Route du Rhin</p>'+
+                '<p>Illkirch-Graffenstaden</p>'+
+                '<p>67400 France</p>'+
+            '</strong></div>'+
+            '<p>&nbsp;</p>'+
+            '<div id="footNotes">'+
+                '<p>A deux pas de Strasbourg</p>'+
+                '<p>Lignes de Tram <strong>A</strong> et <strong>E</strong></p>'
+            '</div>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
     var marker = new google.maps.Marker({
         position: illkirch,
         map: map
     });
+
+    infowindow.open(map, marker);
 }
