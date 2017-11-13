@@ -3,16 +3,17 @@
         <div class="clearfix">
             <%= render partial: 'buttons' %>
             <% cache @article do %>
-                <header>
+                <div class="zone">
                     <h3 class="title">
                         <%= @article.title %>
                     </h3>
                     <p class="content">
                         <%= @article.description %>
                     </p>
-                </header>
+                </div>
                 <nav>
                     <h6 class="title -tiny">Navigation</h6>
+                    <ul></ul>
                 </nav>
                 <div class="article-content">
                     <h6 class="title -tiny">Publié le <%= @article.created_at.strftime("%e %B %Y") %></h6>

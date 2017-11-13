@@ -6,6 +6,7 @@
     border: none;
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     color: $white !important;
+    fill: $white !important;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -36,8 +37,8 @@
     }
 
     svg {
-        max-height: 16px;
-        max-width: 14px;
+        height: 2.1em;
+        max-width: 16px;
     }
 
     &:focus {
@@ -47,13 +48,13 @@
     &:hover {
         box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
         transform: translateY(-2px);
-        background: lighten($accent, 6%);
+        filter: brightness(1.1);
     }
 
     &:active {
         box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         transform: translateY(1px);
-        background: darken($accent, 6%);
+        filter: brightness(0.9);
     }
 
     &.-accent2 {
@@ -61,37 +62,58 @@
 
         &.-white {
             color: $accent2 !important;
+            fill: $accent2 !important;
             outline: 2px solid $accent2;
-
-            &:hover {
-                color: lighten($accent2, 6%) !important;
-            }
-
-            &:active {
-                color: darken($accent2, 6%) !important;
-            }
-        }
-
-        &:hover {
-            background: lighten($accent2, 6%);
-        }
-
-        &:active {
-            background: darken($accent2, 6%);
         }
     }
 
     &.-white {
         background: $true-white !important;
         color: $accent !important;
+        fill: $accent !important;
         outline: 2px solid $accent;
+    }
+}
 
-        &:hover {
-            color: lighten($accent, 6%);
-        }
+.subtle-btns {
+    background: $true-white;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px $gray1;
+    margin-bottom: 0.75em;
+    overflow: hidden;
+}
 
-        &:active {
-            color: darken($accent, 6%);
-        }
+.btn-subtle {
+    color: $gray2;
+    fill: $gray2;
+    box-shadow: 0 1px 0 0 $gray1;
+    display: inline-block;
+    font-size: 80%;
+    letter-spacing: 0.125em;
+    line-height: 2.2em;
+    padding: 0.05em 0.5em 0;
+    text-transform: uppercase;
+    width: 100%;
+    float: left;
+
+    &:hover {
+        color: $gray4;
+        fill: $gray4;
+    }
+
+    &:active {
+        color: $gray6;
+        fill: $gray6;
+    }
+
+    .fa, svg {
+        float: left;
+        line-height: 2.2em;
+        margin-right: 0.5em;
+        max-width: 16px;
+    }
+
+    svg {
+        height: 2.2em;
     }
 }

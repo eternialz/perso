@@ -3,11 +3,46 @@
     background: $true-white;
     border-radius: 4px;
     box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-    padding: 1em;
-    height: 10em;
-    position: relative;
-    overflow: hidden;
+    line-height: 1em;
     margin-bottom: 2em;
+    overflow: hidden;
+    padding: 1em;
+    position: relative;
+
+    .title {
+        float: left;
+        font-size: 1em;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        line-height: 2em;
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+
+        &::after {
+            background: $accent;
+            border-radius: 0 4px 4px 0;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            left: -1em;
+            position: absolute;
+            top: 0em;
+            width: 0.2em;
+        }
+    }
+
+    .content {
+        clear: both;
+        line-height: 1.4em;
+        padding: 0.5em 0 0.3em;
+    }
+
+    .buttons {
+        margin-top: 0.5em;
+        float: left;
+    }
 
     &.-icon {
         padding: 1.5em 1em 1.5em 7em;
@@ -18,13 +53,13 @@
         }
 
         & > .fa {
-            z-index: 0;
-            color: $gray0;
-            opacity: 0.5;
-            left: -20px;
-            font-size: 12em;
-            position: absolute;
             bottom: -40px;
+            color: $gray0;
+            font-size: 12em;
+            left: -20px;
+            opacity: 0.5;
+            position: absolute;
+            z-index: 0;
         }
 
         @media only screen and (max-width: $small) {

@@ -8,7 +8,7 @@
 html {
     --text-shadow-color: #{rgba($black, 0.004)};
 
-    background: $white;
+    background: darken($white, 3%);
     box-sizing: border-box;
     color: $text;
     font-family: Tahoma, Geneva, sans-serif; // Fallback
@@ -25,20 +25,15 @@ html {
     }
 
     @media only screen and (min-width: $large) {
-        font-size: $default-font-size * 1.1;
-        line-height: $default-line-height * 1.2;
+        font-size: $default-font-size * 1.07;
     }
 
     @media only screen and (min-width: $xlarge) {
+        font-size: $default-font-size * 1.13;
+    }
+
+    @media only screen and (min-width: $xxlarge) {
         font-size: $default-font-size * 1.2;
-    }
-
-    @media only screen and (min-width: $xxlarge) {
-        font-size: $default-font-size * 13;
-    }
-
-    @media only screen and (min-width: $xxlarge) {
-        font-size: $default-font-size * 1.4;
     }
 }
 

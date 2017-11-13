@@ -26,51 +26,6 @@
         }
     }
 
-    header {
-        background: $true-white;
-        border-radius: 4px;
-        box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-        display: block;
-        height: auto;
-        line-height: 1em;
-        padding: 1em;
-        position: relative;
-        transition: all 150ms ease;
-
-        .title {
-            float: left;
-            font-size: 1em;
-            font-size: 1em;
-            letter-spacing: 0.1em;
-            line-height: 2em;
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        &::after {
-            background: $accent;
-            border-radius: 0 4px 4px 0;
-            content: "";
-            display: inline-block;
-            height: 2em;
-            left: 0;
-            position: absolute;
-            top: 1em;
-            width: 0.2em;
-        }
-
-        .content {
-            clear: both;
-            color: $text;
-            display: block;
-            font-size: 1em;
-            line-height: 1.2em;
-            padding: 0.5em 0 0.3em;
-        }
-    }
-
     nav {
         float: left;
         padding: 2em 0.5em 2em 0;
@@ -79,8 +34,7 @@
         top: 4em;
         width: 13em;
 
-        a {
-            color: $text;
+        ul a {
             display: inline-block;
             font-size: 0.8em;
             font-weight: 600;

@@ -1,7 +1,7 @@
 Articles = {
     init: function(root) {
         Articles.root = root;
-        Articles.nav = Articles.root.find("nav");
+        Articles.nav = Articles.root.find("nav ul");
         Articles.setSection(Articles.root.find("h1, h2, h3"));
 
         Articles.nav.find("a[href^='#']").on('click', function(event) {
