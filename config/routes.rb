@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
     resources :articles, as: :blog
     post '/articles/preview', as: :blog_preview
+
+    # Static contents
+    get "/:page" => "static_pages#show"
 end
