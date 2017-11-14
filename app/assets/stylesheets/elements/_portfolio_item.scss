@@ -1,36 +1,169 @@
-.portfolio-item {
-    margin-bottom: 0em !important; // override zone.scss
+.portfolio-container {
+    margin-bottom: 4em;
+    padding-top: 2em;
+    
+    header {
+        @extend %clearfix;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4px;
+        box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+        margin-bottom: 2em;
+        overflow: hidden;
+
+        .title {
+            color: $white;
+            line-height: 1em;
+            margin: 0 0 1em;
+        }
+
+        .content {
+            color: $white;
+            float: left;
+            line-height: 1.5;
+            padding: 2em;
+            position: relative;
+            width: 30em;
+            z-index: 1;
+
+            svg {
+                background-size: 100% 100%;
+                bottom: 0;
+                height: 100%;
+                left: auto;
+                position: absolute;
+                left: 100%;
+                top: 0;
+                width: 5em;
+            }
+
+            @media only screen and (min-width: $small) {
+                #horizontal {
+                    display: none;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $small) {
+            .content {
+                margin-top: 15em;
+                width: 100%;
+
+                svg {
+                    height: 5em;
+                    left: 0;
+                    top: initial;
+                    bottom: 100%;
+                    width: 100%;
+                }
+
+                #vertical {
+                    display: none;
+                }
+            }
+        }
+    }
 
     nav {
         float: right;
+        margin-bottom: 2em;
         width: 13em;
 
-        @media only screen and (max-width: $small) {
-            display: none;
+        .btn {
+            margin: 0.5em 0;
+            width: 100%;
         }
 
-        .btn {
-            width: 100%;
-            margin: 0.5em 0;
+        p {
+            font-size: small;
+            text-align: center;
         }
+
+        & > div {
+            margin-bottom: 2em;
+        }
+    }
+
+    .texts {
+        float: right;
+        padding: 0 1em;
+        width: calc(100% - 13em)
     }
 
     .badges {
         @extend %clearfix;
+        text-align: center;
 
         a {
             display: inline-block;
-            float: left;
-            @extend %clearfix;
-            width: calc(50% - 0.5em);
+            margin: 1em 0.5em 0.5em 0;
         }
 
         img {
+            float: none;
+        }
+    }
+
+    @media only screen and (max-width: $small) {
+        nav {
+            width: 100%;
+            text-align: center;
+
+            .btn {
+                width: auto;
+            }
+        }
+
+        .texts {
+            padding: 0;
             width: 100%;
         }
 
-        a:nth-child(even) {
-            margin-left: 1em;
+    }
+
+    #portfolio-1 {
+        $color1: $accent;
+        $color2: $accent;
+
+        background-image: url(https://static.zerochan.net/Kantoku.Self.Select.Calendar.2014.full.1638829.jpg);
+
+        .content {
+            background: rgba(mix($color1, $color2, 45%), .9);
+        }
+
+        svg {
+            #poly-1 {
+                fill: $color1;
+                fill-opacity: 0.8
+            }
+
+            #poly-2 {
+                fill: $color2;
+                fill-opacity: 0.5;
+            }
+        }
+    }
+
+    #portfolio-2 {
+        $color1: $accent2;
+        $color2: $accent2;
+
+        background-image: url(https://static.zerochan.net/Kantoku.Self.Select.Calendar.2014.full.1638829.jpg);
+
+        .content {
+            background: rgba(mix($color1, $color2, 45%), .9);
+        }
+
+        svg {
+            #poly-1 {
+                fill: $color1;
+                fill-opacity: 0.8
+            }
+
+            #poly-2 {
+                fill: $color2;
+                fill-opacity: 0.5;
+            }
         }
     }
 }

@@ -37,4 +37,18 @@
         color: $gray1;
         line-height: 2em;
     }
+
+    &.-center {
+        width: 100%;
+        text-align: center;
+
+        .fa {
+            margin-right: 0;
+        }
+
+        span {
+            padding: 0.5em;
+            display:  block;
+        }
+    }
 }

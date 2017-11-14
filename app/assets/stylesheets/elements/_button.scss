@@ -25,6 +25,16 @@
         width: 100%;
     }
 
+    &.-icon {
+        padding: 0;
+
+        .fa {
+            margin: 0;
+            width: 2.1em;
+            text-align: center;
+        }
+    }
+
     .fa, svg {
         float: left;
         margin-right: 0.8em;
@@ -34,6 +44,10 @@
 
     @media only screen and (max-width: $xsmall) {
         min-width: 40%;
+
+        &.-icon {
+            min-width: auto;
+        }
     }
 
     svg {
