@@ -139,16 +139,15 @@
     }
 
     a {
-        color: $accent2;
+        color: $blue;
     }
 
     a:hover {
-        color: $blue;
+        filter: brightness(1.2);
     }
 
     a:visited {
-        color: $blue;
-        opacity: 0.8;
+        color: $gray1;
     }
 
     o-decoration {
@@ -176,7 +175,10 @@
     h1,
     h2,
     h3 {
+        border-bottom: 1px solid $gray0;
+        padding-bottom: 0.25em;
         margin-bottom: 1.15rem;
+        width: 100%;
     }
 
     h1,
@@ -185,7 +187,7 @@
     h4,
     h5,
     h6 {
-        color: $purple;
+        color: $text;
         display: inline-block;
         font-weight: 600;
         letter-spacing: 0.05em;
