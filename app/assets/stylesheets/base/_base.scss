@@ -1,6 +1,6 @@
 /* Browser Styling */
 ::selection {
-    background-color: rgba($accent, .75) !important;
+    background-color: rgba($accent1, .75) !important;
     color: $white !important;
 }
 
@@ -66,7 +66,7 @@ li {
 }
 
 a {
-    color: $accent;
+    color: $accent1;
     cursor: pointer;
     text-decoration: none;
     transition: all 100ms linear;

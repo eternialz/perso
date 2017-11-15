@@ -2,12 +2,12 @@ Menu = {
     init: function(root) {
         Menu.root = root;
 
-        if (Menu.root.hasClass('transparent')) {
+        if ($('section').first().hasClass('head')) {
             $(document).on('scroll', function() {
                 Menu.toggleTransparency();
             });
 
-            Menu.toggleTransparency()
+            Menu.toggleTransparency();
         }
     },
     toggleTransparency: function(titles) {

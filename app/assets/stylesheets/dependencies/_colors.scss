@@ -1,10 +1,10 @@
 
 // Website accent
 // ====================================================================
-$cyan: #20bbdb;
+$cyan: #20dbd5;
 .cyan { color: $cyan; }
 
-$blue: #2684db;
+$blue: #59aef2;
 .blue { color: $blue; }
 
 $pink: #ef4e74;
@@ -19,28 +19,28 @@ $yellow: #FDD760;
 $orange: #FFA452;
 .orange { color: $orange; }
 
-$purple: #7540f3;
+$purple: #6340f3;
 .purple { color: $purple; }
 
 $red: #de3b4a;
 .red { color: $red; }
 
-$accent: $purple;
-$accent2: $cyan;
+$accent1: $purple;
+$accent2: $blue;
 $text: #525285;
 
 // Gray palette
 // ====================================================================
 $true-white: #FFF;
-$white: #FBFBFB;
-$gray0: #D0D0D4;
-$gray1: #B1B1BA;
-$gray2: #898996;
-$gray3: #63636F;
-$gray4: #4B4B54;
-$gray5: #333339;
-$gray6: #1B1B1E;
-$black: #000;
+$white: #FBFBFD;
+$gray0: #D0D0DB;
+$gray1: #B1B1C2;
+$gray2: #8989AA;
+$gray3: #636384;
+$gray4: #4B4B65;
+$gray5: #333350;
+$gray6: #1B1B2A;
+$black: #001;
 
 // Social Colors
 // ====================================================================

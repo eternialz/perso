@@ -2,7 +2,7 @@
     @extend %clearfix;
 
     clear: both;
-    color: $accent;
+    color: $accent1;
     font-weight: 600;
     letter-spacing: 0.025em;
     margin: 1em 0 1.5em;
@@ -19,9 +19,8 @@
     }
 
     &.-icon {
-
-        & .fa {
-            background: rgba($accent, .4);
+         .fa {
+            background: rgba($accent1, .25);
             border-radius: 50%;
             height: 2.5em;
             margin-right: 0.75em;
@@ -49,6 +48,16 @@
         span {
             padding: 0.5em;
             display:  block;
+        }
+    }
+
+    &.-white {
+        color: $white;
+
+        .fa {
+            background: rgba($white, .25);
+            color: $white;
+            fill: $white;
         }
     }
 }

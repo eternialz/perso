@@ -8,9 +8,7 @@ class ApplicationController < ActionController::Base
 
         @articles = Article.order_by(created_at: :desc).limit(2)
 
-        respond_to do |format|
-            format.html { render '/home', layout: 'home' }
-        end
+        render '/home'
     end
 
     private

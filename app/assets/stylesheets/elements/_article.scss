@@ -1,4 +1,5 @@
 .article {
+    padding-top: 4em;
     position: relative;
 
     .buttons {
@@ -32,7 +33,7 @@
         position: sticky;
         text-align: right;
         top: 4em;
-        width: 13em;
+        width: 15em;
 
         ul a {
             color: $text;
@@ -45,7 +46,7 @@
             width: 100%;
 
             &.current {
-                color: $accent;
+                color: $accent1;
             }
         }
 
@@ -57,9 +58,9 @@
 
 .article-content {
     float: left;
-    max-width: 45em;
+    max-width: 40em;
     padding: 2em 1em;
-    width: calc(100% - 13em);
+    width: calc(100% - 15em);
 
     .-tiny {
         float: left;

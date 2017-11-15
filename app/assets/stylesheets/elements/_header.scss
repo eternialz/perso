@@ -1,6 +1,11 @@
+@keyframes appear {
+    0% { opacity: 0 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
 header.nav {
     @extend %clearfix;
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,6 +13,20 @@ header.nav {
     height: 4em;
     transform: translate3d(0, 0, 0); // Fix flicker with links hover
     z-index: 100;
+
+    @media only screen and (min-width: $small) {
+        animation: appear 1s;
+
+        &.transparent {
+            &::before {
+                opacity: 0;
+            }
+
+            li a {
+                color: $white !important;
+            }
+        }
+    }
 
     &::before {
         background: $true-white;
@@ -29,7 +48,7 @@ header.nav {
     $link-number: 4;
     @for $i from 2 to $link-number + 1 {
         ul li:nth-child(#{$i - 1}) a {
-            color: mix($accent2, $accent, (100% / ($link-number -  1)) * ($i - 1));
+            color: mix($accent2, $accent1, (100% / ($link-number -  1)) * ($i - 1));
         }
     }
 
@@ -63,7 +82,7 @@ header.nav {
     }
 
     #display-menu {
-        color: $accent;
+        color: $accent1;
         display: none;
         float: left;
         font-size: 130%;
