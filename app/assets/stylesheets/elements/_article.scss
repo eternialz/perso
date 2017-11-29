@@ -58,16 +58,162 @@
 
 .article-content {
     float: left;
-    max-width: 40em;
+    position: relative;
     padding: 2em 1em;
     width: calc(100% - 15em);
 
-    .-tiny {
-        float: left;
+    pre {
+        line-height: 1.25;
+        overflow-x: hidden;
+        padding: .5rem;
+    }
+
+    a {
+        color: $blue;
+    }
+
+    a:hover {
+        filter: brightness(1.2);
+    }
+
+    a:visited {
+        color: $gray1;
+    }
+
+    o-decoration {
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 1.3rem;
+        text-indent: 1em;
+        width: 40rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.4em;
+        margin: 2rem 0 .5rem;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        border-bottom: 1px solid $gray0;
+        padding-bottom: 0.25em;
+        margin-bottom: 1.15rem;
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $text;
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        code {
+            font-weight: bold;
+        }
+    }
+
+    h4,
+    h5, {
+        font-size: 1em;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    small {
+        font-size: .707em;
+    }
+
+    img,
+    canvas,
+    iframe,
+    video,
+    svg,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    blockquote {
+        background: rgba($gray0, .5);
+        border-left: 8px solid $gray0;
+        border-radius: 4px;
+        padding: 0.5rem;
+
+        p {
+            margin: 0;
+            padding: 0.5rem;
+        }
+    }
+
+    pre {
+        padding: 1em 0;
+        margin: 0;
+        white-space: pre-wrap;
+        max-width: 40em;
+    }
+
+    pre code {
+        border-radius: 4px;
+        padding: 0.5em;
+    }
+
+    & > code {
+        padding: 0.1em 0.3em;
+        background: lighten($gray0, 5%);
+    }
+
+    table {
+        border-bottom: 1px solid #ddd;
+        border-collapse: collapse;
+        border-right: 1px solid #ddd;
+        border-spacing: 0;
+        margin-bottom: 2em;
+    }
+
+    table th {
+        background-color: #eee;
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        padding: .2em 1em;
+    }
+
+    table td {
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        padding: .2em 1em;
+        vertical-align: top;
+    }
+
+    hr {
+        background: radial-gradient(at top, $gray0, transparent 75%);
+        border: 0;
+        height: 10px;
+        margin: 2em 0;
     }
 
     @media only screen and (max-width: $small) {
         width: 100%;
+
+        p {
+            width: 100%;
+        }
     }
 
     @media print {
@@ -131,134 +277,5 @@
         pre {
             overflow-x: none !important;
         }
-    }
-
-    pre {
-        line-height: 1.25;
-        overflow-x: hidden;
-        padding: .5rem;
-    }
-
-    a {
-        color: $blue;
-    }
-
-    a:hover {
-        filter: brightness(1.2);
-    }
-
-    a:visited {
-        color: $gray1;
-    }
-
-    o-decoration {
-        text-decoration: none;
-    }
-
-    p {
-        font-size: 1rem;
-        margin-bottom: 1.3rem;
-        text-indent: 1em;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        font-size: 1.4em;
-        margin: 2rem 0 .5rem;
-    }
-
-    h1 {
-        margin-top: 0;
-    }
-
-    h1,
-    h2,
-    h3 {
-        border-bottom: 1px solid $gray0;
-        padding-bottom: 0.25em;
-        margin-bottom: 1.15rem;
-        width: 100%;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: $text;
-        display: inline-block;
-        font-weight: 600;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-
-    h4,
-    h5, {
-        font-size: 1em;
-        font-weight: 400;
-        text-transform: capitalize;
-    }
-
-    small {
-        font-size: .707em;
-    }
-
-    img,
-    canvas,
-    iframe,
-    video,
-    svg,
-    select,
-    textarea {
-        max-width: 100%;
-    }
-
-    blockquote {
-        background: rgba($gray0, .5);
-        border-left: 8px solid $gray0;
-        border-radius: 4px;
-        padding: 0.5rem;
-
-        p {
-            margin: 0;
-            padding: 0.5rem;
-        }
-    }
-
-    pre,
-    code {
-        border-radius: 4px;
-    }
-
-    table {
-        border-bottom: 1px solid #ddd;
-        border-collapse: collapse;
-        border-right: 1px solid #ddd;
-        border-spacing: 0;
-        margin-bottom: 2em;
-    }
-
-    table th {
-        background-color: #eee;
-        border-left: 1px solid #ddd;
-        border-top: 1px solid #ddd;
-        padding: .2em 1em;
-    }
-
-    table td {
-        border-left: 1px solid #ddd;
-        border-top: 1px solid #ddd;
-        padding: .2em 1em;
-        vertical-align: top;
-    }
-
-    hr {
-        background: radial-gradient(at top, $gray0, transparent 75%);
-        border: 0;
-        height: 10px;
-        margin: 2em 0;
     }
 }

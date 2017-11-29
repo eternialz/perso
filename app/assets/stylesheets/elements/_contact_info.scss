@@ -5,14 +5,17 @@
     font-weight: 600;
 
     .key {
-        width: 5em;
+        width: 6em;
         float: left;
         text-align: right;
     }
 
     .value {
-        width: calc(100% - 5em);
+        width: calc(100% - 6em);
         padding-left: 2em;
         float: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }

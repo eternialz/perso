@@ -1,43 +1,4 @@
 section {
-    &.-gradient-background {
-        position: relative;
-        z-index: 10;
-        background-image: linear-gradient(125deg,
-            mix($cyan, $accent1, 0%) 0%,
-            mix($cyan, $accent1, 19%) 19%,
-            mix($cyan, $accent1, 34%) 34%,
-            mix($cyan, $accent1, 47%) 47%,
-            mix($cyan, $accent1, 56.5%) 56.5%,
-            mix($cyan, $accent1, 65%) 65%,
-            mix($cyan, $accent1, 73%) 73%,
-            mix($cyan, $accent1, 80.2%) 80.2%,
-            mix($cyan, $accent1, 86.1%) 86.1%,
-            mix($cyan, $accent1, 91%) 91%,
-            mix($cyan, $accent1, 95.2%) 95.2%,
-            mix($cyan, $accent1, 98.2%) 98.2%,
-            mix($cyan, $accent1, 100%) 100%
-        );
-
-        &::before {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-        }
-
-        &::before {
-            z-index: -1;
-            content: "";
-            position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
-        }
-
-        .row > .title {
-            color: $white;
-
-            .fa {
-                background: rgba($white, .35);
-            }
-        }
-    }
-
     &.darker {
         background: rgba($gray0, .25);
     }
@@ -45,7 +6,7 @@ section {
     &.head {
         padding-top: 5em;
 
-        &::before, &::after {
+        &::before {
             z-index: -1;
             height: 400px;
             top: 0;
@@ -54,19 +15,19 @@ section {
             content: "";
             position: absolute;
             background-image: linear-gradient(125deg,
-                mix($cyan, $accent1, 0%) 0%,
-                mix($cyan, $accent1, 19%) 19%,
-                mix($cyan, $accent1, 34%) 34%,
-                mix($cyan, $accent1, 47%) 47%,
-                mix($cyan, $accent1, 56.5%) 56.5%,
-                mix($cyan, $accent1, 65%) 65%,
-                mix($cyan, $accent1, 73%) 73%,
-                mix($cyan, $accent1, 80.2%) 80.2%,
-                mix($cyan, $accent1, 86.1%) 86.1%,
-                mix($cyan, $accent1, 91%) 91%,
-                mix($cyan, $accent1, 95.2%) 95.2%,
-                mix($cyan, $accent1, 98.2%) 98.2%,
-                mix($cyan, $accent1, 100%) 100%
+                mix($cyan, $purple, 0%) 0%,
+                mix($cyan, $purple, 19%) 19%,
+                mix($cyan, $purple, 34%) 34%,
+                mix($cyan, $purple, 47%) 47%,
+                mix($cyan, $purple, 56.5%) 56.5%,
+                mix($cyan, $purple, 65%) 65%,
+                mix($cyan, $purple, 73%) 73%,
+                mix($cyan, $purple, 80.2%) 80.2%,
+                mix($cyan, $purple, 86.1%) 86.1%,
+                mix($cyan, $purple, 91%) 91%,
+                mix($cyan, $purple, 95.2%) 95.2%,
+                mix($cyan, $purple, 98.2%) 98.2%,
+                mix($cyan, $purple, 100%) 100%
             );
         }
     }

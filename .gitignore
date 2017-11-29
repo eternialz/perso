@@ -48,7 +48,10 @@ bower.json
 .*~
 *.swp
 *.swo
+
+#Ignore generated public files
 public/system/
+public/assets
 
 # Ignore environnement variables with secrets and tokens
 /source.sh

@@ -6,8 +6,6 @@
 
 /* Global default custom styles */
 html {
-    --text-shadow-color: #{rgba($black, 0.004)};
-
     background: darken($white, 3%);
     box-sizing: border-box;
     color: $text;
@@ -16,7 +14,6 @@ html {
     font-size: $default-font-size;
     overflow-x: hidden;
     overflow-y: scroll;
-    text-shadow: 1px 1px 1px var(--text-shadow-color);
     text-rendering : geometricPrecision;
     -webkit-font-smoothing: antialiased !important;
 
@@ -25,15 +22,18 @@ html {
     }
 
     @media only screen and (min-width: $large) {
-        font-size: $default-font-size * 1.07;
+        font-size: $default-font-size * 1.04;
+        line-height: $default-line-height * 1.07;
     }
 
     @media only screen and (min-width: $xlarge) {
-        font-size: $default-font-size * 1.13;
+        font-size: $default-font-size * 1.08;
+        line-height: $default-line-height * 1.13;
     }
 
     @media only screen and (min-width: $xxlarge) {
-        font-size: $default-font-size * 1.2;
+        font-size: $default-font-size * 1.12;
+        line-height: $default-line-height * 1.2;
     }
 }
 

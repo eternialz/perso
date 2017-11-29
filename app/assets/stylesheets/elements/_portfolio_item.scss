@@ -1,5 +1,5 @@
 .portfolio-container {
-    margin-bottom: 4em;
+    margin: 1em 0 2em;
 
     header {
         @extend %clearfix;
@@ -25,6 +25,16 @@
             position: relative;
             width: 30em;
             z-index: 1;
+
+            &::after, &::before {
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+            }
 
             svg {
                 background-size: 100% 100%;
@@ -55,6 +65,29 @@
                     top: initial;
                     bottom: 100%;
                     width: 100%;
+                }
+
+                #vertical {
+                    display: none;
+                }
+            }
+        }
+
+        &.vertical {
+            .content {
+                margin-top: 15em;
+                width: 100%;
+
+                svg {
+                    height: 5em;
+                    left: 0;
+                    top: calc(-5em + 0.35px);
+                    bottom: 100%;
+                    width: 100%;
+                }
+
+                #horizontal {
+                    display: inline-block;
                 }
 
                 #vertical {
@@ -122,47 +155,93 @@
     }
 
     #portfolio-1 {
-        $color1: lighten(desaturate($cyan, 45%), 10%);
-        $color2: $accent1;
-
-        background-image: url(https://static.zerochan.net/Kantoku.Self.Select.Calendar.2014.full.1638829.jpg);
+        $color1: #1AB;
+        $color2: #F06;
+        $opacity1: 0.5;
+        $opacity2: 0.7;
+        background-image: url("portfolio_1.jpg");
 
         .content {
-            background: rgba(mix($color1, $color2, 45%), .9);
+            &::before {
+                background: rgba($color1, $opacity1);
+            }
+
+            &::after {
+                background: rgba($color2, $opacity2);
+            }
         }
 
         svg {
             #poly-1 {
                 fill: $color1;
-                fill-opacity: 0.8
+                fill-opacity: $opacity1;
             }
 
             #poly-2 {
                 fill: $color2;
-                fill-opacity: 0.5;
+                fill-opacity: $opacity2;
             }
         }
     }
 
     #portfolio-2 {
         $color1: $purple;
-        $color2: $purple;
+        $color2: $cyan;
+        $opacity1: 0.8;
+        $opacity2: 0.7;
 
-        background-image: url(https://static.zerochan.net/Kantoku.Self.Select.Calendar.2014.full.1638829.jpg);
+        background-image: url("portfolio_2.jpg");
 
         .content {
-            background: rgba(mix($color1, $color2, 45%), .9);
+            &::before {
+                background: rgba($color1, $opacity1);
+            }
+
+            &::after {
+                background: rgba($color2, $opacity2);
+            }
         }
 
         svg {
             #poly-1 {
                 fill: $color1;
-                fill-opacity: 0.8
+                fill-opacity: $opacity1;
             }
 
             #poly-2 {
                 fill: $color2;
-                fill-opacity: 0.5;
+                fill-opacity: $opacity2;
+            }
+        }
+    }
+
+    #portfolio-3 {
+        $color1: $orange;
+        $color2: $pink;
+        $opacity1: 0.6;
+        $opacity2: 0.5;
+
+        background-image: url("portfolio_3.jpg");
+
+        .content {
+            &::before {
+                background: rgba($color1, $opacity1);
+            }
+
+            &::after {
+                background: rgba($color2, $opacity2);
+            }
+        }
+
+        svg {
+            #poly-1 {
+                fill: $color1;
+                fill-opacity: $opacity1;
+            }
+
+            #poly-2 {
+                fill: $color2;
+                fill-opacity: $opacity2;
             }
         }
     }

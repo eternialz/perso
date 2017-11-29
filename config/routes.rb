@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     post '/articles/preview', as: :blog_preview
 
     # Static contents
-    get "/:page" => "static_pages#show"
+    get "/:page" => "static_pages#show", as: :static_page
 end
