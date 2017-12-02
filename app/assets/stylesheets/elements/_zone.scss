@@ -11,27 +11,25 @@
 
     .title {
         float: left;
-        font-size: 1em;
-        font-size: 1em;
+        font-size: 1.5em;
         letter-spacing: 0.1em;
-        line-height: 2em;
+        line-height: 1.5em;
         margin: 0 0 1em 0;
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 100%;
+    }
 
-        &::after {
-            background: $accent1;
-            border-radius: 0 4px 4px 0;
-            content: "";
-            display: inline-block;
-            height: 100%;
-            left: -1em;
-            position: absolute;
-            top: 0em;
-            width: 0.2em;
-        }
-
+    & > .title::after {
+        background: $accent1;
+        border-radius: 0 4px 4px 0;
+        content: "";
+        display: inline-block;
+        height: 100%;
+        left: -0.666em;
+        position: absolute;
+        top: 0em;
+        width: 0.15em;
     }
 
     p {
@@ -39,8 +37,6 @@
     }
 
     .content {
-        clear: both;
-        line-height: 1.4em;
         padding: 0.5em 0 0.3em;
     }
 

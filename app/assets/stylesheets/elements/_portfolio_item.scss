@@ -81,7 +81,7 @@
                 svg {
                     height: 5em;
                     left: 0;
-                    top: calc(-5em + 0.35px);
+                    top: initial;
                     bottom: 100%;
                     width: 100%;
                 }
@@ -155,10 +155,10 @@
     }
 
     #portfolio-1 {
-        $color1: #1AB;
-        $color2: #F06;
+        $color1: #F06;
+        $color2: #1AB;
         $opacity1: 0.5;
-        $opacity2: 0.7;
+        $opacity2: 0.8;
         background-image: url("portfolio_1.jpg");
 
         .content {
@@ -234,6 +234,39 @@
         }
 
         svg {
+            #poly-1 {
+                fill: $color1;
+                fill-opacity: $opacity1;
+            }
+
+            #poly-2 {
+                fill: $color2;
+                fill-opacity: $opacity2;
+            }
+        }
+    }
+
+    #portfolio-4 {
+        $color1: #00a47e;
+        $color2: #FFB300;
+        $opacity1: 0.4;
+        $opacity2: 0.8;
+
+        background-image: url("portfolio_4.jpg");
+
+        .content {
+            &::before {
+                background: rgba($color1, $opacity1);
+            }
+
+            &::after {
+                background: rgba($color2, $opacity2);
+            }
+        }
+
+        svg {
+            height: 7em;
+
             #poly-1 {
                 fill: $color1;
                 fill-opacity: $opacity1;

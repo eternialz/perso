@@ -1,6 +1,6 @@
 
 <%= render "layouts/splash" %>
-<section>
+<!-- <section>
     <div class="row list">
         <h3 class="title -icon"><%= fa_icon "newspaper-o" %><span>Derniers articles du blog</span></h3>
         <% @articles.each do |a| %>
@@ -27,7 +27,7 @@
             <% end %>
         </div>
     </div>
-</section>
+</section> -->
 <section class="-border-bottom -border-top -sp-bottom">
     <div class="row">
         <h3 class="title -icon"><%= fa_icon "id-card" %><span>Compétences</span></h3>
@@ -148,7 +148,6 @@
     </div>
 </section>
 <section class="contact darker">
-    <a id="contact"></a>
     <div class="row">
         <h3 class="title -icon"><%= fa_icon "comments-o" %><span>Contact</span></h3>
         <div class="col-12 -sp">
@@ -188,6 +187,7 @@
                 <% end %>
             </div>
             <div class="col-6 -sp -wp-left">
+                <a id="contact"></a>
                 <% if flash[:success].blank? %>
                     <h5 class="title">Me contacter</h5>
                     <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>

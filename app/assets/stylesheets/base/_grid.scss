@@ -161,6 +161,7 @@ section {
     .col-6 { width: (100% / 2) }
     .col-8 { width: (100% / (12 / 8)) }
     .col-9 { width: (100% / (12 / 9)) }
+    .col-10 { width: (100% / (12 / 10)) }
     .col-12 { width: 100% }
 
     .col-3.-sm { width: calc(#{(100% / 4)} - #{($gutter)}) }
@@ -168,6 +169,7 @@ section {
     .col-6.-sm { width: calc(#{(100% / 2)} - #{($gutter)}) }
     .col-8.-sm { width: calc(#{(100% / (12 / 8))} - #{($gutter)}) }
     .col-9.-sm { width: calc(#{(100% / (12 / 9))} - #{($gutter)}) }
+    .col-10.-sm { width: calc(#{(100% / (12 / 10))} - #{($gutter)}) }
     .col-12.-sm { width: calc(100% - #{($gutter)}) }
 }
 

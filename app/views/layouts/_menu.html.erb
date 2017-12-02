@@ -8,8 +8,8 @@
         <label id="display-menu" for="menu-toggle"><%= fa_icon "bars" %></label>
         <input type="checkbox" id="menu-toggle" checked>
         <ul>
-            <li><a href="/portfolio"><%= fa_icon "caret-right" %>Portfolio</a></li>
-            <li><a href="/articles"><%= fa_icon "caret-right" %>Blog</a></li>
+            <li><a href="<%= static_page_path('portfolio') %>"><%= fa_icon "caret-right" %>Portfolio</a></li>
+            <li><a href="<%= static_page_path('cv') %>"><%= fa_icon "caret-right" %>CV</a></li>
             <li><a href="<%= root_path %>#contact"><%= fa_icon "caret-right" %>Contact</a></li>
         </ul>
     </div>
