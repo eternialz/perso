@@ -42,7 +42,7 @@
                 height: 100%;
                 left: auto;
                 position: absolute;
-                left: 100%;
+                left: 99.9%;
                 top: 0;
                 width: 5em;
             }
@@ -95,6 +95,10 @@
                 }
             }
         }
+
+        .btn {
+            margin: 2em 0 0;
+        }
     }
 
     nav {
@@ -120,7 +124,11 @@
     .texts {
         float: right;
         padding: 0 1em;
-        width: calc(100% - 14em)
+        width: calc(100% - 14em);
+
+        p {
+            text-indent: 1em;
+        }
     }
 
     .badges {
@@ -155,8 +163,8 @@
     }
 
     #portfolio-1 {
-        $color1: #F06;
-        $color2: #1AB;
+        $color2: $blue;
+        $color1: $cyan;
         $opacity1: 0.5;
         $opacity2: 0.8;
         background-image: url("portfolio_1.jpg");

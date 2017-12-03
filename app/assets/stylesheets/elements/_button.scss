@@ -13,7 +13,7 @@
     font-weight: 600;
     letter-spacing: 0.125em;
     line-height: 2.1em;
-    margin: 1.5em 1em 1.5em 0;
+    margin: 0 1em 1.5em 0;
     opacity: 1 !important;
     outline: none !important;
     padding: 0.25em 0.9em;
@@ -87,48 +87,5 @@
         color: $blue !important;
         fill: $blue !important;
         outline: 2px solid $accent1;
-    }
-}
-
-.subtle-btns {
-    background: $true-white;
-    border-radius: 4px;
-    box-shadow: 0 0 0 1px $gray1;
-    margin-bottom: 0.75em;
-    overflow: hidden;
-}
-
-.btn-subtle {
-    color: $gray2;
-    fill: $gray2;
-    box-shadow: 0 1px 0 0 $gray1;
-    display: inline-block;
-    font-size: 80%;
-    letter-spacing: 0.125em;
-    line-height: 2.2em;
-    padding: 0.05em 0.5em 0;
-    text-transform: uppercase;
-    width: 100%;
-    float: left;
-
-    &:hover {
-        color: $gray4;
-        fill: $gray4;
-    }
-
-    &:active {
-        color: $gray6;
-        fill: $gray6;
-    }
-
-    .fa, svg {
-        float: left;
-        line-height: 2.2em;
-        margin-right: 0.5em;
-        max-width: 16px;
-    }
-
-    svg {
-        height: 2.2em;
     }
 }

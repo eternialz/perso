@@ -12,6 +12,7 @@ html {
     font-family: Tahoma, Geneva, sans-serif; // Fallback
     font-family: 'Open Sans', sans-serif;
     font-size: $default-font-size;
+    line-height: 1.6;
     overflow-x: hidden;
     overflow-y: scroll;
     text-rendering : geometricPrecision;
@@ -23,17 +24,14 @@ html {
 
     @media only screen and (min-width: $large) {
         font-size: $default-font-size * 1.04;
-        line-height: $default-line-height * 1.07;
     }
 
     @media only screen and (min-width: $xlarge) {
         font-size: $default-font-size * 1.08;
-        line-height: $default-line-height * 1.13;
     }
 
     @media only screen and (min-width: $xxlarge) {
         font-size: $default-font-size * 1.12;
-        line-height: $default-line-height * 1.2;
     }
 }
 

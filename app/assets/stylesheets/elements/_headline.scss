@@ -1,0 +1,47 @@
+.headline {
+    position: relative;
+}
+
+.pattern {
+    position: relative;
+    background-image: url(https://static.pexels.com/photos/254770/pexels-photo-254770.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 20em;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-image: linear-gradient(125deg,
+            rgba(mix($cyan, $purple, 0%), 0.5) 0%,
+            rgba(mix($cyan, $purple, 19%), 0.5) 19%,
+            rgba(mix($cyan, $purple, 34%), 0.5) 34%,
+            rgba(mix($cyan, $purple, 47%), 0.5) 47%,
+            rgba(mix($cyan, $purple, 56.5%), 0.5) 56.5%,
+            rgba(mix($cyan, $purple, 65%), 0.5) 65%,
+            rgba(mix($cyan, $purple, 73%), 0.5) 73%,
+            rgba(mix($cyan, $purple, 80.2%), 0.5) 80.2%,
+            rgba(mix($cyan, $purple, 86.1%), 0.5) 86.1%,
+            rgba(mix($cyan, $purple, 91%), 0.5) 91%,
+            rgba(mix($cyan, $purple, 95.2%), 0.5) 95.2%,
+            rgba(mix($cyan, $purple, 98.2%), 0.5) 98.2%,
+            rgba(mix($cyan, $purple, 100%), 0.5) 100%
+        );
+
+        @media only screen and (max-width: $small) {
+            transform: rotate(0);
+            height: 100%;
+            top: 0;
+        }
+    }
+
+    * {
+        position: relative;
+        z-index: 1;
+    }
+}

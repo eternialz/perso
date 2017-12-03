@@ -1,18 +1,16 @@
 .tag {
     @extend %clearfix;
-    background: $true-white;
-    border-radius: 4px;
-    box-shadow: 0 3px 10px rgba($black, .15), 0 1px 1px 1px rgba($black, .05);
-    line-height: 3em;
-    margin-bottom: 1em;
+    line-height: 2em;
     font-weight: 600;
+    margin-bottom: 1em;
 
     .key .fa {
-        float: left;
-        height: 3em;
-        line-height: 3em;
+        float: right;
+        height: 2em;
+        line-height: 2em;
         text-align: center;
         width: 1em;
+        margin-left: 1em;
     }
 
     .key, .value {
@@ -21,16 +19,13 @@
     }
 
     .key {
-        color: $accent1; fill: $accent1;
+        fill: $text;
         text-align: right;
         width: 10em;
-        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .value {
-        color: $accent2;
         width: calc(100% - 10em);
     }
-
-    a { color: $accent2; }
 }

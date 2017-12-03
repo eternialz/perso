@@ -1,20 +1,9 @@
-.technologie {
+.techno {
+    background: rgba($gray0, .4);
+    border-radius: 4px;
     display: inline-block;
-    background: rgba($accent1, .22);
-    color: $accent1; fill: $accent1;
-    font-weight: 600;
-    padding-right: 0.25em;
-
-    .fa {
-        text-align: center;
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        padding: 0.3em;
-        margin-right: 0.2em;
-    }
-
-    span, .fa {
-        float: left;
-    }
+    line-height: 2em;
+    margin: 0.3em 0.3em 0 0;
+    padding: 0 0.5em;
+    float: left;
 }

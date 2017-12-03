@@ -4,10 +4,15 @@
         <header id="portfolio-1">
             <div class="content">
                 <h2 class="title">Moeverdose</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    Plateforme d'hébergement d'image sous la forme d'un forum d'image basé sur des tags.
+                    Chaque image possède un ou plusieurs tags et les utilisateurs peuvent rechercher et trouver les images qui les interesses en combinant les tags.
+                    Les utilisateurs et auteurs disposent d'un système de commentaires et de réactions pour échanger ensemble.
+                    Projet Open Source sous Mozilla Public Licence 2.0.
+                </p>
                 <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 50">
                     <polygon id="poly-1" points="0,50 50,0 50,50"/>
-                    <polygon id="poly-2"  points="0,25 50,50 0,50"/>
+                    <polygon id="poly-2" points="0,25 50,50 0,50"/>
                 </svg>
                 <svg id="vertical" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 50">
                     <polygon id="poly-1" points="0,0 50,50 0,50"/>
@@ -29,18 +34,34 @@
             </nav>
             <div class="texts">
                 <div class="col-6 -sp -wp-right">
-                    <h6 class="title -tiny">Technologies</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h6 class="title -tiny">Le Projet</h6>
+                    <p>
+                        Le projet à été réalisé avec Ruby on Rails et MongoDB.
+                        Il dispose d'un serveur Discord où les membres sont notifié automatiquement pour chaque nouveau post, chaque commits sur le projet et du résultat de la suite de test après un build par TravisCI.
+                        Le serveur compte également un bot directement relié au site pour chercher des informations sur les posts et les utilisateurs.
+                        Le meilleur post est automatiquement publié chaque jour sur le compte Twitter du projet.
+                    </p>
+                    <p>
+                        Le projet n'est pas encore en ligne mais le <a href="https://discord.me/moeverdose" target="_blank">serveur Discord</a> ainsi que le <a href="https://github.com/eternialz/moeverdose" target="_blank">code source</a> est disponible.
+                    </p>
                 </div>
                 <div class="col-6 -sp -wp-left -wp-right">
                     <h6 class="title -tiny">Technologies</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <span class="techno">Ruby on Rails</span>
+                    <span class="techno">MongoDB</span>
+                    <span class="techno">HTML5</span>
+                    <span class="techno">CSS3</span>
+                    <span class="techno">JavaScript</span>
+                    <span class="techno">JQuery</span>
+                    <span class="techno">Git</span>
+                    <span class="techno">Discord</span>
+                    <span class="techno">TravisCI</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="darker -border-top">
+<!--<section class="darker -border-top">
     <div class="row portfolio-container">
         <div class="col-4 -sp">
             <header id="portfolio-2" class="vertical">
@@ -49,7 +70,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 49">
                         <polygon id="poly-1" points="0,50 50,0 50,50"/>
-                        <polygon id="poly-2"  points="0,25 50,50 0,50"/>
+                        <polygon id="poly-2" points="0,25 50,50 0,50"/>
                     </svg>
                 </div>
             </header>
@@ -70,12 +91,26 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <section class="-border-top">
     <div class="row portfolio-container">
         <h3 class="title -icon -center"><%= fa_icon "vcard" %><span>Internships</span></h3>
-        <hr>
-        <h3 class="title -center"><span>Bed & Dreams</span></h3>
+        <div class="col-4 -sp">
+            <header id="portfolio-3" class="vertical">
+                <div class="content">
+                    <h2 class="title">Bed & Dreams</h2>
+                    <p>
+                        Bed & Dreams est un magasin de meubles, spécialisé dans la literie, situé à Schweighouse-sur-Moder.
+                        Ils proposent des concept innovant, comme des outils de biométrie, pour proposer les articles les mieux adaptés.
+                    </p>
+                    <a href="https://www.facebook.com/bedanddreams/" traget="_blank" class="btn -white"><%= fa_icon "facebook" %>facebook</a>
+                    <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 49">
+                        <polygon id="poly-1" points="0,50 50,0 50,50"/>
+                        <polygon id="poly-2" points="0,25 50,50 0,50"/>
+                    </svg>
+                </div>
+            </header>
+        </div>
         <div class="col-8 -big-gutter">
             <nav>
                 <div>
@@ -93,29 +128,24 @@
                 </div>
             </nav>
             <div class="texts">
-                <h6 class="title -tiny">Mission</h6>
-                <p></p>
+                <h6 class="title -tiny">Mes Missions</h6>
+                <p>
+                    J'ai été chargé de développé entièrement un site d'e-commerce avec un second stagiaire:
+                    création d'un framework css,
+                    réalisation du design ainsi que l'intégration des interfaces,
+                    développement de fonctionnalités et création de plusieurs modèles de donnée.
+                </p>
                 <hr>
                 <h6 class="title -tiny">Technologies</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span class="techno">Ruby on Rails</span>
+                <span class="techno">PostgreSQL</span>
+                <span class="techno">HTML5</span>
+                <span class="techno">CSS3</span>
+                <span class="techno">JavaScript</span>
+                <span class="techno">JQuery</span>
+                <span class="techno">Git</span>
             </div>
         </div>
-        <div class="col-4 -sp">
-            <header id="portfolio-3" class="vertical">
-                <div class="content">
-                    <h2 class="title">Bed & Dreams</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 49">
-                        <polygon id="poly-1" points="0,50 50,0 50,50"/>
-                        <polygon id="poly-2"  points="0,25 50,50 0,50"/>
-                    </svg>
-                </div>
-            </header>
-        </div>
-    </div>
-    <div class="row">
-        <hr>
-        <h3 class="title -center"><span>Epopia</span></h3>
     </div>
     <div class="row portfolio-container">
         <div class="col-4 -sp">
@@ -128,7 +158,7 @@
                     <a href="https://epopia.com" target="_blank" class="btn -white"><%= fa_icon "external-link" %>Accès au site</a>
                     <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 49">
                         <polygon id="poly-1" points="0,50 50,25 50,50"/>
-                        <polygon id="poly-2"  points="0,0 50,50 0,50"/>
+                        <polygon id="poly-2" points="0,0 50,50 0,50"/>
                     </svg>
                 </div>
             </header>
@@ -145,10 +175,20 @@
             </nav>
             <div class="texts">
                 <h6 class="title -tiny">Mission</h6>
-                <p></p>
+                <p>
+                    Lors de ce stage, j'ai intégré une équipe de développeurs et j'ai été chargé de réaliser différentes fonctionnalités en front-end comme en back-end.
+                    J'ai notamment été chargé de refaire entièrement leur formulaire d'abonnement ou de réaliser une de leurs landing pages.
+                </p>
+                <p>
+                    C'est pendant ce stage que j'ai appris à utiliser Ruby on Rails, MongoDB ou des outils comme Git et Gitlab.
+                </p>
                 <hr>
-                <h6 class="title -tiny">Technologies & Logiciels</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h6 class="title -tiny">Technologies</h6>
+                <span class="techno">Ruby on Rails</span>
+                <span class="techno">MongoDB</span>
+                <span class="techno">HTML5</span>
+                <span class="techno">CSS3</span>
+                <span class="techno">JQuery</span>
             </div>
         </div>
     </div>

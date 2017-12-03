@@ -1,13 +1,8 @@
 #splash {
     color: $white;
     height: auto;
-    padding-top: 13em;
     padding-bottom: 3em;
     position: relative;
-
-    &::before {
-        height: 100%;
-    }
 
     .row {
         position: relative;
@@ -20,9 +15,5 @@
 
     h2 {
         font-size: 2em;
-    }
-
-    #buttons .btn {
-        margin: 1.5em 1em 1.5em 0;
     }
 }

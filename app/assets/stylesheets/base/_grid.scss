@@ -149,9 +149,12 @@ section {
 
     @media only screen and (max-width: $small) {
         border: none !important;
-        padding: 0em 0 2em !important;
-    }
+        padding: 0 0 1em !important;
 
+        &.-big-gutter {
+            padding: 1.5em !important;
+        }
+    }
 }
 
 @media only screen and (min-width: $small) {

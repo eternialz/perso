@@ -1,4 +1,3 @@
-
 <%= render "layouts/splash" %>
 <!-- <section>
     <div class="row list">
@@ -28,11 +27,31 @@
         </div>
     </div>
 </section> -->
-<section class="-border-bottom -border-top -sp-bottom">
+<section class="-sp-bottom">
     <div class="row">
-        <h3 class="title -icon"><%= fa_icon "id-card" %><span>Compétences</span></h3>
-        <div class="col-8 -sp -wp-right">
-            <h6 class="title">Web :</h6>
+        <div class="zone -sp headline">
+            <div class="col-4 pattern">
+            </div>
+            <div class="col-8 -big-gutter">
+                <h3 class="subtitle">
+                    Étudiant en 3ème année d'informatique
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="<%= static_page_path("portfolio") %>" class="btn"><%= fa_icon "book" %>Portfolio</a>
+                <a href="https://github.com/eternialz" class="btn -white"><%= fa_icon "github"%>Profil Github</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="-border-bottom -sp-bottom">
+    <div class="row">
+        <h3 class="title -icon"><%= fa_icon "briefcase" %>Mes compétences</h3>
+        <div class="col-6">
+            
+        </div>
+        <div class="col-6">
             <div class="tag -full">
                 <div class="key">
                     <%= fa_icon "css3" %><span>CSS/SASS</span>
@@ -68,7 +87,7 @@
             </div>
             <div class="tag -full">
                 <div class="key">
-                    <%= inline_svg "js_logo.svg", class: "fa" %><span>JS/JQuery</span>
+                    <%= fa_icon "database" %><span>SQL</span>
                 </div>
                 <div class="value">
                     <div class="progress-bar">
@@ -79,70 +98,30 @@
             </div>
             <div class="tag -full">
                 <div class="key">
-                    <%= fa_icon "database" %><span>SQL</span>
+                    <%= inline_svg "js_logo.svg", class: "fa" %><span>JS/JQuery</span>
                 </div>
                 <div class="value">
                     <div class="progress-bar">
-                        <div class="progress" style="width:69%">
+                        <div class="progress" style="width:65%">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4 -sp -wp-left">
-            <div class="col-12 -sp">
-                <h6 class="title">Autres technologies :</h6>
-                <div class="technologie">
-                    <%= fa_icon "code-fork" %><span>GIT</span>
-                </div>
-                <div class="technologie">
-                    <%= fa_icon "linux" %><span>Linux</span>
-                </div>
-                <div class="technologie">
-                    <%= inline_svg "ruby_logo.svg", class: "fa" %><span>Ruby</span>
-                </div>
-                <div class="technologie">
-                    <%= inline_svg "python_logo.svg", class: "fa" %><span>Python</span>
-                </div>
-                <div class="technologie">
-                    <%= inline_svg "nodejs_logo.svg", class: "fa" %><span>NodeJS</span>
-                </div>
-                <div class="technologie">
-                    <%= fa_icon "code" %><span>C/C++</span>
-                </div>
-                <div class="technologie">
-                    <%= fa_icon "code" %><span>C#</span>
-                </div>
-                <div class="technologie">
-                    <%= fa_icon "database" %><span>NoSQL/MongoDB</span>
-                </div>
-            </div>
-            <div class="col-12 -sp">
-                <h6 class="title -accent2">Autres compétences :</h6>
-                <div class=" -accent2">
-                    <div class="icon"><%= fa_icon "users" %>Expérience Utilisateur (UX)</div>
-                </div>
-                <div class=" -accent2">
-                    <div class="icon"><%= fa_icon "paint-brush" %>Design (UI)</div>
-                </div>
-                <div class=" -accent2">
-                    <div class="icon"><%= fa_icon "calendar-o" %>Management</div>
-                </div>
-                <div class=" -accent2">
-                    <div class="icon"><%= fa_icon "briefcase" %>Droit Informatique</div>
-                </div>
-            </div>
+        <div class="col-12 align -center">
+            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "id-card-o" %>Voir mon CV</a>
+            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "download" %>Télécharger mon CV</a>
         </div>
         <div class="col-6 -big-gutter -gradient-border-right -wp-right -wp-bottom">
             <h6 class="title">Informatique</h6>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsued do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
         <div class="col-6 -big-gutter -wp-left -wp-bottom">
             <h6 class="title">Design</h6>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
         </div>
     </div>
@@ -153,38 +132,40 @@
         <div class="col-12 -sp">
             <div class="col-6 -sp -wp-right">
                 <h5 class="title">Informations de contact</h5>
-                <div class="zone">
-                    <div class="contact-info">
-                        <div class="key">
-                            Mail :
+                <div class="zone -sp">
+                    <div class="col-12">
+                        <div class="contact-info">
+                            <div class="key">
+                                Mail :
+                            </div>
+                            <div class="value">
+                                <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani@gmail.com</a></span>
+                            </div>
                         </div>
-                        <div class="value">
-                            <span><a href="mailto:sebastien.erfani@gmail.com" target="_blank">sebastien.erfani@gmail.com</a></span>
+                        <div class="contact-info">
+                            <div class="key">
+                                Telegram :
+                            </div>
+                            <div class="value">
+                                <span>@eternialz</span>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="key">
+                                Discord :
+                            </div>
+                            <div class="value">
+                                <span>Eternialz#4329</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-info">
-                        <div class="key">
-                            Telegram :
-                        </div>
-                        <div class="value">
-                            <span>@eternialz</span>
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <div class="key">
-                            Discord :
-                        </div>
-                        <div class="value">
-                            <span>Eternialz#4329</span>
-                        </div>
-                    </div>
+                    <% unless Rails.env.development? %>
+                        <div id="map"></div>
+                        <script async defer
+                            <%= "src=https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAPS_API_KEY'] + "&callback=initMap" %>>
+                        </script>
+                    <% end %>
                 </div>
-                <% unless Rails.env.development? %>
-                    <div id="map"></div>
-                    <script async defer
-                        <%= "src=https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAPS_API_KEY'] + "&callback=initMap" %>>
-                    </script>
-                <% end %>
             </div>
             <div class="col-6 -sp -wp-left">
                 <a id="contact"></a>
