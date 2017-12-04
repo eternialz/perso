@@ -1,6 +1,4 @@
 .cv {
-    color: lighten($text, 20%);
-    font-size: 1.1em;
 
     header {
         margin-bottom: 2em;
@@ -9,6 +7,11 @@
             font-size: 2em;
             margin-bottom: 0;
         }
+    }
+
+    .title {
+        margin: 0;
+        margin-bottom: 0;
     }
 
     ul {
@@ -33,12 +36,25 @@
 
     .cv__part {
         @extend %clearfix;
+        background: rgba($gray0, .25);
+        border-radius: 4px;
         clear: both;
-        line-height: 1em;
+        line-height: 1;
+        margin-bottom: 0.5em;
+        padding: 1em;
 
-        .content {
-            padding-left: 1em;
-            border-left: 0.2em solid rgba($gray0, .5);
+        p {
+            color: lighten($text, 10%);
+            float: left;
+            letter-spacing: 1px;
+            line-height: 1.4;
+            margin: 0;
+            padding-right: 1em;
+            text-indent: 1em;
+            width: 50%;
+        }
+
+        .subtitle {
         }
 
         h5 {
@@ -46,35 +62,25 @@
         }
 
         .date {
-            opacity: 0.6;
+            font-size: 80%;
+            opacity: 0.5;
+            padding-left: 1em;
         }
 
-        p {
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-            line-height: 1.4;
+        @media only screen and (max-width: $normal) {
+            p {
+                width: 100%;
+                padding: 0;
+            }
+
+            .date {
+                display: block;
+                padding-left: 0em;
+            }
         }
-    }
-
-
-    .date strong {
-        display: block;
-        margin-bottom: 1em;
-        line-height: 1.2em;
     }
 
     ul {
         padding: 0;
-    }
-
-    .interests {
-        span {
-            display: inline-block;
-            background: rgba($gray0, .25);
-            line-height: 2em;
-            padding: 0 0.6em;
-            border-radius: 4px;
-            margin-right: 0.5em;
-        }
     }
 }

@@ -1,13 +1,16 @@
 .headline {
-    position: relative;
+
+    .btn {
+        margin-top: 2em;
+    }
 }
 
 .pattern {
     position: relative;
-    background-image: url(https://static.pexels.com/photos/254770/pexels-photo-254770.jpeg);
+    background-image: url("portfolio_5.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 20em;
+    height: 24em;
 
     &::before {
         position: absolute;

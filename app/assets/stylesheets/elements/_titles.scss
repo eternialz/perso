@@ -5,7 +5,7 @@
     color: $accent1;
     font-weight: 600;
     letter-spacing: 0.025em;
-    margin: 1em 0 1.5em;
+    margin: 1em 0 0.5em;
     position: relative;
     text-transform: uppercase;
 
@@ -46,7 +46,7 @@
         }
 
         span {
-            padding: 0.5em;
+            margin-bottom: 0.5em;
             display:  block;
         }
     }

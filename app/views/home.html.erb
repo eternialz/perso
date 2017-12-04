@@ -33,14 +33,12 @@
             <div class="col-4 pattern">
             </div>
             <div class="col-8 -big-gutter">
-                <h3 class="subtitle">
-                    Étudiant en 3ème année d'informatique
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <h5 class="subtitle">
+                    Bonjour, je suis un <strong>intégrateur</strong> et <strong>développeur web</strong> sur <strong>Strasbourg</strong> avec un souçis pour l'optimisation et l'expérience utilisateur.
+                    Bienvenue sur mon site personnel.
+                </h5>
                 <a href="<%= static_page_path("portfolio") %>" class="btn"><%= fa_icon "book" %>Portfolio</a>
-                <a href="https://github.com/eternialz" class="btn -white"><%= fa_icon "github"%>Profil Github</a>
+                <a href="https://github.com/eternialz" class="btn -white"><%= fa_icon "github"%>Github</a>
             </div>
         </div>
     </div>
@@ -48,81 +46,80 @@
 <section class="-border-bottom -sp-bottom">
     <div class="row">
         <h3 class="title -icon"><%= fa_icon "briefcase" %>Mes compétences</h3>
-        <div class="col-6">
+        <div id="home-fixedheight-skills">
+            <div class="col-6">
+                <div class="zone">
+                    <h5 class="subtitle">Méthode de travail</h5>
+                    <p>
 
-        </div>
-        <div class="col-6">
-            <div class="tag -full">
-                <div class="key">
-                    <%= fa_icon "css3" %><span>CSS/SASS</span>
-                </div>
-                <div class="value">
-                    <div class="progress-bar">
-                        <div class="progress" style="width:100%">
-                        </div>
-                    </div>
+                    </p>
                 </div>
             </div>
-            <div class="tag -full">
-                <div class="key">
-                    <%= fa_icon "html5" %><span>HTML</span>
-                </div>
-                <div class="value">
-                    <div class="progress-bar">
-                        <div class="progress" style="width:100%">
+            <div class="col-6">
+                <div class="zone">
+                    <h5 class="subtitle">Points Forts</h5>
+                    <div class="tag -full">
+                        <div class="key">
+                            <%= fa_icon "css3" %><span>CSS/SASS</span>
+                        </div>
+                        <div class="value">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:100%">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="tag -full">
-                <div class="key">
-                    <%= inline_svg "ruby_logo.svg", class: "fa" %><span>Ruby on Rails</span>
-                </div>
-                <div class="value">
-                    <div class="progress-bar">
-                        <div class="progress" style="width:82%">
+                    <div class="tag -full">
+                        <div class="key">
+                            <%= fa_icon "html5" %><span>HTML</span>
+                        </div>
+                        <div class="value">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:100%">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="tag -full">
-                <div class="key">
-                    <%= fa_icon "database" %><span>SQL</span>
-                </div>
-                <div class="value">
-                    <div class="progress-bar">
-                        <div class="progress" style="width:72%">
+                    <div class="tag -full">
+                        <div class="key">
+                            <%= inline_svg "ruby_logo.svg", class: "fa" %><span>Ruby on Rails</span>
+                        </div>
+                        <div class="value">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:82%">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="tag -full">
-                <div class="key">
-                    <%= inline_svg "js_logo.svg", class: "fa" %><span>JS/JQuery</span>
-                </div>
-                <div class="value">
-                    <div class="progress-bar">
-                        <div class="progress" style="width:65%">
+                    <div class="tag -full">
+                        <div class="key">
+                            <%= fa_icon "database" %><span>SQL</span>
+                        </div>
+                        <div class="value">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:72%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag -full">
+                        <div class="key">
+                            <%= inline_svg "js_logo.svg", class: "fa" %><span>JS/JQuery</span>
+                        </div>
+                        <div class="value">
+                            <div class="progress-bar">
+                                <div class="progress" style="width:65%">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-12 align -center">
-            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "id-card-o" %>Voir mon CV</a>
-            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "download" %>Télécharger mon CV</a>
-        </div>
-        <div class="col-6 -big-gutter -gradient-border-right -wp-right -wp-bottom">
-            <h6 class="title">Informatique</h6>
-            <p>
-                Lorem ipsued do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-        <div class="col-6 -big-gutter -wp-left -wp-bottom">
-            <h6 class="title">Design</h6>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <h4 class="subtitle -center">Vous pouvez aussi regarder mon portfolio ou mon cv</h4>
+            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "id-card-o" %>Curriculum vitæ</a>
+            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "book" %>Portfolio</a>
         </div>
     </div>
 </section>

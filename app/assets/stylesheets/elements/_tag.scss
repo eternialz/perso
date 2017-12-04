@@ -2,15 +2,15 @@
     @extend %clearfix;
     line-height: 2em;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin: 0.5em 0;
 
     .key .fa {
-        float: right;
         height: 2em;
         line-height: 2em;
         text-align: center;
         width: 1em;
-        margin-left: 1em;
+        float: left;
+        margin-right: 1em;
     }
 
     .key, .value {
@@ -20,7 +20,6 @@
 
     .key {
         fill: $text;
-        text-align: right;
         width: 10em;
         padding-right: 1em;
     }
