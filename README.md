@@ -1,1 +1,7 @@
-# Readme [![CodeFactor](https://www.codefactor.io/repository/github/eternialz/perso/badge)](https://www.codefactor.io/repository/github/eternialz/perso/) [![TravisCI](https://travis-ci.org/eternialz/perso.svg?branch=master)](https://travis-ci.org/eternialz/perso)
+# Readme [![CodeFactor](https://www.codefactor.io/repository/github/eternialz/perso/badge)](https://www.codefactor.io/repository/github/eternialz/perso/)
+
+Personal website available at https://erfani.fr
+Made with Rails 5 and MongoDB
+
+# Licence
+Mozilla Public Licence 2.0
