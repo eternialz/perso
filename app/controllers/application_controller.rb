@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
     before_action :set_locale
+    before_action :redirect_to_https
     layout 'application'
 
     def home
@@ -29,5 +30,9 @@ class ApplicationController < ActionController::Base
     private
     def extract_locale_from_accept_language_header
         request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+    end
+
+    def redirect_to_https
+        redirect_to :protocol => "https://" unless (request.ssl? || request.local?)
     end
 end
