@@ -8,28 +8,38 @@
 }
 
 #cookies_disclaimer {
-    background: $gray0;
+    color: $white;
+    background: $gray4;
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.1),
                 0 15px 35px rgba(50,50,93,.15),
                 0 5px 15px rgba(0,0,0,.1),
                 inset 0 0 0 1px rgba(0,0,0,.2);
     display: inline-block;
-    line-height: 3em;
     margin: 15px auto;
     max-width: calc(100% - 30px);
-    padding: 0 1em;
+    overflow: hidden;
+    padding-left: 1em;
+    line-height: 3em;
     text-align: center;
     width: auto;
 
     p {
+        float: left;
         display: inline-block;
     }
 
     #cookies_close {
+        background: $gray3;
+        border-left: 3px solid $gray3;
+        display: inline-block;
+        padding: 0 1em;
         float: right;
-        margin: 1em 0 0 1em;
-        padding: 0;
+        margin-left: 1em;
+
+        &:hover {
+            background: $gray4;
+        }
     }
 
     a { color: $accent1}
