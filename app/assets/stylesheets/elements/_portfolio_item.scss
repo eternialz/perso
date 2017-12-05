@@ -167,7 +167,6 @@
         $color1: $cyan;
         $opacity1: 0.5;
         $opacity2: 0.8;
-        background-image: url("portfolio_1.jpg");
 
         .content {
             &::before {
@@ -198,8 +197,6 @@
         $opacity1: 0.8;
         $opacity2: 0.7;
 
-        background-image: url("portfolio_2.jpg");
-
         .content {
             &::before {
                 background: rgba($color1, $opacity1);
@@ -229,8 +226,6 @@
         $opacity1: 0.6;
         $opacity2: 0.5;
 
-        background-image: url("portfolio_3.jpg");
-
         .content {
             &::before {
                 background: rgba($color1, $opacity1);
@@ -259,8 +254,6 @@
         $color2: #FFB300;
         $opacity1: 0.4;
         $opacity2: 0.8;
-
-        background-image: url("portfolio_4.jpg");
 
         .content {
             &::before {

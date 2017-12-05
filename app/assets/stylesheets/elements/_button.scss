@@ -23,6 +23,7 @@
     text-shadow: none !important;
     transform: translateY(0);
     transition: all 170ms ease-in-out;
+
     &.-full {
         width: 100%;
     }
@@ -45,7 +46,9 @@
     }
 
     @media only screen and (max-width: $xsmall) {
-        min-width: 40%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
 
         &.-icon {
             min-width: auto;

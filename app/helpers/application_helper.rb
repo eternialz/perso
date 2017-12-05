@@ -5,6 +5,6 @@ module ApplicationHelper
 
     # TODO Change color
     def accent
-        "#7540f3"
+        "#59aef2"
     end
 end
