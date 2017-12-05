@@ -28,7 +28,11 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compress = true
   config.assets.compile = true
+  config.assets.digest = true
+
+  config.static_cache_control = "public, max-age=31536000"
 
   # Static assets in public
   config.serve_static_assets = true
