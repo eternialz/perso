@@ -8,23 +8,26 @@
         <div class="col-3">
             <h6 class="title">Liens</h6>
             <nav>
-                <a href="/">Accueil</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/articles">Blog</a>
-                <a href="/curriculum_vitae">Télécharger mon CV</a>
+                <a href="<%= root_path %>">Accueil</a>
+                <a href="<%= static_page_path("portfolio") %>">Portfolio</a>
+                <a href="<%= static_page_path("cv") %>">CV</a>
+                <a href="<%= static_page_path("cv") %>">Télécharger mon CV</a>
                 <a href="https://github.com/eternialz">Profil Github</a>
-                <a href="/mentions">Mentions Légales</a>
+                <a href="<%= static_page_path("mentions") %>">Mentions Légales</a>
             </nav>
         </div>
         <div class="col-6">
             <h6 class="title">A Propos</h6>
             <p>
                 Ce site a été créé en utilisant RoR5 et MongoDB pour me présenter et servir de blog pour mes futurs articles.
-                Il est hébérgé par Heroku Inc. et est déployé directement depuis les différentes branches du projet GIT.
+                Il est hébergé par Heroku Inc. et est déployé directement depuis les différentes branches du projet GIT.
                 Le code source est disponible en Open Source avec la licence Mozilla Public Licence 2.0.
             </p>
             <br/>
             <a href="https://github.com/eternialz/perso" target="_blank" class="btn -white"><%= fa_icon "github" %>Accès au projet</a>
         </div>
     </div>
+
+    <%= javascript_include_tag 'application', defer: Rails.env.production?, async: Rails.env.production? %>
+    
 </footer>

@@ -1,4 +1,12 @@
-<%= render "layouts/splash" %>
+<section id="splash" class="head">
+    <div class="row">
+        <div class="col-12">
+            <h1>Sébastien Erfani</h1>
+            <h2>Intégrateur Web</h2>
+        </div>
+    </div>
+</section>
+
 <!-- <section>
     <div class="row list">
         <h3 class="title -icon"><%= fa_icon "newspaper-o" %><span>Derniers articles du blog</span></h3>
@@ -34,7 +42,8 @@
             </div>
             <div class="col-8 -big-gutter">
                 <h5 class="subtitle">
-                    Bonjour, je suis un <strong>intégrateur</strong> et <strong>développeur web</strong> sur <strong>Strasbourg</strong> avec un souçis pour l'optimisation et l'expérience utilisateur.
+                    Bonjour, je suis un <strong>intégrateur</strong> et <strong>développeur web</strong> sur <strong>Strasbourg</strong>
+                    qui attache une grande importance à l'optimisation et l'expérience utilisateur.<br/>
                     Bienvenue sur mon site personnel.
                 </h5>
                 <a href="<%= static_page_path("portfolio") %>" class="btn"><%= fa_icon "book" %>Portfolio</a>
@@ -47,14 +56,6 @@
     <div class="row">
         <h3 class="title -icon"><%= fa_icon "briefcase" %>Mes compétences</h3>
         <div id="home-fixedheight-skills">
-            <div class="col-6">
-                <div class="zone">
-                    <h5 class="subtitle">Méthode de travail</h5>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
             <div class="col-6">
                 <div class="zone">
                     <h5 class="subtitle">Points Forts</h5>
@@ -115,19 +116,57 @@
                     </div>
                 </div>
             </div>
+            <div class="col-6">
+                <div class="zone">
+                    <h5 class="subtitle">Outils de travail</h5>
+                    <p>
+                        <span class="techno">Git</span>
+                        <span class="techno">Linux (ArchLinux)</span>
+                        <span class="techno">Windows</span>
+                        <span class="techno">Atom</span>
+                        <span class="techno">TravisCI</span>
+                        <span class="techno">Codefactor</span>
+                        <span class="techno">Photoshop</span>
+                        <span class="techno">Heroku</span>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="col-12 align -center">
             <h4 class="subtitle -center">Vous pouvez aussi regarder mon portfolio ou mon cv</h4>
+            <a href="<%= static_page_path("portfolio") %>" class="btn"><%= fa_icon "book" %>Portfolio</a>
             <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "id-card-o" %>Curriculum vitæ</a>
-            <a href="<%= static_page_path("cv") %>" class="btn"><%= fa_icon "book" %>Portfolio</a>
         </div>
     </div>
 </section>
-<section class="contact darker">
+<section class="contact darker" id="contact">
     <div class="row">
         <h3 class="title -icon"><%= fa_icon "comments-o" %><span>Contact</span></h3>
         <div class="col-12 -sp">
-            <div class="col-6 -sp -wp-right">
+            <div class="col-6">
+                <% if flash[:success].blank? %>
+                    <h5 class="title">Me contacter</h5>
+                    <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
+                        <div>
+                            <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
+                            <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
+                            <%= f.text_area :message, required: true, placeholder: "Message" %>
+                            <% if flash.any? %>
+                                <% flash.each do |key, value| %>
+                                    <div class="flash -<%= key %>"><%= value %></div>
+                                <% end %>
+                            <% end %>
+                            <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
+                        </div>
+                    <% end %>
+                <% else %>
+                    <h3 class="success -green"><%= fa_icon "check" %>Votre message a été envoyé</h3>
+                    <p>
+                        Je vous répondrai le plus rapidement possible
+                    </p>
+                <% end %>
+            </div>
+            <div class="col-6">
                 <h5 class="title">Coordonnées</h5>
                 <div class="zone -sp">
                     <div class="col-12">
@@ -163,30 +202,6 @@
                         </script>
                     <% end %>
                 </div>
-            </div>
-            <div class="col-6 -sp -wp-left">
-                <a id="contact"></a>
-                <% if flash[:success].blank? %>
-                    <h5 class="title">Me contacter</h5>
-                    <%= form_for @contact, url: submit_contact_form_path(anchor: "contact") do |f| %>
-                        <div>
-                            <%= f.text_field :full_name, required: true, placeholder: "Nom complet" %>
-                            <%= f.text_field :mail, required: true, placeholder: "Adresse mail", pattern: "[^ @]{1,}@[^ @]{1,}([.]{1}[^ @]{2,}|[.]{1}[^ @]{2,}[.]{1}[^ @]{2,})" %>
-                            <%= f.text_area :message, required: true, placeholder: "Message" %>
-                            <% if flash.any? %>
-                                <% flash.each do |key, value| %>
-                                    <div class="flash -<%= key %>"><%= value %></div>
-                                <% end %>
-                            <% end %>
-                            <button type="submit" class="btn -white -accent2"><%= fa_icon "send" %> Envoyer</button>
-                        </div>
-                    <% end %>
-                <% else %>
-                    <h3 class="success -green"><%= fa_icon "check" %>Votre message a été envoyé</h3>
-                    <p>
-                        Je vous répondrai le plus rapidement possible
-                    </p>
-                <% end %>
             </div>
         </div>
     </div>

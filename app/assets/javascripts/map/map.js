@@ -303,14 +303,13 @@ function initMap() {
         '<div id="content">'+
             '<h1 id="firstHeading" class="firstHeading">Adresse</h1>'+
             '<div id="bodyContent"><strong>'+
-                '<p>22 Route du Rhin</p>'+
-                '<p>Illkirch-Graffenstaden</p>'+
-                '<p>67400 France</p>'+
+                '<p>22 Route du Rhin<br/>'+
+                'Illkirch-Graffenstaden<br/>'+
+                '67400 France</p>'+
             '</strong></div>'+
-            '<p>&nbsp;</p>'+
             '<div id="footNotes">'+
-                '<p>A deux pas de Strasbourg</p>'+
-                '<p>Lignes de Tram <strong>A</strong> et <strong>E</strong></p>'
+                '<p>A deux pas de Strasbourg<br/>'+
+                'Lignes de Tram <strong>A</strong> et <strong>E</strong></p>'
             '</div>'+
         '</div>';
 

@@ -66,8 +66,12 @@ li {
 a {
     color: $accent1;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     transition: all 100ms linear;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 label {

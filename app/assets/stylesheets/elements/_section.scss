@@ -6,7 +6,7 @@ section {
     &.head {
         padding-top: 5em;
 
-        &::before {
+        &::before, &::after {
             z-index: -1;
             height: 400px;
             top: 0;

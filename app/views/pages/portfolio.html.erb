@@ -1,4 +1,4 @@
-<section class="head">
+<section id="portfolio" class="head">
     <h3 class="title -white -icon -center"><%= fa_icon "book" %><span>Portfolio</span></h3>
     <div class="row portfolio-container">
         <header id="portfolio-1">
@@ -38,7 +38,7 @@
                     <p>
                         Le projet a été réalisé avec Ruby on Rails et MongoDB.
                         Il dispose d'un serveur Discord où les membres sont notifiés automatiquement de chaque nouveau post,
-                        de chaque commit sur le projet et du résultat de la suite de test après un build par TravisCI.
+                        de chaque commit sur le projet et du résultat de la suite de tests après un build par TravisCI.
                         Le serveur compte également un bot directement relié au site pour chercher des informations sur les posts et les utilisateurs.
                         Le meilleur post est automatiquement publié chaque jour sur le compte Twitter du projet.
                     </p>
@@ -118,14 +118,14 @@
                     <h6 class="title -tiny">Durée</h6>
                     <strong>2 mois</strong> temps plein<br/>
                     <br/>
-                    du <strong>1er Septembre 2017</strong><br/>
-                    au <strong>31 Octobre 2017</strong><br/>
+                    du <strong>1er septembre 2017</strong><br/>
+                    au <strong>31 octobre 2017</strong><br/>
                     <br/>
                     <br/>
                     <strong>3 mois</strong> temps partiel<br/>
                     <br/>
-                    du <strong>16 Novembre 2017</strong><br />
-                    au <strong>16 Février 2018</strong><br/>
+                    du <strong>16 novembre 2017</strong><br />
+                    à maintenant<br/>
                 </div>
             </nav>
             <div class="texts">
@@ -170,18 +170,18 @@
                     <h6 class="title -tiny">Durée</h6>
                     <strong>4 mois</strong> temps plein<br/>
                     <br/>
-                    du <strong>1er Juillet 2016</strong><br/>
-                    au <strong>31 Octobre 2016</strong>
+                    du <strong>1er juillet 2016</strong><br/>
+                    au <strong>31 octobre 2016</strong>
                 </div>
             </nav>
             <div class="texts">
                 <h6 class="title -tiny">Mission</h6>
                 <p>
                     Lors de ce stage, j'ai intégré une équipe de développeurs et j'ai été chargé de réaliser différentes fonctionnalités en front-end comme en back-end.
-                    J'ai notamment été chargé de refaire entièrement leur formulaire d'abonnement et de réaliser une de leurs landing pages.
+                    J'ai notamment été chargé de refaire entièrement le formulaire d'abonnement et de réaliser une des landing pages de la société.
                 </p>
                 <p>
-                    C'est pendant ce stage que j'ai appris à utiliser Ruby on Rails, MongoDB ou des outils comme Git et Gitlab.
+                    C'est pendant ce stage que j'ai appris à utiliser Ruby on Rails, MongoDB ou des outils comme Redmine et Gitlab.
                 </p>
                 <hr>
                 <h6 class="title -tiny">Technologies</h6>
@@ -189,7 +189,9 @@
                 <span class="techno">MongoDB</span>
                 <span class="techno">HTML5</span>
                 <span class="techno">CSS3</span>
+                <span class="techno">JavaScript</span>
                 <span class="techno">JQuery</span>
+                <span class="techno">Git</span>
             </div>
         </div>
     </div>
@@ -198,10 +200,13 @@
     <div class="row">
         <div class="col-12">
             <h2 class="title -icon"><%= fa_icon "comments-o" %>Contactez-moi</h2>
+            <p>
+                Utilisez le formulaire ou envoyez-moi un mail à <a href="mailto:sebastien.erfani@gmail.com">sebastien.erfani@gmail.com</a>.
+            </p>
         </div>
         <div class="col-12">
             <a href="<%= root_path %>#contact" class="btn"><%= fa_icon "comment-o" %> Formulaire</a>
-            <a href="mailto:sebastien.erfani@gmail.com" class="btn -white"><%= fa_icon "envelope-o" %> Envoyer moi un mail</a>
+            <a href="mailto:sebastien.erfani@gmail.com" class="btn -white"><%= fa_icon "envelope-o" %> Envoyez-moi un mail</a> (client mail par défaut)
         </div>
     </div>
 </section>
