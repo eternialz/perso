@@ -14,3 +14,5 @@
 //= require rails-ujs
 
 //= require_directory .
+
+console.log("loaded");

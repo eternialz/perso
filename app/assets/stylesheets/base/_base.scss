@@ -9,8 +9,7 @@ html {
     background: darken($white, 3%);
     box-sizing: border-box;
     color: $text;
-    font-family: Tahoma, Geneva, sans-serif; // Fallback
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Arial', Tahoma, Geneva, sans-serif;
     font-size: $default-font-size;
     line-height: 1.6;
     overflow-x: hidden;

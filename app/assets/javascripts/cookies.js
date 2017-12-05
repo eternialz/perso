@@ -4,7 +4,7 @@ Cookies = {
             $('#cookies_disclaimer').removeClass('hide');
         }
 
-        $('#cookies_disclaimer #cookies_close').click(Cookies.closeCookieDisclaimer);
+        $('#cookies_close').click(Cookies.closeCookieDisclaimer);
     },
     closeCookieDisclaimer: function() {
         $('#cookies_disclaimer').addClass('hide');
@@ -34,6 +34,6 @@ Cookies = {
     }
 };
 
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
     Cookies.init();
 });
