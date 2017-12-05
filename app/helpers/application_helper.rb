@@ -1,6 +1,6 @@
 module ApplicationHelper
     def site_name
-        "Site name"
+        "Sébastien erfani - intégrateur web"
     end
 
     # TODO Change color
