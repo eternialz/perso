@@ -1,0 +1,71 @@
+fr:
+    portfolio:
+        project: "Le Projet"
+        mission: "Mes Missions"
+        moeverdose_pres: "Plateforme d'hébergement d'images sous la forme d'un forum basé sur des tags.
+        Chaque image possède un ou plusieurs tags et les utilisateurs peuvent rechercher et trouver les images qui les intéressent en combinant les tags.
+        Les utilisateurs et auteurs disposent d'un système de commentaires et de réactions pour échanger entre eux.
+        Projet Open Source sous Mozilla Public Licence 2.0."
+        moeverdose_project_html: "
+            <p>
+                Le projet a été réalisé avec Ruby on Rails et MongoDB.
+                Il dispose d'un serveur Discord où les membres sont notifiés automatiquement de chaque nouveau post,
+                de chaque commit sur le projet et du résultat de la suite de tests après un build par TravisCI.
+                Le serveur compte également un bot directement relié au site pour chercher des informations sur les posts et les utilisateurs.
+                Le meilleur post est automatiquement publié chaque jour sur le compte Twitter du projet.
+            </p>
+            <p>
+                Le projet n'est pas encore en ligne mais le <a href=\"https://discord.me/moeverdose\" target=\"_blank\">serveur Discord</a> ainsi que le <a href=\"https://github.com/eternialz/moeverdose\" target=\"_blank\">code source</a> sont disponibles.
+            </p>
+        "
+
+        internships: "Stages"
+
+        bed_dreams_pres: "Bed & Dreams est un magasin de meubles, spécialisé dans la literie, situé à Schweighouse-sur-Moder.
+            Il propose des concepts innovants, comme des outils de biométrie, pour proposer les articles les mieux adaptés.
+        "
+        bed_dreams_project_html: "
+            J'ai été chargé de développer entièrement un site d'e-commerce avec un second stagiaire:
+            création d'un framework sass/css,
+            réalisation du design et intégration des interfaces,
+            développement de fonctionnalités et création de plusieurs modèles de données.
+        "
+        bed_dreams_duration_html: "
+            <div>
+                <strong>2 mois</strong> temps plein<br/>
+                <br/>
+                du <strong>1er septembre 2017</strong><br/>
+                au <strong>31 octobre 2017</strong><br/>
+                <br/>
+                <br/>
+                <strong>1-3 mois</strong> temps partiel<br/>
+                <br/>
+                du <strong>16 novembre 2017</strong><br />
+                à maintenant<br/>
+            </div>
+        "
+        epopia_pres: "
+            Epopia (anciennement Rêve aux Lettres) est une maison d'édition située à Strasbourg qui crée des aventures personnalisées pour les enfants qui leur sont envoyées par courrier postal.
+        "
+        epopia_project_html: "
+            <p>
+                Lors de ce stage, j'ai intégré une équipe de développeurs et j'ai été chargé de réaliser différentes fonctionnalités en front-end comme en back-end.
+                J'ai notamment été chargé de refaire entièrement le formulaire d'abonnement et de réaliser une des landing pages de la société.
+            </p>
+            <p>
+                C'est pendant ce stage que j'ai appris à utiliser Ruby on Rails, MongoDB ou des outils comme Redmine et Gitlab.
+            </p>
+        "
+        epopia_duration_html: "
+            <strong>4 mois</strong> temps plein<br/>
+            <br/>
+            du <strong>1er juillet 2016</strong><br/>
+            au <strong>31 octobre 2016</strong>
+        "
+        epopia_link: "Accès au site"
+
+        contact_me: "Contactez-moi"
+        contact_me_message_html: "Utilisez le formulaire ou envoyez-moi un mail à <a href=\"mailto:sebastien.erfani@gmail.com\">sebastien.erfani@gmail.com</a>."
+        contact_me_button_form: "Formulaire"
+        contact_me_button_mail: "Envoyez-moi un mail"
+        contact_me_client_mail: "client mail par défaut"

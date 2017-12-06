@@ -1,14 +1,11 @@
 <section id="portfolio" class="head">
-    <h3 class="title -white -icon -center"><%= fa_icon "book" %><span>Portfolio</span></h3>
+    <h3 class="title -white -icon -center"><%= fa_icon "book" %><span><%= t "menu.portfolio" %></span></h3>
     <div class="row portfolio-container">
         <header id="portfolio-1" style="background-image: url(<%= image_url('portfolio_1.jpg') %>);">
             <div class="content">
                 <h2 class="title">Moeverdose</h2>
                 <p>
-                    Plateforme d'hébergement d'images sous la forme d'un forum basé sur des tags.
-                    Chaque image possède un ou plusieurs tags et les utilisateurs peuvent rechercher et trouver les images qui les intéressent en combinant les tags.
-                    Les utilisateurs et auteurs disposent d'un système de commentaires et de réactions pour échanger entre eux.
-                    Projet Open Source sous Mozilla Public Licence 2.0.
+                    <%= t "portfolio.moeverdose_pres" %>
                 </p>
                 <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 50">
                     <polygon id="poly-1" points="0,50 50,0 50,50"/>
@@ -34,17 +31,8 @@
             </nav>
             <div class="texts">
                 <div class="col-6 -sp -wp-right">
-                    <h6 class="title -tiny">Le Projet</h6>
-                    <p>
-                        Le projet a été réalisé avec Ruby on Rails et MongoDB.
-                        Il dispose d'un serveur Discord où les membres sont notifiés automatiquement de chaque nouveau post,
-                        de chaque commit sur le projet et du résultat de la suite de tests après un build par TravisCI.
-                        Le serveur compte également un bot directement relié au site pour chercher des informations sur les posts et les utilisateurs.
-                        Le meilleur post est automatiquement publié chaque jour sur le compte Twitter du projet.
-                    </p>
-                    <p>
-                        Le projet n'est pas encore en ligne mais le <a href="https://discord.me/moeverdose" target="_blank">serveur Discord</a> ainsi que le <a href="https://github.com/eternialz/moeverdose" target="_blank">code source</a> sont disponibles.
-                    </p>
+                    <h6 class="title -tiny"><%= t "portfolio.project" %></h6>
+                    <%= t "portfolio.moeverdose_project_html" %>
                 </div>
                 <div class="col-6 -sp -wp-left -wp-right">
                     <h6 class="title -tiny">Technologies</h6>
@@ -95,14 +83,13 @@
 </section>-->
 <section class="-border-top">
     <div class="row portfolio-container">
-        <h3 class="title -icon -center"><%= fa_icon "vcard" %><span>Internships</span></h3>
+        <h3 class="title -icon -center"><%= fa_icon "vcard" %><span><%= t "portfolio.internships" %></span></h3>
         <div class="col-4 -sp">
             <header id="portfolio-3" style="background-image: url(<%= image_url('portfolio_3.jpg') %>);" class="vertical">
                 <div class="content">
                     <h2 class="title">Bed & Dreams</h2>
                     <p>
-                        Bed & Dreams est un magasin de meubles, spécialisé dans la literie, situé à Schweighouse-sur-Moder.
-                        Il propose des concepts innovants, comme des outils de biométrie, pour proposer les articles les mieux adaptés.
+                        <%= t "portfolio.bed_dreams_pres" %>
                     </p>
                     <a href="https://www.facebook.com/bedanddreams/" traget="_blank" class="btn -white"><%= fa_icon "facebook" %>facebook</a>
                     <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 49">
@@ -114,28 +101,12 @@
         </div>
         <div class="col-8 -big-gutter">
             <nav>
-                <div>
-                    <h6 class="title -tiny">Durée</h6>
-                    <strong>2 mois</strong> temps plein<br/>
-                    <br/>
-                    du <strong>1er septembre 2017</strong><br/>
-                    au <strong>31 octobre 2017</strong><br/>
-                    <br/>
-                    <br/>
-                    <strong>3 mois</strong> temps partiel<br/>
-                    <br/>
-                    du <strong>16 novembre 2017</strong><br />
-                    à maintenant<br/>
-                </div>
+                <h6 class="title -tiny">Durée</h6>
+                <%= t "portfolio.bed_dreams_duration_html" %>
             </nav>
             <div class="texts">
-                <h6 class="title -tiny">Mes Missions</h6>
-                <p>
-                    J'ai été chargé de développer entièrement un site d'e-commerce avec un second stagiaire:
-                    création d'un framework css,
-                    réalisation du design et intégration des interfaces,
-                    développement de fonctionnalités et création de plusieurs modèles de données.
-                </p>
+                <h6 class="title -tiny"><%= t "portfolio.mission" %></h6>
+                <%= t "portfolio.bed_dreams_project_html" %>
                 <hr>
                 <h6 class="title -tiny">Technologies</h6>
                 <span class="techno">Ruby on Rails</span>
@@ -154,9 +125,9 @@
                 <div class="content">
                     <h2 class="title">Epopia</h2>
                     <p>
-                        Epopia (anciennement Rêve aux Lettres) est une maison d'édition située à Strasbourg qui crée des aventures personnalisées pour les enfants qui leur sont envoyées par courrier postal.<br/>
+                        <%= t "portfolio.epopia_pres" %>
                     </p>
-                    <a href="https://epopia.com" target="_blank" class="btn -white"><%= fa_icon "external-link" %>Accès au site</a>
+                    <a href="https://epopia.com" target="_blank" class="btn -white"><%= fa_icon "external-link" %><%= t "portfolio.epopia_link" %></a>
                     <svg id="horizontal" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 50 49">
                         <polygon id="poly-1" points="0,50 50,25 50,50"/>
                         <polygon id="poly-2" points="0,0 50,50 0,50"/>
@@ -168,21 +139,12 @@
             <nav>
                 <div>
                     <h6 class="title -tiny">Durée</h6>
-                    <strong>4 mois</strong> temps plein<br/>
-                    <br/>
-                    du <strong>1er juillet 2016</strong><br/>
-                    au <strong>31 octobre 2016</strong>
+                    <%= t "portfolio.epopia_duration_html" %>
                 </div>
             </nav>
             <div class="texts">
                 <h6 class="title -tiny">Mission</h6>
-                <p>
-                    Lors de ce stage, j'ai intégré une équipe de développeurs et j'ai été chargé de réaliser différentes fonctionnalités en front-end comme en back-end.
-                    J'ai notamment été chargé de refaire entièrement le formulaire d'abonnement et de réaliser une des landing pages de la société.
-                </p>
-                <p>
-                    C'est pendant ce stage que j'ai appris à utiliser Ruby on Rails, MongoDB ou des outils comme Redmine et Gitlab.
-                </p>
+                    <%= t "portfolio.epopia_project_html" %>
                 <hr>
                 <h6 class="title -tiny">Technologies</h6>
                 <span class="techno">Ruby on Rails</span>
@@ -199,14 +161,14 @@
 <section class="darker -border-top">
     <div class="row">
         <div class="col-12">
-            <h2 class="title -icon"><%= fa_icon "comments-o" %>Contactez-moi</h2>
+            <h2 class="title -icon"><%= fa_icon "comments-o" %><%= t "portfolio.contact_me" %></h2>
             <p>
-                Utilisez le formulaire ou envoyez-moi un mail à <a href="mailto:sebastien.erfani@gmail.com">sebastien.erfani@gmail.com</a>.
+                <%= t "portfolio.contact_me_message_html" %>
             </p>
         </div>
         <div class="col-12">
-            <a href="<%= root_path %>#contact" class="btn"><%= fa_icon "comment-o" %> Formulaire</a>
-            <a href="mailto:sebastien.erfani@gmail.com" class="btn -white"><%= fa_icon "envelope-o" %> Envoyez-moi un mail</a> (client mail par défaut)
+            <a href="<%= root_path %>#contact" class="btn"><%= fa_icon "comment-o" %> <%= t "portfolio.contact_me_button_form" %></a>
+            <a href="mailto:sebastien.erfani@gmail.com" class="btn -white"><%= fa_icon "envelope-o" %> <%= t "portfolio.contact_me_button_mail" %></a> (<%= t "portfolio.contact_me_client_mail" %>)
         </div>
     </div>
 </section>
