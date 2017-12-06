@@ -1,0 +1,8 @@
+fr:
+    menu:
+        home: "Accueil"
+        portfolio: "Portfolio"
+        resume: "CV"
+        download_cv: "Télécharger mon CV"
+        github: "Profil Github"
+        legal_notice: "Mentions Légales"

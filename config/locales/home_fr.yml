@@ -1,0 +1,26 @@
+fr:
+    home:
+        subtitle: "Intégrateur Web"
+        headline_html: "Bonjour, je suis un <strong>intégrateur</strong> et <strong>développeur web</strong> sur <strong>Strasbourg</strong> qui attache une grande importance à l'optimisation et l'expérience utilisateur. Bienvenue sur mon site personnel."
+
+        skill: "Mes compétences"
+        strong_points: "Poins Forts"
+        software: "Outils de travail"
+
+        call_to_action: "Vous pouvez aussi regarder mon portfolio ou mon curriculum vitæ"
+
+        contact_me: "Me contacter"
+
+        form_name_placeholder: "Nom complet"
+        form_mail_placeholder: "Adresse mail"
+        form_message_placehodler: "Message"
+
+        send: "Envoyer"
+
+        sended: "Votre message a été envoyé"
+        reply: "Je vous répondrai le plus rapidement possible"
+
+        error: "Une erreur a empêcher l'envoi du formulaire. Vérifier les informations s'il vous plaît"
+
+        contact_info: "Coordonnées"
+        mail: "Mail"
