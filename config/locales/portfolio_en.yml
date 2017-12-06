@@ -1,20 +1,20 @@
 en:
     portfolio:
         project: "The Project"
-        mission: "My Missions"
-        moeverdose_pres: "Image hosting platform in the form of a taggable image forum.
-        Each image has multiples tags and users can search them by combining those tags.
-        Users and authors interact using a comments and reactions system.
+        mission: "My Mission"
+        moeverdose_pres: "Moeverdose is Image hosting platform in the form of a taggable image forum.
+        Each image has multiple tags and users can search them by combining those tags.
+        Users and authors interact using a comment and reaction system.
         Open Source project licenced under the Mozilla Public Licence 2.0."
         moeverdose_project_html: "
             <p>
                 This project was made using Ruby on Rails and MongoDB.
-                A Discord server is available where members are notified about each new posts, each commits and about the result of the test suite after a build by TravisCI.
-                This server also propose a Discord Bot linked to the project.
+                A Discord server is available where members are notified about each new post, each commit and about the result of the test suite after a build by TravisCI.
+                This server also offers a Discord Bot linked to the project.
                 The best image is published each day, automatically, on the Twitter account of the project.
             </p>
             <p>
-                This project isn't online for the moment but the <a href=\"https://discord.me/moeverdose\" target=\"_blank\">Discord server</a> and the <a href=\"https://github.com/eternialz/moeverdose\" target=\"_blank\">source code</a> are available.
+                This project is not online for the moment but the <a href=\"https://discord.me/moeverdose\" target=\"_blank\">Discord server</a> and the <a href=\"https://github.com/eternialz/moeverdose\" target=\"_blank\">source code</a> are available.
             </p>
         "
 
@@ -25,7 +25,7 @@ en:
             They display innovative concept, such as biometric tools, to answer the expectation of their clients.
         "
         bed_dreams_project_html: "
-            I was tasked to develop an entire selling platform with a second student:
+            I was tasked to develop an entire selling platform with another student:
             elaboration of a SASS/CSS framework,
             design and integration of the different interfaces,
             implementation of features and creation of different data schemes.
@@ -34,13 +34,8 @@ en:
             <div>
                 <strong>2 months</strong> full time<br/>
                 <br/>
-                from <strong>Septembre, 1<sup>rst</sup> 2017</strong><br/>
-                to <strong>October, 31<sup>th</sup> 2017</strong><br/>
-                <br/>
-                <br/>
-                <strong>1-3 month</strong> part-time<br/>
-                <br/>
-                from <strong>November, 16<sup>th</sup> 2017</strong>
+                from <strong>Septembre 1<sup>st</sup>, 2017</strong><br/>
+                to <strong>October 31<sup>st</sup>, 2017</strong><br/>
             </div>
         "
         epopia_pres: "
@@ -48,18 +43,18 @@ en:
         "
         epopia_project_html: "
             <p>
-                In this traineeship, i took an active part in an IT team and i was tasked to create different feature for the front-end, as well as the back-end.
-                In particular, i remade their subscription form entirely and i created one of their landing page.
+                In this traineeship, I took an active part in an IT team and I was tasked to create different feature for the front-end, as well as the back-end.
+                In particular, I rewrote their subscription form entirely and I created one of their landing pages.
             </p>
             <p>
-                It was in this internship that i earned to use Ruby on Rails, MongoDB and other tools and software such as Redmine and Gitlab.
+                It was in this internship that I learned to use Ruby on Rails, MongoDB and other tools and software such as Redmine and Gitlab.
             </p>
         "
         epopia_duration_html: "
             <strong>4 month</strong> full time<br/>
             <br/>
-            from <strong>July, 1<sup>rst</sup> 2016</strong><br/>
-            to <strong>October, 31<sup>th</sup> 2016</strong>
+            from <strong>July 1<sup>st</sup>, 2016</strong><br/>
+            to <strong>October 31<sup>st</sup>, 2016</strong>
         "
         epopia_link: "Website"
 

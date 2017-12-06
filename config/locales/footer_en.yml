@@ -1,8 +1,9 @@
 en:
     footer:
-        locale: "Language"
+        locale: "Languages"
         links: "Links"
         about: "About"
         about_text: "This website was created using Ruby on Rails 5 and MongoDB in order to represent me and be usable as a blog for my future articles.
-        It is hosted by Heroku Inc. et and deployed directly from the different branch of the GIT project.
+        It is hosted by Heroku Inc. and deployed directly from the different branches of the GIT project.
         The source code is available under the Mozilla Public Licence 2.0."
+        button: "See on Github"

@@ -6,3 +6,4 @@ fr:
         about_text: "Ce site a été créé en utilisant Ruby on Rails 5 et MongoDB pour me présenter et servir de blog pour mes futurs articles.
         Il est hébergé par Heroku Inc. et est déployé directement depuis les différentes branches du projet GIT.
         Le code source est disponible en Open Source avec la licence Mozilla Public Licence 2.0."
+        button: "Accès au projet"

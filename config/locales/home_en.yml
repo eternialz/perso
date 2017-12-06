@@ -1,18 +1,18 @@
 en:
     home:
         subtitle: "Front-end Developer"
-        headline_html: "Hello, I am a <strong>Front-end developer</strong> based in <strong>Strasbourg</strong> with an emphasis on optimisation and user experience. Welcome to my personal website."
+        headline_html: "Hello, I am a <strong>Front-end developer</strong> based in <strong>Strasbourg</strong>. Optimisation and user experience are my priorities. Welcome to my personal website."
         skill: "My skills"
-        strong_points: "Strong Points"
+        strong_points: "Strengths"
         software: "Software"
 
-        call_to_action: "You can also take a loot to my works and my resume"
+        call_to_action: "You can also take a look to my works and my resume"
 
         contact_me: "Contact me"
 
-        form_name_placeholder: "Complete name"
-        form_mail_placeholder: "Email address"
-        form_message_placehodler: "Message content"
+        form_name_placeholder: "Complete Name"
+        form_mail_placeholder: "Email Address"
+        form_message_placehodler: "Message Content"
 
         send: "Send"
 
@@ -22,5 +22,5 @@ en:
         error: "Une erreur a empêcher l'envoi du formulaire. Vérifier les informations s'il vous plaît"
         error: "An error prevented your message from being send. Please verify all the informations provided"
 
-        contact_info: "Contact informations"
+        contact_info: "Contact information"
         mail: "Email"
