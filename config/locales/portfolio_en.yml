@@ -19,6 +19,7 @@ en:
         "
 
         internships: "Internships"
+        duration: "Duration"
 
         bed_dreams_pres: "Bed & Dreams is a furniture store specialised in beddings based in Schweighouse-sur-Moder.
             They display innovative concept, such as biometric tools, to answer the expectation of their clients.
@@ -33,13 +34,13 @@ en:
             <div>
                 <strong>2 months</strong> full time<br/>
                 <br/>
-                du <strong>Septembre, 1<sup>rst</sup> 2017</strong><br/>
-                au <strong>October, 31<sup>th</sup> 2017</strong><br/>
+                from <strong>Septembre, 1<sup>rst</sup> 2017</strong><br/>
+                to <strong>October, 31<sup>th</sup> 2017</strong><br/>
                 <br/>
                 <br/>
                 <strong>1-3 month</strong> part-time<br/>
                 <br/>
-                du <strong>November, 16<sup>th</sup> 2017</strong>
+                from <strong>November, 16<sup>th</sup> 2017</strong>
             </div>
         "
         epopia_pres: "
@@ -51,14 +52,14 @@ en:
                 In particular, i remade their subscription form entirely and i created one of their landing page.
             </p>
             <p>
-                If was in this internship that i earned to use Ruby on Rails, MongoDB and other tools and software such as Redmine and Gitlab.
+                It was in this internship that i earned to use Ruby on Rails, MongoDB and other tools and software such as Redmine and Gitlab.
             </p>
         "
         epopia_duration_html: "
             <strong>4 month</strong> full time<br/>
             <br/>
-            du <strong>July, 1<sup>rst</sup> 2016</strong><br/>
-            au <strong>October, 31<sup>th</sup> 2016</strong>
+            from <strong>July, 1<sup>rst</sup> 2016</strong><br/>
+            to <strong>October, 31<sup>th</sup> 2016</strong>
         "
         epopia_link: "Website"
 

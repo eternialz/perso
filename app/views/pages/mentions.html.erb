@@ -1,53 +1,19 @@
 <section id="legal" class="head">
-    <h3 class="title -white -icon -center"><%= fa_icon "book" %><span>Legal Notice</span></h3>
+    <h3 class="title -white -icon -center"><%= fa_icon "book" %><span><%= t "legal.title" %></span></h3>
 
     <div class="row">
         <div class="zone">
-            <h3 class="title">About the website</h3>
-            <h5>Hosting:</h5>
-            <p>This website is hosted by Heroku Inc., 650 7th Street, San Francisco, CA (tel : +33 1 (877) 563-4311)</p>
-            <hr>
-            <h5>About the editor:</h5>
-            <p>
-                This website is edited by Sébastien Erfani:<br/>
-                <br/>
-                22 Route du Rhin,<br/>
-                Illkirch-Graffenstaden<br/>
-                67400, France<br/>
-            </p>
-            <hr>
-            <h5>Contact</h5>
-            <ul>
-                <li>mail: <a href="mailto:sebastien.erfani@gmail.com">sebastien.erfani@gmail.com</a></li>
-            </ul>
-
+            <h3 class="title"><%= t "legal.about" %></h3>
+            <h5><%= t "legal.hosting" %> :</h5>
+            <%= t "legal.hosting_text_html" %>
         </div>
         <div class="zone" id="cookies">
-            <h3 class="title">Cookies</h3>
-            <p>
-                Le site utilise des cookies pour stocker quelques informations dans votre navigateur.
-                Vous pouvez désactiver leurs utilisations dans les options de votre navigateur.
-            </p>
-            <p>
-                Ces cookies sont utilisé pour:
-            </p>
-            <p>
-                - Sauvegarder l'identifiant aléatoire utilisé dans notre serveur pour garder en mémoire la langue choisie.
-            </p>
-            <p>
-                - Sauvegarder l'acceptation de l'usage des cookies.
-            </p>
+            <h3 class="title"><%= t "legal.cookies" %></h3>
+            <%= t "legal.disclaimer_html" %>
         </div>
         <div class="zone">
-            <h3 class="title">Credits</h3>
-            <p>
-                The JavaScript Icon is Created by Alexander Vakulin from the Noun Project
-            </p>
-            <p>
-                Flag icons for France and United Kingdom made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
-                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-            </p>
+            <h3 class="title"><%= t "legal.thanks" %></h3>
+            <%= t "legal.thanks_text_html" %>
         </div>
     </div>
 </section>

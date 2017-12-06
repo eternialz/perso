@@ -1,0 +1,52 @@
+en:
+    legal:
+        title: "Mentions légales"
+        about: "A propos du site"
+
+        hosting: "Hosting"
+        hosting_text_html: "
+            <p>This website is hosted by Heroku Inc., 650 7th Street, San Francisco, CA (tel : +33 1 (877) 563-4311)</p>
+            <hr>
+            <h5>About the editor:</h5>
+            <p>
+                This website is edited by Sébastien Erfani:<br/>
+                <br/>
+                22 Route du Rhin,<br/>
+                Illkirch-Graffenstaden<br/>
+                67400, France<br/>
+            </p>
+            <hr>
+            <h5>Contact</h5>
+            <ul>
+                <li>mail: <a href=\"mailto:sebastien.erfani@gmail.com\">sebastien.erfani@gmail.com</a></li>
+            </ul>
+        "
+
+        cookies: "Cookies"
+        disclaimer_html: "
+            <p>
+                This Website use cookies to save informations in your browser.
+                You can prevent their use with your browser parameters.
+            </p>
+            <p>
+                These cookies are used for:
+            </p>
+            <p>
+                - Saving the random sessions id used in our server to save the choosen language.
+            </p>
+            <p>
+                - Saving the acceptance of our terms regarding cookies
+            </p>
+        "
+
+        thanks: "Remerciements"
+        thanks_text_html: "
+            <p>
+                The JavaScript Icon is Created by Alexander Vakulin from the Noun Project
+            </p>
+            <p>
+                Flag icons for France and United Kingdom made by <a href=\"http://www.freepik.com\" title=\"Freepik\">Freepik</a>
+                from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a>
+                is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>
+            </p>
+        "

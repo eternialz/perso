@@ -1,0 +1,52 @@
+fr:
+    legal:
+        title: "Mentions légales"
+        about: "A propos du site"
+
+        hosting: "Hosting"
+        hosting_text_html: "
+            <p>Ce site est hébergé par Heroku Inc., 650 7th Street, San Francisco, CA (tel : +33 1 (877) 563-4311)</p>
+            <hr>
+            <h5>A propos de l'éditeur :</h5>
+            <p>
+                Sébastien Erfani:<br/>
+                <br/>
+                22 Route du Rhin,<br/>
+                Illkirch-Graffenstaden<br/>
+                67400, France<br/>
+            </p>
+            <hr>
+            <h5>Contact</h5>
+            <ul>
+                <li>mail: <a href=\"mailto:sebastien.erfani@gmail.com\">sebastien.erfani@gmail.com</a></li>
+            </ul>
+        "
+
+        cookies: "Cookies"
+        disclaimer_html: "
+            <p>
+                Le site utilise des cookies pour stocker quelques informations dans votre navigateur.
+                Vous pouvez désactiver leurs utilisations dans les options de votre navigateur.
+            </p>
+            <p>
+                Ces cookies sont utilisé pour:
+            </p>
+            <p>
+                - Sauvegarder l'identifiant aléatoire utilisé dans notre serveur pour garder en mémoire la langue choisie.
+            </p>
+            <p>
+                - Sauvegarder l'acceptation de l'usage des cookies.
+            </p>
+        "
+
+        thanks: "Crédits"
+        thanks_text_html: "
+            <p>
+                L'icone JavaScript est créée par Alexander Vakulin de the Noun Project
+            </p>
+            <p>
+                Les icônes pour la France et les Royaume-Uni ont été fait par  <a href=\"http://www.freepik.com\" title=\"Freepik\">Freepik</a>
+                de <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a>
+                et sont sous la licence <a href=\"http://creativecommons.org/licenses/by/3.0/\" title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>
+            </p>
+        "
