@@ -1,3 +1,4 @@
 fr:
-    cookie:
-        alert: ""
+    cookies:
+        alert_html: "En visitant ce site web, vous acceptez <a href=\"mentions#cookies\">notre politique</a> sur l'utilisation des cookies."
+        accept: "Accepter et fermer"

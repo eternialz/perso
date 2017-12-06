@@ -1,3 +1,4 @@
 en:
-    cookie:
-        alert: ""
+    cookies:
+        alert_html: "By visiting this website, you accept the use of cookies according to <a href=\"mentions#cookies\">our policy</a> on their usage."
+        accept: "Accept and close"
