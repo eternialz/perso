@@ -25,6 +25,10 @@ header.nav {
             li a {
                 color: $white !important;
             }
+
+            li a.current {
+                box-shadow: none;
+            }
         }
     }
 
@@ -59,6 +63,20 @@ header.nav {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
+
+        &.current {
+            box-shadow: inset 0 -0.2em 0 $cyan;
+
+            @media only screen and (max-width: $small) {
+                box-shadow: inset 0.2em 0 0 $cyan;
+            }
+        }
+    }
+
+    li svg {
+        max-height: 1.2em;
+        position: relative;
+        top: 4px;
     }
 
     a:active {
@@ -124,7 +142,6 @@ header.nav {
             top: 100%;
             width: 100%;
             background: $white;
-            border-bottom: 3px solid $gray0;
             box-shadow: 0 6px 12px -5px rgba($black, 0.08);
             line-height: 2.5em;
 

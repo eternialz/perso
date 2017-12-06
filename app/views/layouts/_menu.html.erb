@@ -11,6 +11,8 @@
             <li><a href="<%= static_page_path('portfolio') %>"><%= fa_icon "caret-right" %><%= t "menu.portfolio" %></a></li>
             <li><a href="<%= static_page_path('cv') %>"><%= fa_icon "caret-right" %><%= t "menu.resume" %></a></li>
             <li><a href="<%= root_path %>#contact"><%= fa_icon "caret-right" %>Contact</a></li>
+            <li><a class="<%= I18n.locale == :fr ? 'current' : '' %>" href="?locale=fr"><%= inline_svg "fr.svg" %></a></li>
+            <li><a class="<%= I18n.locale == :en ? 'current' : '' %>" href="?locale=en"><%= inline_svg "gb.svg" %></a></li>
         </ul>
     </div>
 </header>
