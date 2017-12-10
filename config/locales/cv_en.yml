@@ -1,0 +1,130 @@
+en:
+    cv:
+        title: "Resume"
+        subtitle: "Front-end Developer"
+        about_me_html: "
+            <li>3<sup>rd</sup> year student</li>
+            <li>Driving Licence (B)</li>
+            <li>20 years old</li>
+        "
+        address_html: "
+            <li>22 Route du Rhin</li>
+            <li>Illkirch-Graffenstaden</li>
+            <li>67400 France</li>
+        "
+        contact_info_html: "
+            <li>sebastien.erfani@gmail.com</li>
+            <li>07 86 60 03 39</li>
+            <li><a href=\"http://erfani.fr\">http://erfani.fr</a></li>
+        "
+        experience: "experience"
+        bed_stage:
+            title: "Internship: Bed & Dreams"
+            duration: "September 2017 - full time - 2 months"
+            text_html: "
+                <p>
+                    Réalisation d'un site d'e-commerce de A à Z avec un autre stagiaire en utilisant Ruby On Rails.
+                    Développement de différents modules, notamment les comptes clients, la génération des factures, l'API pour l'ERP de l'entreprise, le choix du type de livraison.
+                </p>
+                <p>
+                    Création d'un framework CSS et élaboration d'une interface utilisateur (UI) en respectant l'image de l'entreprise et en optimisant l'user experience (UX).
+                    Respect des lois françaises sur les cookies, mentions légales et début de l'implémentation de la loi européenne RGPD.
+                </p>
+            "
+        epopia_stage:
+            title: "Internship: Epopia"
+            duration: "July 2016 - full time - 4 months"
+            text_html: "
+                <p>
+                    Stage dans une équipe de développement et apprentissage du framework web Ruby On Rails, de GIT, de la méthode AJAX.
+                    Utilisation d'un système de tickets (Redmine puis Gitlab), utilisation avancée du système d'opération Linux (Debian).
+                </p>
+                <p>
+                    Développement de plusieurs fonctions pour le site internet et l'erp d'Epopia : formulaire d'inscription, système avancé de FAQ, landing page, interfaces d'administration.
+                </p>
+            "
+        personal:
+            title: "Personal Experience"
+            text_html: "
+                <p>
+                    Participation à plusieurs événements sur l'informatique: Startup Weekend Strasbourg 2016 : Prix Scalingo, Nuit de l'Info, Global Game Jam 2016 et 2017.
+                    Création de différents projets de ma propre initiative dont certains sont disponibles en open source sur <a href=\"https://github.com/eternialz\" target=\"_blank\">GitHub</a>.
+                </p>
+                <p>
+                    Approfondissement de différentes technologies en dehors des stages ou périodes scolaires comme WordPress, PHP, HTML, CSS, etc.
+                    Utilisation de divers logiciels graphiques de la suite Adobe.
+                </p>
+            "
+        studies:
+            title: "Studies"
+            supinfo:
+                title: "Études supérieures d'informatique à Supinfo"
+                duration: "From 2015 until today - 3 ans"
+                text_html: "
+                    <p>
+                        Études d'informatique générale : développement, réseaux, administration, loi, management.
+                        Participations aux différents événements de l'école : job forum, portes ouvertes, présentation dans un lycée, afterwork.
+                    </p>
+                    <p>
+                        Réalisation de plusieurs projets seul ou en équipe. Certains de ces projets sont disponibles sur <a href=\"https://github.com/eternialz\" target=\"_blank\">GitHub</a>.
+                        Rédaction d'articles publiés sur le site de l'école et soutien dans le cadre d'une matière sur le partage de connaissances.
+                    </p>
+                "
+            highschool:
+                title: "Technical highschool"
+                duration: "Before 2015"
+                text_html: "
+                    <p>
+                        Bac S SI avec option informatique et sciences du numérique, mention TB; apprentissage des bases de l'informatique (algorithmie, python et binaire/hexadécimal).
+                        Réalisation de différents sites web en utilisant WordPress.
+                    </p>
+                "
+        skills:
+            title: "Skills"
+            dev:
+                title: "Dev Web"
+                text_html: "
+                    <li>&rsaquo; HTML5 & CSS3</li>
+                    <li>&rsaquo; Responsive Design</li>
+                    <li>&rsaquo; JavaScript & JQuery</li>
+                    <li>&rsaquo; Ruby on Rails</li>
+                    <li>&rsaquo; Optimisation</li>
+                    <li>&rsaquo; PHP</li>
+                "
+            bdd:
+                title: "Bases de Données"
+                text_html: "
+                    <li>&rsaquo; SQL / PLQSL</li>
+                    <li>&rsaquo; PostgreSQL</li>
+                    <li>&rsaquo; MySQL / MariaDB</li>
+                    <li>&rsaquo; MongoDB</li>
+                "
+            other:
+                title: "Autres"
+                text_html: "
+                    <li>&rsaquo; SEO</li>
+                    <li>&rsaquo; Wordpress</li>
+                    <li>&rsaquo; User Experience & Interface</li>
+                    <li>&rsaquo; Photoshop</li>
+                    <li>&rsaquo; Linux</li>
+                "
+            locale:
+                title: "Langues"
+                text_html: "
+                    <strong>Anglais :</strong>
+                    <li>&rsaquo; Écrit, lu et parlé</li>
+                    <br/>
+                    <strong>Français :</strong>
+                    <li>&rsaquo; Langue maternelle</li>
+                "
+        interest:
+            title: "Centres d'Intérêts"
+            text_html: "
+                <span class=\"techno\">Technologies</span>
+                <span class=\"techno\">Innovations Web</span>
+                <span class=\"techno\">Open Source</span>
+                <span class=\"techno\">Culture Asiatique</span>
+                <span class=\"techno\">Lecture</span>
+                <span class=\"techno\">Manga/Novels</span>
+                <span class=\"techno\">Musique</span>
+            "
